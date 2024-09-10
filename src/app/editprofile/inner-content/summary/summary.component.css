@@ -1,0 +1,123 @@
+.summary .backcolor{
+    background-color: #000;
+
+}
+.summary h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin:0px 0px 0px 0px ;
+    color: #121262;
+}
+.summary h2{
+    
+    margin:0px 0px 0px 0px ;
+}
+.summary label{
+    color: #000;
+}
+.summary .star{
+    color: #EF0015;
+}
+.summary form{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.summary input{
+    border: 1px solid black;
+}
+.summary .mt-0 input{
+    margin-top: 0px;
+}
+.summary .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.summary .form-check-label{
+    margin-left: 10px;
+}
+
+.summary .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.summary .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.summary .head{
+    margin-bottom: 10px;
+}
+​
+.summary .fix-width{
+    width: 30%;
+}
+.summary .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    /* padding: 15px 15px 0px 15px; */
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.summary label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.summary input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.summary .form-check label{
+    padding-top: 13px;
+}
+.summary .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.summary .marg{
+    margin-top: 10px;
+}
+.summary .colr{
+    color: #F42323;
+}
+.summary label img{
+    height: 20px;
+    width: 20px;
+}
+.btn-color1{
+    background-color: #FF7575;
+    color: #fff;
+    margin-right: 25px;
+}
+.btn-color2{
+    background-color: #54B4EA;
+    color: #fff;
+}

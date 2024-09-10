@@ -1,0 +1,148 @@
+.personal-details .backcolor{
+    background-color: #000;
+
+}
+.personal-details h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin:0px 0px 0px 0px ;
+    color: #121262;
+}
+.personal-details h2{
+    
+    margin:0px 0px 0px 0px ;
+}
+.personal-details label{
+    color: #000;
+}
+.personal-details .star{
+    color: #EF0015;
+}
+.personal-details form{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.personal-details input{
+    border: 1px solid black;
+}
+.personal-details .mt-0 input{
+    margin-top: 0px;
+}
+.personal-details .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.personal-details .form-check-label{
+    margin-left: 10px;
+}
+
+.personal-details .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.personal-details .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.personal-details .head{
+    margin-bottom: 0px;
+}
+​
+.personal-details .fix-width{
+    width: 30%;
+}
+.personal-details .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    /* padding: 15px 15px 0px 15px; */
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.personal-details label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.personal-details input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.personal-details .form-check label{
+    padding-top: 13px;
+}
+.personal-details .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.personal-details .marg{
+    margin-top: 10px;
+}
+.personal-details .colr{
+    color: #F42323;
+}
+.personal-details label img{
+    height: 20px;
+    width: 20px;
+}
+.personal-details .btn-color1{
+    background-color: #FF7575;
+    color: #fff;
+    margin-right: 25px;
+}
+.personal-details .btn-color2{
+    background-color: #54B4EA;
+    color: #fff;
+}
+.personal-details .btn-verify{
+    background-color: #54B4EA;
+    color: #fff;
+    height: 48px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 24px;
+}
+.personal-details .btn-otp-submit{
+    background-color: #4D9F4C;
+    color: #fff;
+    height: 48px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 20px;
+}
+.personal-details .re-otp{
+    text-align: end;
+    text-decoration: none;
+    color: #407BFF;
+}
+.personal-details .re-otp p{
+    margin: 0px 0px 0px 0px;
+}
+.personal-details #linkedin{
+    margin-bottom: 0px;
+}

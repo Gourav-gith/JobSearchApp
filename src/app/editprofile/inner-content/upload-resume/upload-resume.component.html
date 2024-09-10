@@ -1,0 +1,41 @@
+
+<div class="upload-resume">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Upload Resume</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square"></i></b></p>
+                    </div>
+                </div>
+                    <h2>An uploaded resume increases your chances by 60% of getting job offers.</h2>
+                </div>
+                
+              <div class="row ">
+                <div class="col-lg-12 col-md-6 col-sm-6">
+                    <div class="mt-0">
+                            <div class="border-style">
+                                <input type="file" class="form-control" id="upload-resume" (change)="resumeUpload($event)"
+                                    placeholder="Select file to upload">
+                            <span *ngIf="error.resume"><span class="error" *ngFor="let errorMessage of error.resume">{{errorMessage}}</span></span>
+                            </div>
+                            <span class="d-flex"> <p><i class="bi bi-info-circle"></i> Supported file formats: doc, rtf, docx, pdf | upto 3 mb</p></span>
+                    </div>
+                    
+                    </div>
+                </div>       
+                <div class=" justify-content-center text-end">
+                    <button type="button" class="btn btn-color1"  (click)="cancel()" >Cancel</button>
+                    <button type="button" class="btn btn-color2" (click)="submit()">Save</button>
+                </div>               
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

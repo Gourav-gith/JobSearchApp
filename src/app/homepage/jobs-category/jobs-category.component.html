@@ -1,0 +1,120 @@
+
+<div id="client-section" class="padding">
+    <div class="container">
+      <div class="section-title " >
+        
+        <h1 class="jobcategory">Explore jobs by category
+        </h1>
+        <h4 class="view">View all
+        </h4>
+       
+      </div>
+      <div class=" mx-auto  justify-content-center py-30 d-flex ">
+            <div class="row scrollmenu">
+              <div class="col-lg-3 col-md-3 px-2 "  *ngFor="let jobs of jobsByCatagoryList">
+                <div class="card ">
+                  <div class=" cathead" >
+                    <div class="card-img catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+                   <div class="catbox">
+                    <div>
+                      <!-- <h2 class="text-overflow-ellipses" title="{{job.job_title}}">{{job.job_title}}</h2> -->
+                    <h2 class="text-overflow-ellipses" title="{{jobs.industry?.name }}" >{{jobs.industry?.name }}</h2>
+                    <!-- <h2 class="text-overflow-ellipses" title ="jobs?.industry?.name">{{ (jobs?.industry?.name!.length > 15 ) ? (jobs?.industry?.name | slice:0:15)+'..':(jobs?.industry?.name)}}</h2> -->
+                    <div>
+                      <p class="ppad">{{jobs?.job_count}} Jobs Available</p>
+                    </div>
+                  </div>
+                   
+                  </div>
+                  
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+              <!-- <div class="scrollmenu">
+                
+              </div> -->
+
+
+              <!-- <div class="col-md-3 w-25 px-2 ">
+                <div class="card card2">
+                  <div class="card-img cathead" >
+                    <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+                   <div class="catbox">
+                    <h2>Marketing & Communication</h2>
+                    <p class="ppad">237 Jobs Available</p></div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 w-25 px-2 card3 ">
+                <div class="card">
+                  <div class="card-img cathead" >
+                    <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+                   <div class="catbox">
+                    <h2>Marketing & Communication</h2>
+                    <p class="ppad">237 Jobs Available</p></div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 w-25 px-2  card4">
+                <div class="card">
+                  <div class="card-img cathead" >
+                    <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+                   <div class="catbox">
+                    <h2>Marketing & Communication</h2>
+                    <p class="ppad">237 Jobs Available</p></div> 
+                  </div>
+                </div>
+              </div>      -->
+      </div>
+<!-- 
+      <div class="mx-auto my-1 justify-content-center " style="display: flex;padding-bottom: 30px;">
+        
+        <div class="col-md-3 w-25 px-2 ">
+          <div class="card card1">
+            <div class="card-img cathead" >
+              <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+             <div class="catbox">
+              <h2>Marketing & Communication</h2>
+              <p class="ppad">237 Jobs Available</p></div> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 w-25 px-2 ">
+          <div class="card card2">
+            <div class="card-img cathead"  >
+              <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+             <div class="catbox">
+              <h2>Marketing & Communication</h2>
+              <p class="ppad">237 Jobs Available</p></div> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 w-25 px-2 card3 ">
+          <div class="card">
+            <div class="card-img cathead" >
+              <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+             <div class="catbox">
+              <h2>Marketing & Communication</h2>
+              <p class="ppad">237 Jobs Available</p></div> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 w-25 px-2 card4 ">
+          <div class="card">
+            <div class="card-img cathead" >
+              <div class="catlogo"><img src="./assets/images/resume.png" class="img-fluid"></div>
+             <div class="catbox">
+              <h2>Marketing & Communication</h2>
+              <p class="ppad">237 Jobs Available</p></div> 
+            </div>
+          </div>
+        </div>     
+</div> -->
+      
+    </div>
+  </div>
+
+  <!-- Client Section End -->

@@ -1,0 +1,216 @@
+<section id="main">
+    <div class="container" id="recruiter">
+        <div class="row space">
+            <div class="col-md-3">
+                <div class="card">
+                    <app-recruiter-sidemenu></app-recruiter-sidemenu>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card-heading mb-3 bg-blue p-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-9">
+                            <h3>Ready to post a job now?</h3>
+                            <p>You can post your job on workassist and get matched with qualified candidates.</p>
+
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <button class="btn btn-danger">Post a Job</button>
+                        </div>
+                    </div>
+                </div>  
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <a href="">
+                                <div class="card card-grid px-3 py-2">
+                                    <h4>Active Jobs</h4>
+                                    <span>{{headerCounter!.active_jobs}}</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a href="">
+                                <div class="card card-grid px-3 py-2">
+                                    <h4>Applied Candidates</h4>
+                                    <span>{{headerCounter!.applied_candidates}}</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a href="">
+                                <div class="card card-grid px-3 py-2">
+                                    <h4>Shortlisted Candidates</h4>
+                                    <span>{{headerCounter!.shortlisted_candidates}}</span>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 ">
+                            <a href="">
+                                <div class="card card-grid px-3 py-2">
+                                    <h4>On-hold Candidates</h4>
+                                    <span>{{headerCounter!.on_hold_candidates}}</span>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="mt-3 recent-job">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <h3 class="">Recent Posted Jobs</h3>
+                                    </div>
+                                    <div class="col-md-6 text-end">
+                                        <a href=""><span>View All</span></a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="loop" *ngFor="let item of postJob?.data">
+                                <div class="row align-items-end">
+                                    <div class="col-md-5">
+                                        <h5>{{item.job_title}}</h5>
+                                        <p>{{item.job_locations}}</p>
+                                        <p>Posted: {{item.posted_date}}</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <ul class="list-unstyled ">
+                                            <li class="text-center"><a>Application : {{item.application_count}}</a></li>
+                                            <li class="text-end"><a>New : {{item.new_application_count}}</a></li>
+                                        </ul>
+                                    </div>
+                                  
+                                </div>
+                                <hr>
+                            </div>
+                               
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="card seeker-item-div  p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <h5>Recent Applications</h5>
+                                    </div>
+                                    <div class="col-md-4 text-end">
+                                        <a href=""><span>View All</span></a>
+                                    </div>
+                                </div>
+                                <div class="seekr">
+                                    <div class="seeker-item" *ngFor="let item of application?.data">
+                                        <a href="">
+
+                                            <div class="d-flex align-items-center">
+                                                <div class="card-img-div">
+                                                    <img [src]="item.profile_image"
+                                                        class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="px-2">
+
+                                                    <h3 class="card-title">{{item.first_name}} {{item.middle_name}} {{item.last_name}}</h3>
+                                                    <p class="card-text">{{item.job_title}}</p>
+                                                </div>
+                                                <!-- <p> Details</p> -->
+
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="blog-section bg-white mt-3">
+                    <div class="card p-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3 class="">Recent Posted Jobs</h3>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href=""><span>View All</span></a>
+                        </div>
+                    </div>
+                </div>
+    <div class="row p-3">
+<div class="col-md-4" *ngFor="let item of blog.data"> 
+    <div class="card" >
+    <div class="inner-card" >
+      <div class="img-wrapper">
+        <img [src]="item.blog_image?.blog_image" alt="">
+      </div>
+      <div class="content">
+        <h1>{{truncateString(item.blog_title!, 30)}}</h1>
+        <p>{{truncateString(item.blog_details!, 100)}}
+      </div>
+      <div class="btn-wrapper">
+        <button class="view-btn">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="col-md-4"> <div class="card">
+    <div class="inner-card">
+      <div class="img-wrapper">
+        <img src="../../../assets/images/blog-img.jpg" alt="">
+      </div>
+      <div class="content">
+        <h1>Lorem Ipsum is simply dummy text
+            of the printing and typesetting industry</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+      </div>
+      <div class="btn-wrapper">
+        <button class="view-btn">Read More</button>
+      </div>
+    </div>
+  </div></div>
+  <div class="col-md-4"> <div class="card">
+    <div class="inner-card">
+      <div class="img-wrapper">
+        <img src="../../../assets/images/blog-img.jpg" alt="">
+      </div>
+      <div class="content">
+        <h1>Lorem Ipsum is simply dummy text
+            of the printing and typesetting industry</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, dolore!</p>
+      </div>
+      <div class="btn-wrapper">
+        <button class="view-btn">Read More</button>
+      </div>
+    </div>
+  </div></div> -->
+    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</section>

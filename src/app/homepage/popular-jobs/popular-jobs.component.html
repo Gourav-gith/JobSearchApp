@@ -1,0 +1,242 @@
+
+
+<div id="client-section" class="padding fordesktop">
+    <div class="container">
+      <div class="section-title " >
+        
+        <h1 class="popularjob" >Popular jobs
+        </h1>
+        <h4 class="view">View all
+        </h4>
+       
+      </div>
+      <div class="mx-auto py-30 justify-content-center d-flex" >
+        
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  px-2 " *ngFor="let job of popularJobsList">
+                <div class="card pcard1">
+                  <div class="card-img" class="cardlogo" >
+                    <div class="row">
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  pr-0">
+                        <div class="cardimg">
+                        <!-- <img src="./assets/images/logo.png" class="img-fluid">  -->
+                        <img [src]="job.recruiter_company_detail?.company_logo" class="img-fluid"> 
+                    </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div style=" margin-top: 15px;">
+                            <!-- <h2>Fullstack Web Developer </h2> -->
+                            <h2 class="text-overflow-ellipses" title="{{job.job_title}}">{{job.job_title}}</h2>
+                            <!-- <h2 >{{ (job.job_title!.length > 20 ) ? (job.job_title | slice:0:20)+'..':(job.job_title)}}</h2> -->
+
+                            <!-- <p >Company Name</p> -->
+                            <p>{{job.primary_responsibility_detail?.display_company_name }}</p>
+                            </div>
+                    </div>
+                
+                </div>
+                    
+                 
+                <div class="job-detail">
+                    <div class="row" >
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 " style="display: flex;">
+                            
+                            <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  {{job.min_experience?.min}} to {{job.max_experience?.min }} years</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 width-style" style="display: flex;"  *ngIf="job.ctc_type == 1">
+                            <i class="bi bi-currency-rupee ico2" ></i><p >{{job.fixed_ctc}}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display: flex;"  *ngIf="job.ctc_type == 2">
+                            <i class="bi bi-currency-rupee ico2" ></i><p >{{job?.min_ctc | numberFilter : value}} - {{job?.max_ctc | numberFilter : value}} {{job?.min_ctc | alphabetFilter : value}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display: flex;">
+                            <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 width-style" style="display: flex;">
+                            <!-- <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p> -->
+                            <i class="bi bi-geo-alt ico2 " ></i> <p [title]="showLocationOnTitle(job.job_location)" class="text-overflow-ellipses" >{{job.job_location | jobLocationFilter : "summary"  }}</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                  </div>
+                  <div class="row submit " >
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex" >
+                      <a>  <p class="save">Save Job</p></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex" >
+                       <a> <p class="apply" >Apply Now</p></a>
+                    </div>
+                </div>
+                </div>   
+              </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile view start -->
+
+  <div id="client-section" class="padding formobile">
+    <div class="container">
+      <div class="section-title " >
+        
+        <h1 class="popularjob" >Popular jobs
+        </h1>
+        <h4 class="view">View all
+        </h4>
+       
+      </div>
+      <div class="  mx-auto my-1 justify-content-center py-4" style="display: flex;">
+        
+        <div class="col-sm-6  px-2 ">
+          <div class="card pcard1">
+            <div class="card-img" class="cardlogo">
+              <div class="row">
+              <div class="col-sm-3">
+                  <div class="cardimg">
+                  <img src="./assets/images/logo.png" class="img-fluid"> 
+              </div>
+              </div>
+              <div class="col-sm-9">
+                  <div style=" margin-top: 15px;">
+                      <h2>Fullstack Web Developer </h2>
+                      <p >Company Name</p>
+                      </div>
+              </div>
+          </div>
+              
+           
+          <div class="job-detail">
+            <div class="row" >
+                <div class="col-sm-6" style="display: flex;">
+                    
+                    <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                </div>
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                </div>
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                </div>
+            </div>
+        </div> 
+          <div class="row submit ">
+            <div class="col-sm-6" style="display: flex;" >
+                <p class="save">Save Job</p>
+            </div>
+            <div class="col-sm-6" style="display: flex;">
+                <p class="apply">Apply Now</p>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6  px-2 ">
+          <div class="card pcard2">
+            <div class="card-img" class="cardlogo">
+              <div class="row">
+              <div class="col-sm-3">
+                  <div class="cardimg">
+                  <img src="./assets/images/logo.png" class="img-fluid"> 
+              </div>
+              </div>
+              <div class="col-sm-9">
+                  <div style=" margin-top: 15px;">
+                      <h2>Fullstack Web Developer </h2>
+                      <p >Company Name</p>
+                      </div>
+              </div>
+          </div>
+              
+           
+          <div class="job-detail">
+            <div class="row" >
+                <div class="col-sm-6" style="display: flex;">
+                    
+                    <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                </div>
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                </div>
+                <div class="col-sm-6" style="display: flex;">
+                    <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                </div>
+            </div>
+        </div> 
+          <div class="row submit ">
+            <div class="col-sm-6" style="display: flex;" >
+                <p class="save">Save Job</p>
+            </div>
+            <div class="col-sm-6" style="display: flex;">
+                <p class="apply">Apply Now</p>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-sm-4  px-2 ">
+            <div class="card pcard2">
+              <div class="card-img" class="cardlogo">
+                <div class="row">
+                <div class="col-sm-3">
+                    <div class="cardimg">
+                    <img src="./assets/images/logo.png" class="img-fluid"> 
+                </div>
+                </div>
+                <div class="col-sm-9">
+                    <div style=" margin-top: 15px;">
+                        <h2>Fullstack Web Developer </h2>
+                        <p >Company Name</p>
+                        </div>
+                </div>
+            </div>
+                
+             
+            <div class="job-detail">
+              <div class="row" >
+                  <div class="col-sm-6" style="display: flex;">
+                      
+                      <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                  </div>
+                  <div class="col-sm-6" style="display: flex;">
+                      <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6" style="display: flex;">
+                      <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                  </div>
+                  <div class="col-sm-6" style="display: flex;">
+                      <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                  </div>
+              </div>
+          </div> 
+            <div class="row submit ">
+              <div class="col-sm-6" style="display: flex;" >
+                  <p class="save">Save Job</p>
+              </div>
+              <div class="col-sm-6" style="display: flex;">
+                  <p class="apply">Apply Now</p>
+              </div>
+          </div>
+              </div>
+            </div>
+          </div> -->
+        
+</div>
+      
+    </div>
+  </div> 
+  

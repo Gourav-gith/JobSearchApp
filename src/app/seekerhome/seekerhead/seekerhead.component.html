@@ -1,0 +1,83 @@
+
+
+<div id="bottom-header" class="headhid" >
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"  >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group hide">
+            <li class="nav-item dropdown" >
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Home
+                </a>
+              </li>
+            <li class="nav-item dropdown">
+                
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Career Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Job By Categories</a></li>
+                <li><a class="dropdown-item" href="#">Job By Location</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" style="padding-right:20px; border-right: 1px solid #1a53a6;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Upload Resume</a>
+                </li>
+                
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li style="padding-left:20px" *ngIf="!userName">
+              <a href="#" target="_self" role="button" class="btn btn-outline-primary">Hi User                
+                    <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo">                  
+              </a>
+            </li>
+            <li style="padding-left:20px" *ngIf="userName">
+              <a href="#" target="_self" role="button" class="btn btn-outline-primary">Hi {{userName}}                
+                    <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo">                  
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        <span style="padding-left: 20px;">
+            <a href="#" target="_self" role="button" class=" bellico">
+                <i class="bi bi-bell"></i>
+                <!-- <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo"> -->
+              
+          </a>
+        </span>
+      </nav>
+      
+    </div>
+
+  </div>
+
+
+  
+
+  

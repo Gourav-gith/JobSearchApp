@@ -1,0 +1,286 @@
+<div class="individual-blog">
+<div id="hero-banner" class="padding">
+    <div class="intro-banner">
+      <div class="container">
+        <div class="col-lg-12 img-style">
+            <!-- <img src="../../../assets/images/blog-img.jpg"> -->
+            <img [src]="individualBlog.data?.blog_image?.blog_image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="padding">
+    <div class="find-section">
+      <div class="container">
+        <div class="row d-flex bg-color"  >
+          <div class="col-md-1 col-lg-1 col-sm-0">
+            
+          </div>
+          <div class="col-md-10 col-lg-10 col-sm-12" id="heropop">
+          <div class="col-md-12 col-lg-12 col-sm-12" >
+            <div class="card card-left   ">
+              <div class="card-body card-height" >
+               
+                <div class="row disblock" >
+                  <div class="col-md-12 col-lg-12 col-sm-12 text-center" >
+                    <!-- <p class="card-text banner herotext">Is Your Job Different Than You Expected? Here’s What to Do.</p> -->
+                    <p class="card-text banner herotext">{{individualBlog.data?.blog_title }}</p>
+                  </div>
+                  <!-- <div class="col-md-7 col-lg-6 col-sm-12">
+                    <div style="margin-top: 15px; text-align: right;">
+                      <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn banbutton1">Upload resume</a>
+                      <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn banbutton2">Create profile</a>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="link-style d-flex">
+                    <div class="col-lg-6">
+                        <span class="activestyle">
+                            <span class="d-flex">
+                                <h4><i class="bi bi-calendar2-week"></i> </h4>
+                                <h5>: 22 September</h5>
+                            </span>
+                            <span class="botstyle d-flex">
+                                <h4><i class="bi bi-card-text"></i> </h4>
+                                <!-- <h5>: Resume Tips</h5> -->
+                                <h5>: {{individualBlog.data?.blog_category?.name}}</h5>
+                            </span>
+                            <span class="botstyle d-flex">
+                                <h4><i class="bi bi-vector-pen"></i></h4>
+                                <!-- <h5>: Ankit Tewari</h5> -->
+                                <h5>: {{individualBlog.data?.posted_by?.first_name}}  {{' '}} {{individualBlog.data?.posted_by?.last_name}}</h5>
+                            </span>                                       
+                        </span>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- <span class="text-end d-flex">
+                            <h4 class="mr-20"><i class="bi bi-hand-thumbs-up"></i> </h4>
+                            <h4><i class="bi bi-send"></i></h4>
+                        </span> -->
+                        <div class="social-media ">
+                            <ul class=" mb-0 list-unstyled">
+                                <li> <a  target="_blank" class="social-icon">
+                                    <img class="footer-logo deskfico" src="./assets/images/social-share.png" alt="logo">
+                                  </a> </li>
+                              <li> <a href="https://www.facebook.com/workassist.in" target="_blank" class="social-icon">
+                                <img class="footer-logo deskfico" src="./assets/images/fb.png" alt="logo">
+                              </a> </li>
+                              <li> <a href="https://www.linkedin.com/company/workassist-in" target="_blank" class="social-icon">
+                                <img class="footer-logo deskfico" src="./assets/images/insta.png" alt="logo">
+                                </a> </li>
+                              <li> <a href="https://twitter.com/workassistin" target="_blank" class="social-icon">
+                                <img class="footer-logo deskfico" src="./assets/images/twtr.png" alt="logo">
+                              </a> </li>
+                              <li> <a href="https://www.instagram.com/workassistindia" target="_blank" class="social-icon">
+                                <img class="footer-logo deskfico" src="./assets/images/linkin.png" alt="logo">
+                              </a> </li>
+                            </ul>
+                          </div>
+                    </div>                               
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-1 col-lg-1 col-sm-0">
+            
+          </div>
+          
+        </div>
+        <div class="row background-color position">
+            <div class="col-lg-3 margin-top">
+                
+                <div class="main-profile outline">
+                    
+                    <div class="card border-right">
+                        <span class="activestyle">
+                            <a class="name-style">
+                                <div class="bottom-img">
+                                    <img src="../../../assets/images/profile.jpg" alt="" class="img-fluid"  > 
+                                </div>
+                                <h2>{{individualBlog.data?.posted_by?.first_name}}  {{' '}} {{individualBlog.data?.posted_by?.last_name}}</h2>
+                                <h5>Content Writer <b>At</b> Workassist</h5>
+                            </a>                                       
+                        </span>
+                        <div class="card-body">
+                            <ul class="mt-100">
+                                <h4>Outline</h4>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Signals You’ve Been Mis-Sold on a Job</p>
+                                    </a>
+                                </li>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>You Feel Overqualified or Underqualified</p>
+                                    </a>
+                                </li>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Your Responsibilities Don’t Match What You Were Told</p>
+                                    </a>
+                                </li>
+                                <!-- <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <h3>Career Tips</h3>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-profile related-tags">
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <ul>
+                                <h4>Related Tags</h4>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Tag Name</p>
+                                    </a>
+                                </li>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Tag Name</p>
+                                    </a>
+                                </li>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Tag Name</p>
+                                    </a>
+                                </li>
+                                <li class="tabs-main">
+                                    <a href="#" class="link">
+                                    <p>Tag Name</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 margin-top ">
+                <h2>Blog Content</h2>
+               <p>
+                <!-- You likely feel misled and let down if you’ve just started a new job and it’s not what you expected. Maybe the 
+                position differs from what you were told, or perhaps the company culture isn’t what you thought it would be. 
+                Whatever the case, it can be tough to know what to do when your new job isn’t meeting your expectations.
+                Even though you just recently came on board, you’re not stuck trying to make the best of it. If you feel like your 
+                new job isn’t what you signed up for, here are a few steps to help you determine why it’s different and help you
+                decide how to move forward. -->
+                {{individualBlog.data?.blog_details}}
+            </p>
+                
+                <h2>Signals You’ve Been Mis-Sold on a Job</h2>
+               <p> It’s natural to feel a bit out of your comfort zone when you start a new job. You’re likely nervous about making
+                mistakes and anxious about exploring the dynamics of a new team. It can take some time to adjust, so feelings
+                of uncertainty are perfectly normal. However, if you feel like it’s more than simply new job jitters, look for these
+                key signals that you’ve been mis-sold on a job.
+            </p>
+                
+               <h2> 1. You Feel Overqualified or Underqualified</h2>
+               <p> Perhaps the job was advertised as an excellent opportunity for career growth. But now that you’re in it, you
+                realize that you’re overqualified—or even underqualified—for the role. If you don’t have the right skill set, it will
+                be hard to excel.
+                But before you jump to conclusions, ensure that you’re not simply in Leadership may want new hires to explore
+                the process from the ground up before they’re at full speed. Or, maybe the duties are a stretch because you are
+                new, and you might be able to invest in some learning to get up to speed.
+                On the other hand, if the duties are permanent and you’re stepping back on you may be wasting time and energy.
+                Not only that, but you may struggle to communicate to future recruiters and hiring managers why you went 
+                backward instead of forward in
+            </p>
+                
+               <h2> 2. Your Responsibilities Don’t Match What You Were Told</h2>
+              <P>  If the tasks and responsibilities of your new job are drastically different from what you were promised, it’s a clear
+                sign that there was a miscommunication. Comparing what you were expecting and understanding how far off
+                that reality is can help decide your next steps.
+                Gather all of the hiring materials, such as, your offer letter, and any communications or notes from your hiring
+                process.
+            </P>
+    
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="client-section" class="padding">
+        <div class="container bg-color">
+            <h2>Similar Blogs</h2>
+          <div class="mx-auto my-1 justify-content-center pfordesk" style="display: flex;">
+            
+                  <div class="col-lg-4 col-md-6 pd-15  ">
+                    <div class="post-slide">
+                        <div class="post-img">
+                          <img src="./assets/images/blog-img.jpg" alt="img">
+                          <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                          <h3 class="post-title">
+                            How Does a Bank Make Money
+                            Understanding the Profitable
+                            Mechanisms of Banks?
+                          </h3>
+                          <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                          <!-- <span class="post-date"><i class="fa fa-clock-o"></i>DD/MM/YY</span> -->
+                          <a href="#" class="read-more">read more<i class="bi bi-caret-right-fill"></i></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 pd-15">
+                    <div class="post-slide">
+                        <div class="post-img">
+                          <img src="./assets/images/blog-img.jpg" alt="img">
+                          <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                          <h3 class="post-title">
+                            How Does a Bank Make Money
+                            Understanding the Profitable
+                            Mechanisms of Banks?
+                          </h3>
+                          <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                          <!-- <span class="post-date"><i class="fa fa-clock-o"></i>DD/MM/YY</span> -->
+                          <a href="#" class="read-more">read more<i class="bi bi-caret-right-fill"></i></a>
+                          
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4  disnone pd-15">
+                    <div class="post-slide">
+                        <div class="post-img">
+                          <img src="./assets/images/blog-img.jpg" alt="img">
+                          <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                          <h3 class="post-title">
+                            How Does a Bank Make Money
+                            Understanding the Profitable
+                            Mechanisms of Banks?
+                          </h3>
+                          <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                          <a href="#" class="read-more">read more<i class="bi bi-caret-right-fill"></i></a>
+                        </div>
+                      </div>
+                  </div>
+                
+                
+          </div>
+          
+        </div>
+      </div>
+
+  </section>
+  
+</div>
+  
+
+
+  

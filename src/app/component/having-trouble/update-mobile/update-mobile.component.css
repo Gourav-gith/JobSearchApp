@@ -1,0 +1,102 @@
+.mobile .backcolor{
+    background-color: #E3EBFF;
+
+}
+.mobile h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px 0px 0px 0px ;
+}
+.mobile form{
+    max-height: 700px;
+    max-width: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.mobile input{
+    border: 1px solid black;
+}
+.mobile .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.mobile .form-check-label{
+    margin-left: 10px;
+}
+.mobile .btn{
+    width: 100%;
+}
+.mobile .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.mobile .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.mobile .head{
+    margin-bottom: 40px;
+}
+​
+.mobile .fix-width{
+    width: 30%;
+}
+.mobile .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    padding: 15px 15px 0px 15px;
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.mobile label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.mobile input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 50px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.mobile .form-check label{
+    padding-top: 13px;
+}
+.mobile .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.mobile .marg{
+    margin-top: 10px;
+}
+.mobile .colr{
+    color: #F42323;
+}
+.mobile label img{
+    height: 20px;
+    width: 20px;
+}

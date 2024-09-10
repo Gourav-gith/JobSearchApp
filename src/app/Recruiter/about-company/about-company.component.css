@@ -1,0 +1,11 @@
+.card-title h1{
+    font-size: 20px;
+}
+
+textarea{
+    margin: 0px;
+}
+
+.t-content{
+    padding: 20px !important;
+}

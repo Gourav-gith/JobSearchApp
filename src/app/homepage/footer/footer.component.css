@@ -1,0 +1,518 @@
+/* ==========================================================================
+    FOOTER SECTION CSS START
+========================================================================== */
+#footer {
+    background-color: #233A46;
+    border-top: 1px solid #fff;
+}
+
+#footer p {
+    color: #fff;
+    line-height: 25px;
+    padding-right: 100px;
+
+
+}
+.formobile{
+    display: none;
+}
+#footer a .footer-logo {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.deskfico{
+    height: 26px;
+}
+img.footer-logo {
+    margin-bottom: 7px;
+}
+
+.utf-footer-item-links ul li a {
+    color: #fff;
+    padding: 0px;
+}
+
+#footer h3 {
+    color: #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+.utf-footer-item-links h3::before {
+    background: #fff;
+    border: 0 none;
+    content: "";
+    height: 0px;
+    left: 0;
+    position: absolute;
+    bottom: 4px;
+    width: 35px;
+}
+
+.utf-footer-section-item-block {
+    padding-top: 20px;
+}
+
+
+.utf-footer-copyright-item {
+    background-color: #233A46;
+    color: #fff;
+    /* padding: 10px 0px; */
+    border: none;
+    border-top: 1px solid #fff;
+}
+
+.social-media ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+#footer .utf-footer-item-links .social-media h3 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+}
+
+#footer .utf-footer-item-links .social-media i {
+    font-size: 20px;
+    color: #0288d1;
+}
+.bborder{
+    border-bottom: 2px solid #fff;
+}
+ol{
+    list-style-type: disc;
+    color: #fff;
+    padding: 15px;
+}
+a, .utf-header-widget-item .log-in-button:hover i, .notification-text span.color, ul.utf-user-menu-dropdown-nav li a:hover, ul.utf-user-menu-dropdown-nav li a:hover i, #navigation ul li:hover a:after, #navigation ul li a.current:after,  #navigation ul li:hover a,  #breadcrumbs ul li a:hover,  #breadcrumbs.white ul li a:hover,  .single-page-header .utf-header-details li a:hover,  .utf-blog-post-content h3 a:hover,  #posts-nav li a:hover,  .task-tags span,  .utf-manage-resume-detail-item a:hover,  .list-4 li:before,  .list-3 li:before,  .list-2 li:before,  .list-1 li:before,  .share-buttons-content span strong,  .keyword,  .banner-headline strong.color,  .utf-category-box-icon-item, .boxed-widget.summary li.total-costs span,  .utf-testimonial-box:before,  .utf-popup-tabs-nav-item li.active a,  .dialog-with-tabs .forgot-password:hover,  .dropdown-menu > li > a:hover,  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .bootstrap-select .dropdown-menu li.selected a span.check-mark:before, .bootstrap-select .dropdown-menu li.selected:hover a span.check-mark:before, .utf-boxed-list-headline-item h3 i, .utf-boxed-list-item-item .item-details .utf-detail-item a:hover, .utf-job-overview .utf-job-overview-inner ul li i, .utf-dashboard-nav ul:before, .utf-dashboard-nav ul li.active-submenu a i, .utf-dashboard-nav ul li.active-submenu a:after, .utf-dashboard-nav ul li.active a:after, .utf-dashboard-nav ul li:hover a:after, .dashboard-box .headline h3 i, .help-icon, .utf-header-widget-item .log-in-button:hover, .utf-header-widget-item .log-in-button:hover i {
+	color: #fff;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+    Responsive CSS START
+========================================================================== */
+@media screen and (max-width: 992px) { 
+    
+#footer {
+    background-color: #233A46;
+    border-top: 1px solid #fff;
+}
+
+#footer p {
+    color: #fff;
+    line-height: 25px;
+    padding-right: 100px;
+
+
+}
+img.footer-logo {
+    margin-top: 0px;
+}
+#footer a .footer-logo {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+img.footer-logo {
+    margin-bottom: 7px;
+}
+
+.utf-footer-item-links ul li a {
+    color: #fff;
+    padding: 0px;
+}
+
+#footer h3 {
+    color: #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.utf-footer-item-links h3::before {
+    background: #fff;
+    border: 0 none;
+    content: "";
+    height: 0px;
+    left: 0;
+    position: absolute;
+    bottom: 4px;
+    width: 35px;
+}
+
+.utf-footer-section-item-block {
+    padding-top: 20px;
+}
+
+
+.utf-footer-copyright-item {
+    background-color: #233A46;
+    color: #fff;
+    /* padding: 10px 0px; */
+    border: none;
+    border-top: 1px solid #fff;
+}
+
+.social-media ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+#footer .utf-footer-item-links .social-media h3 {
+    /*     margin-bottom: 5px; */
+    margin-top: 15px;
+
+}
+
+#footer .utf-footer-item-links .social-media i {
+    font-size: 20px;
+    color: #0288d1;
+}
+.bborder{
+    border-bottom: 2px solid #fff;
+}
+ol{
+    list-style-type: disc;
+    color: #fff;
+    padding: 15px;
+}
+a, .utf-header-widget-item .log-in-button:hover i, .notification-text span.color, ul.utf-user-menu-dropdown-nav li a:hover, ul.utf-user-menu-dropdown-nav li a:hover i, #navigation ul li:hover a:after, #navigation ul li a.current:after,  #navigation ul li:hover a,  #breadcrumbs ul li a:hover,  #breadcrumbs.white ul li a:hover,  .single-page-header .utf-header-details li a:hover,  .utf-blog-post-content h3 a:hover,  #posts-nav li a:hover,  .task-tags span,  .utf-manage-resume-detail-item a:hover,  .list-4 li:before,  .list-3 li:before,  .list-2 li:before,  .list-1 li:before,  .share-buttons-content span strong,  .keyword,  .banner-headline strong.color,  .utf-category-box-icon-item, .boxed-widget.summary li.total-costs span,  .utf-testimonial-box:before,  .utf-popup-tabs-nav-item li.active a,  .dialog-with-tabs .forgot-password:hover,  .dropdown-menu > li > a:hover,  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .bootstrap-select .dropdown-menu li.selected a span.check-mark:before, .bootstrap-select .dropdown-menu li.selected:hover a span.check-mark:before, .utf-boxed-list-headline-item h3 i, .utf-boxed-list-item-item .item-details .utf-detail-item a:hover, .utf-job-overview .utf-job-overview-inner ul li i, .utf-dashboard-nav ul:before, .utf-dashboard-nav ul li.active-submenu a i, .utf-dashboard-nav ul li.active-submenu a:after, .utf-dashboard-nav ul li.active a:after, .utf-dashboard-nav ul li:hover a:after, .dashboard-box .headline h3 i, .help-icon, .utf-header-widget-item .log-in-button:hover, .utf-header-widget-item .log-in-button:hover i {
+	color: #fff;
+    font-size: 12px;
+}
+ p {
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.utf-footer-section-item-block {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+}
+
+@media screen and (max-width: 768px) { 
+    
+    #footer {
+        background-color: #233A46;
+        border-top: 1px solid #fff;
+    }
+    
+    #footer p {
+        color: #fff;
+        line-height: 25px;
+        padding-right: 100px;
+    
+    
+    }
+    
+    #footer a .footer-logo {
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    img.footer-logo {
+        margin-bottom: 7px;
+    }
+    
+    .utf-footer-item-links ul li a {
+        color: #fff;
+        padding: 0px;
+    }
+    
+    #footer h3 {
+        color: #fff;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 14px;
+        
+    }
+    
+    .utf-footer-item-links h3::before {
+        background: #fff;
+        border: 0 none;
+        content: "";
+        height: 0px;
+        left: 0;
+        position: absolute;
+        bottom: 4px;
+        width: 35px;
+    }
+    
+    .utf-footer-section-item-block {
+        padding-top: 20px;
+    }
+    
+    
+    .utf-footer-copyright-item {
+        background-color: #233A46;
+        color: #fff;
+        /* padding: 10px 0px; */
+        border: none;
+        border-top: 1px solid #fff;
+        display: none;
+    }
+    
+    .social-media ul li {
+        float: left;
+        margin-right: 15px;
+    }
+    
+    #footer .utf-footer-item-links .social-media h3 {
+        /*     margin-bottom: 5px; */
+        margin-top: 15px;
+    
+    }
+    
+    #footer .utf-footer-item-links .social-media i {
+        font-size: 20px;
+        color: #0288d1;
+    }
+    .bborder{
+        border-bottom: 2px solid #fff;
+    }
+    ol{
+        list-style-type: disc;
+        color: #fff;
+        padding: 15px;
+    }
+    a, .utf-header-widget-item .log-in-button:hover i, .notification-text span.color, ul.utf-user-menu-dropdown-nav li a:hover, ul.utf-user-menu-dropdown-nav li a:hover i, #navigation ul li:hover a:after, #navigation ul li a.current:after,  #navigation ul li:hover a,  #breadcrumbs ul li a:hover,  #breadcrumbs.white ul li a:hover,  .single-page-header .utf-header-details li a:hover,  .utf-blog-post-content h3 a:hover,  #posts-nav li a:hover,  .task-tags span,  .utf-manage-resume-detail-item a:hover,  .list-4 li:before,  .list-3 li:before,  .list-2 li:before,  .list-1 li:before,  .share-buttons-content span strong,  .keyword,  .banner-headline strong.color,  .utf-category-box-icon-item, .boxed-widget.summary li.total-costs span,  .utf-testimonial-box:before,  .utf-popup-tabs-nav-item li.active a,  .dialog-with-tabs .forgot-password:hover,  .dropdown-menu > li > a:hover,  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .bootstrap-select .dropdown-menu li.selected a span.check-mark:before, .bootstrap-select .dropdown-menu li.selected:hover a span.check-mark:before, .utf-boxed-list-headline-item h3 i, .utf-boxed-list-item-item .item-details .utf-detail-item a:hover, .utf-job-overview .utf-job-overview-inner ul li i, .utf-dashboard-nav ul:before, .utf-dashboard-nav ul li.active-submenu a i, .utf-dashboard-nav ul li.active-submenu a:after, .utf-dashboard-nav ul li.active a:after, .utf-dashboard-nav ul li:hover a:after, .dashboard-box .headline h3 i, .help-icon, .utf-header-widget-item .log-in-button:hover, .utf-header-widget-item .log-in-button:hover i {
+        color: #fff;
+        font-size: 12px;
+    }
+     p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .utf-footer-section-item-block {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    }
+
+    @media screen and (max-width: 768px) { 
+    
+        #footer {
+            background-color: #233A46;
+            border-top: 1px solid #fff;
+        }
+        
+        #footer p {
+            color: #fff;
+            line-height: 25px;
+            padding-right: 100px;
+        
+        
+        }
+        .fordesktop{
+            display: none;
+        }
+        .formobile{
+            display: block;
+        }
+        #footer a .footer-logo {
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        
+        img.footer-logo {
+            margin-bottom: 7px;
+        }
+        
+        .utf-footer-item-links ul li a {
+            color: #fff;
+            padding: 0px;
+        }
+        
+        #footer h3 {
+            color: #fff;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            font-size: 14px;
+            
+        }
+        .pt-20{
+            padding: 20px 0px 0px 25px;
+        }
+        .pl-20{
+            padding: 0px 0px 0px 20px;
+        }
+        .utf-footer-item-links h3::before {
+            background: #fff;
+            border: 0 none;
+            content: "";
+            height: 0px;
+            left: 0;
+            position: absolute;
+            bottom: 4px;
+            width: 35px;
+        }
+        
+        .utf-footer-section-item-block {
+            padding-top: 20px;
+        }
+        
+        
+        .utf-footer-copyright-item1 {
+            background-color: #233A46;
+            color: #fff;
+            /* padding: 10px 0px; */
+            border: none;
+            border-top: 1px solid #fff;
+        }
+        
+        .social-media ul li {
+            float: left;
+            margin-right: 15px;
+        }
+        
+        #footer .utf-footer-item-links .social-media h3 {
+            /*     margin-bottom: 5px; */
+            margin-top: 15px;
+        
+        }
+        
+        #footer .utf-footer-item-links .social-media i {
+            font-size: 20px;
+            color: #0288d1;
+        }
+        .bborder{
+            border-bottom: 2px solid #fff;
+        }
+        ol{
+            list-style-type: disc;
+            color: #fff;
+            padding: 15px;
+        }
+        a, .utf-header-widget-item .log-in-button:hover i, .notification-text span.color, ul.utf-user-menu-dropdown-nav li a:hover, ul.utf-user-menu-dropdown-nav li a:hover i, #navigation ul li:hover a:after, #navigation ul li a.current:after,  #navigation ul li:hover a,  #breadcrumbs ul li a:hover,  #breadcrumbs.white ul li a:hover,  .single-page-header .utf-header-details li a:hover,  .utf-blog-post-content h3 a:hover,  #posts-nav li a:hover,  .task-tags span,  .utf-manage-resume-detail-item a:hover,  .list-4 li:before,  .list-3 li:before,  .list-2 li:before,  .list-1 li:before,  .share-buttons-content span strong,  .keyword,  .banner-headline strong.color,  .utf-category-box-icon-item, .boxed-widget.summary li.total-costs span,  .utf-testimonial-box:before,  .utf-popup-tabs-nav-item li.active a,  .dialog-with-tabs .forgot-password:hover,  .dropdown-menu > li > a:hover,  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .bootstrap-select .dropdown-menu li.selected a span.check-mark:before, .bootstrap-select .dropdown-menu li.selected:hover a span.check-mark:before, .utf-boxed-list-headline-item h3 i, .utf-boxed-list-item-item .item-details .utf-detail-item a:hover, .utf-job-overview .utf-job-overview-inner ul li i, .utf-dashboard-nav ul:before, .utf-dashboard-nav ul li.active-submenu a i, .utf-dashboard-nav ul li.active-submenu a:after, .utf-dashboard-nav ul li.active a:after, .utf-dashboard-nav ul li:hover a:after, .dashboard-box .headline h3 i, .help-icon, .utf-header-widget-item .log-in-button:hover, .utf-header-widget-item .log-in-button:hover i {
+            color: #fff;
+            font-size: 12px;
+        }
+         p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .utf-footer-section-item-block {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        }
+        
+        @media screen and (max-width: 768px) { 
+            
+            #footer {
+                background-color: #233A46;
+                border-top: 1px solid #fff;
+            }
+            
+            #footer p {
+                color: #fff;
+                line-height: 25px;
+                padding-right: 100px;
+            
+            
+            }
+            
+            #footer a .footer-logo {
+                background-color: #fff;
+                border-radius: 4px;
+                height: 24px;
+            }
+            
+            img.footer-logo {
+                margin-bottom: 7px;
+            }
+            
+            .utf-footer-item-links ul li a {
+                color: #fff;
+                padding: 0px;
+            }
+            
+            #footer h3 {
+                color: #fff;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                font-size: 14px;
+            }
+            
+            .utf-footer-item-links h3::before {
+                background: #fff;
+                border: 0 none;
+                content: "";
+                height: 0px;
+                left: 0;
+                position: absolute;
+                bottom: 4px;
+                width: 35px;
+            }
+            .py-10{
+                padding: 10px 0px;
+            }
+            .utf-footer-section-item-block {
+                padding-top: 20px;
+            }
+            
+            
+            .utf-footer-copyright-item1 {
+                background-color: #233A46;
+                color: #fff;
+                /* padding: 10px 0px; */
+                border: none;
+                border-top: 1px solid #fff;
+                text-align: center;
+            }
+            
+            .social-media ul li {
+                float: left;
+                margin-right: 15px;
+            }
+            
+            #footer .utf-footer-item-links .social-media h3 {
+                /*     margin-bottom: 5px; */
+                margin-top: 15px;
+            
+            }
+            
+            #footer .utf-footer-item-links .social-media i {
+                font-size: 20px;
+                color: #0288d1;
+            }
+            .bborder{
+                border-bottom: 2px solid #fff;
+            }
+            ol{
+                list-style-type: disc;
+                color: #fff;
+                padding: 0px;
+                padding-left: 15px;
+                margin-bottom: 0px;
+            }
+            .pad{
+                padding-top: 20px;
+            }
+            a, .utf-header-widget-item .log-in-button:hover i, .notification-text span.color, ul.utf-user-menu-dropdown-nav li a:hover, ul.utf-user-menu-dropdown-nav li a:hover i, #navigation ul li:hover a:after, #navigation ul li a.current:after,  #navigation ul li:hover a,  #breadcrumbs ul li a:hover,  #breadcrumbs.white ul li a:hover,  .single-page-header .utf-header-details li a:hover,  .utf-blog-post-content h3 a:hover,  #posts-nav li a:hover,  .task-tags span,  .utf-manage-resume-detail-item a:hover,  .list-4 li:before,  .list-3 li:before,  .list-2 li:before,  .list-1 li:before,  .share-buttons-content span strong,  .keyword,  .banner-headline strong.color,  .utf-category-box-icon-item, .boxed-widget.summary li.total-costs span,  .utf-testimonial-box:before,  .utf-popup-tabs-nav-item li.active a,  .dialog-with-tabs .forgot-password:hover,  .dropdown-menu > li > a:hover,  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .bootstrap-select .dropdown-menu li.selected a span.check-mark:before, .bootstrap-select .dropdown-menu li.selected:hover a span.check-mark:before, .utf-boxed-list-headline-item h3 i, .utf-boxed-list-item-item .item-details .utf-detail-item a:hover, .utf-job-overview .utf-job-overview-inner ul li i, .utf-dashboard-nav ul:before, .utf-dashboard-nav ul li.active-submenu a i, .utf-dashboard-nav ul li.active-submenu a:after, .utf-dashboard-nav ul li.active a:after, .utf-dashboard-nav ul li:hover a:after, .dashboard-box .headline h3 i, .help-icon, .utf-header-widget-item .log-in-button:hover, .utf-header-widget-item .log-in-button:hover i {
+                color: #fff;
+                font-size: 12px;
+            }
+             p {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .utf-footer-section-item-block {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            }
+
+            @media screen and (max-width: 992px) { 
+
+                .downfoot{
+                    padding-top: 0px;
+                }
+            }

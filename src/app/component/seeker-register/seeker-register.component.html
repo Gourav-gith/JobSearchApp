@@ -1,0 +1,128 @@
+
+<div class="seeker-register">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form> 
+                <div class="head">
+                    <div >
+                        <span><b><i class="bi bi-arrow-left" (click)="goToHome()"></i></b></span>
+                    </div>
+                    <div >
+                        <h1>Create an account</h1>
+                    </div>
+                    <p>Create your profile and boost your chances for career success!.</p>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="first-name">First Name <span class="star">*</span> </label>
+                            <input type="text" class="form-control" id="first-name" [(ngModel)]="jobSeekerRegister.first_name"
+                            [ngModelOptions]="{standalone: true}"
+                            (input)="jobSeekerRegister.first_name = alphabetsOnly(jobSeekerRegister.first_name)" 
+                            (keyup)="jobSeekerRegister.first_name = alphabetsOnly(jobSeekerRegister.first_name)"
+                                placeholder="Enter first name" >
+                                <span class="error-message">{{error.first_name}}</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div >
+                            <label for="middle-name">Middle Name  </label>
+                            <input type="text" class="form-control" id="middle-name" 
+                            [(ngModel)]="jobSeekerRegister.middle_name"
+                            [ngModelOptions]="{standalone: true}"
+                            (input)="jobSeekerRegister.middle_name = alphabetsOnly(jobSeekerRegister.middle_name)" 
+                            (keyup)="jobSeekerRegister.middle_name = alphabetsOnly(jobSeekerRegister.middle_name)" 
+                            placeholder="Enter middle name">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="last-name">Last Name <span class="star" >*</span> </label>
+                                <input type="text" class="form-control" id="last-name" [(ngModel)]="jobSeekerRegister.last_name"
+                                [ngModelOptions]="{standalone: true}"
+                                (input)="jobSeekerRegister.last_name = alphabetsOnly(jobSeekerRegister.last_name)" 
+                                (keyup)="jobSeekerRegister.last_name = alphabetsOnly(jobSeekerRegister.last_name)"
+                                 
+                                    placeholder="Enter last name">
+                                <span class="error-message">{{error.last_name}}</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <fieldset disabled>
+                                <label for="mobile-number">Mobile Number <span class="star">*</span></label>
+                                <input type="text" class="form-control" maxlength="10" id="mobile-number" [(ngModel)]="jobSeekerRegister.mobile_number"
+                                [ngModelOptions]="{standalone: true}"
+                                (input)="jobSeekerRegister.mobile_number = numbersOnly(jobSeekerRegister.mobile_number)" 
+                                (keyup)="jobSeekerRegister.mobile_number = numbersOnly(jobSeekerRegister.mobile_number)"
+                                disabled
+                                    placeholder="Enter mobile number">
+                                <span class="error-message">{{error.mobile_number}}</span>
+                            </fieldset>
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="email-address">Email Address <span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="email-address" [(ngModel)]="jobSeekerRegister.email"
+                                [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter email address">
+                                <span class="error-message">{{error.email}}</span>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="yo-experience">Work Experience <span class="star">*</span></label>
+                                <select name="yo-experience" id="yo-experience" (change)="experience($event)">
+                                <option selected disabled >Select experience </option>
+                                <option [value]="data.id" *ngFor="let data of [{name: 'Fresher' , id : '0'} , {name: 'Experience' , id : '1'}]">{{data.name}}</option>
+                                </select> 
+                                <span class="error-message">{{error.work_experience}}</span>
+                        </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div>
+                                    <label for="upload-resume">Upload Resume </label>
+                                    <input type="file" class="form-control" id="upload-resume" (change)="uploadFile($event)"
+                                        placeholder="Select file to upload">
+                                </div>
+                                <span class="d-flex"> <p><i class="bi bi-info-circle"></i> Supported file formats: doc, rtf, docx, pdf | upto 3 mb.</p></span>
+
+                            </div>
+                            </div>
+
+                            <div class="form-group d-flex ">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" [(ngModel)]="agreedTermsAndConditions" [ngModelOptions]="{standalone: true}">
+                                <label >I agree to Workassist. <span
+                                        class="text-primary"> <a href="https://workassist.in/privacy-policy" target="_blank"> Terms & Conditions.</a> </span>
+                                        <span class="star">*</span></label>
+
+                                     <!-- <label >
+                                         I agree to Workassist <span class="text-primary"> <a href="https://workassist.in/privacy-policy"> Terms & Conditions.</a> </span>  
+                                     </label> -->
+                            </div>
+
+                            <div class="form-group d-flex  ">
+                                <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1" [(ngModel)]="whatsupUpdates" [ngModelOptions]="{standalone: true}">
+                                <label class="mt-0">Send me important updates on whatsapp.</label>
+                            </div>
+
+                <div class=" justify-content-center text-center col-12">
+                    <!-- <button type="submit" class="btn btn-color1">Cancel</button> -->
+                    <button type="button" class="btn btn-color2" [disabled]="disabled"  [ngClass]="disabled ? 'btn-color3'  : 'btn-color2'" (click)="submit()" >Resister Now</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

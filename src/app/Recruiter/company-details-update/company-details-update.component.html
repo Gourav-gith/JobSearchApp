@@ -1,0 +1,172 @@
+<div class="container-fluid bg-color">
+    <div class="container bg-white">
+        <div class="row">
+            <form>
+                <div class="model-title d-flex pb-2">
+                    <div class="title">
+                        <h3>Company Details</h3>
+                    </div>
+                    <div class="cross"><i class="bi bi-x-square" (click)="cancel()"></i></div>
+                </div>
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="cname">Company Logo</label>
+                            <div class="input-group custom-file-button">
+                                <input type="file" class="form-control" id="inputGroupFile"
+                                    (change)="profilePicture($event)">
+                                <label class="input-group-text" for="inputGroupFile">Upload file</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cname">Company Name<span>*</span></label>
+                            <input type="text" id="cname" name="cname" placeholder=" Enter company name"
+                                [(ngModel)]="companyDetails.company_name" [ngModelOptions]="{standalone: true}">
+                            <span class="text-danger">{{error.company_name}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="lname">Email Address<span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder=" Enter company email address"
+                                [(ngModel)]="companyDetails.email" [ngModelOptions]="{standalone: true}">
+                            <span class="text-danger">{{error.email}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Website<span>*</span></label>
+                            <input type="text" id="website" name="website" placeholder=" Enter company URL"
+                                [(ngModel)]="companyDetails.website_url" [ngModelOptions]="{standalone: true}">
+                            <span class="text-danger">{{error.website_url}}</span>
+                        </div>
+                    </div>
+                    <div class="title pb-2">
+                        <h3>Headquarter Address</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="adress1">Address Line 1<span>*</span></label>
+                            <input type="text" id="adress1" name="adress1" placeholder=" Enter house number"
+                                [(ngModel)]="companyDetails.address_line_1" [ngModelOptions]="{standalone: true}">
+                            <span class="text-danger">{{error.address_line_1}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="address2">Address Line 2<span></span></label>
+                            <input type="text" id="address2" name="address2" placeholder=" Enter street"
+                                [(ngModel)]="companyDetails.address_line_2" [ngModelOptions]="{standalone: true}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="pincode">Pin code<span>*</span></label>
+                            <input type="text" id="pincode" name="pincode" placeholder=" Enter pin code"
+                                [(ngModel)]="companyDetails.pincode" [ngModelOptions]="{standalone: true}"
+                                (input)="pinCodechange($event)" maxlength="6">
+                            <!-- <span class="text-danger">{{error.pincode}}</span> -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city">City<span>*</span></label>
+                            <input type="text" id="citycode" name="citycode" placeholder=""
+                                [(ngModel)]="companyDetails.city_name" [ngModelOptions]="{standalone: true}" readonly>
+                            <span class="text-danger">{{error.city_id}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="State">State<span>*</span></label>
+                            <input type="text" id="state" name="state" placeholder=""
+                                [(ngModel)]="companyDetails.state_name" [ngModelOptions]="{standalone: true}" readonly>
+                            <span class="text-danger">{{error.state_id}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="country">Country<span>*</span></label>
+                            <input type="text" id="country" name="country" placeholder=""
+                                [(ngModel)]="companyDetails.country_name" [ngModelOptions]="{standalone: true}"
+                                readonly>
+                            <span class="text-danger">{{error.country_id}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="panNumber">PAN Number<span></span></label>
+                            <input type="text" id="panNumber" name="panNumber" placeholder=" Enter Pan number"
+                                [(ngModel)]="companyDetails.pan_number" [ngModelOptions]="{standalone: true}">
+                            <!-- <span class="text-danger">{{error.pan_number}}</span> -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="panDoc">PAN Document <span></span></label>
+                            <input type="file" id="panDoc" name="panDoc" placeholder="Select file to upload"
+                                (change)="uploadPanDocument($event)">
+                            <span class="text-danger">{{error.pan_document}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="gstNumber">GST Number<span></span></label>
+                            <input type="text" id="gstNumber" name="gstNumber" placeholder=" Enter GST number"
+                                [(ngModel)]="companyDetails.gst_number" [ngModelOptions]="{standalone: true}">
+                            <!-- <span class="text-danger">{{error.address_line_1}}</span> -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="gstDoc">GST Document <span></span></label>
+                            <input type="file" id="gstDoc" name="gstDoc" placeholder="Select file to upload"
+                                (change)="uploadGstDocument($event)">
+                            <span class="text-danger">{{error.gst_document}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="companyType">Company Type<span>*</span></label>
+                            <select>
+                                <option [value]="companyDetails.company_type_id">{{companyDetails.company_type_name}}
+                                </option>
+                                <span class="text-danger">{{error.company_type_id}}</span>
+                            </select>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cinNumber">CIN Number<span>*</span></label>
+                            <input type="text" id="cinNumber" name="cinNumber" placeholder="Enter cin Number"
+                                [(ngModel)]="companyDetails.cin_number" [ngModelOptions]="{standalone: true}">
+                            <span class="text-danger">{{error.cin_number}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Year Of Establishment<span></span></label>
+                            <input type="date" id="yearEstablishment" name="yearEstablishment" placeholder=""
+                                [(ngModel)]="companyDetails.year_of_establishment"
+                                [ngModelOptions]="{standalone: true}">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Major Industry You Serve<span>*</span></label>
+                            <ng-multiselect-dropdown [placeholder]="'Select Industry'" [settings]="dropdownSettings"
+                                [data]="entityResult" [(ngModel)]="selectedItems" (onSelect)="onItemSelect($event)"
+                                (onSelectAll)="onSelectAll($event)" [ngModelOptions]="{standalone: true}">
+                            </ng-multiselect-dropdown>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="companySize">Company Size<span>*</span></label>
+                            <input type="text" id="companySize" name="companySize" placeholder=" Enter company size"
+                                [(ngModel)]="companyDetails.company_size" [ngModelOptions]="{standalone: true}">
+                            <!-- <span class="text-danger">{{error.address_line_1}}</span> -->
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="gstDoc">Linkdin URL<span>*</span></label>
+                            <input type="text" id="gstDoc" name="gstDoc" placeholder="Enter linkdin url"
+                                [(ngModel)]="companyDetails.linkedin_url" [ngModelOptions]="{standalone: true}">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-end">
+                        <button class="btn btn-danger me-3" (click)="cancel()">Cancel</button>
+                        <button class="btn btn-primary" (click)="submit()">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

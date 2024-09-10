@@ -1,0 +1,315 @@
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class=" d-hide col-lg-3 col-md-3 d-md-block d-xs-none d-sm-none d-lg-block">
+                <app-recruiter-sidemenu></app-recruiter-sidemenu>
+            </div>
+            <div class="col-md-9 col-lg-9 col-sm-12 col-12">
+                <div class="activity">
+
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="d-flex align-items-center mb-2">
+                                <h1 class="col-lg-6 col-md-6 col-sm-6 col-6">Professional Details</h1>
+                                <h3 class="col-lg-6 col-md-6 col-sm-6 col-6 hedingstyle1"> <i class="bi bi-pencil-fill"
+                                        (click)="professionalDetailsDialog()"></i></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-lg-2 col-2 d-hide col-md-2">
+                            <div class="card">
+                                <div class="profile-img1">
+                                    <img [src]="professionalDetail.data?.profile_image" alt="img" height="100%"
+                                        class="height">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-sm-12 col-md-10">
+
+                            <div class="card p-2">
+                                <div class="row activity-dash">
+                                    <div class="col-lg-12">
+                                        <div class="">
+                                            <div style="display: flex;">
+                                                <h1 class="col-lg-6 col-sm-6 col-6 col-md-6">
+                                                    {{professionalDetail.data?.first_name}}
+                                                    {{professionalDetail.data?.last_name}}</h1>
+                                                <h5 class="col-lg-6 col-sm-6 col-6 col-md-6 hedingstyle1"> Individual
+                                                </h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="divstyle1 py-1">
+
+                                            <p>{{professionalDetail.data?.job_role}}</p>
+                                            <p>at <span>{{companyName}}</span></p>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="row d-hide">
+                                    <div
+                                        class="col-lg-12 contact d-lg-flex d-md-flex d-sm-block justify-content-between">
+
+                                        <div class="email d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-envelope-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.email}}</h5>
+
+                                        </div>
+
+                                        <div class="mobile d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-telephone-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.mobile_number}}</h5>
+                                        </div>
+
+
+                                        <div class="location d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-geo-alt-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.city_name}}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <DIV class="card d-hide-1 mt-2 p-2">
+                                <div class="row">
+                                    <div
+                                        class="col-lg-12  contact d-lg-flex d-md-flex d-sm-block justify-content-between">
+
+                                        <div class="email d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-envelope-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.email}}</h5>
+
+                                        </div>
+
+                                        <div class="mobile d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-telephone-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.mobile_number}}</h5>
+                                        </div>
+
+
+                                        <div class="location d-flex align-items-center">
+                                            <span class="iconstyle"><i class="bi bi-geo-alt-fill"></i></span>
+                                            <h5>{{professionalDetail.data?.city_name}}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </DIV>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <div class="card p-2">
+                                <div class="activity-dash">
+
+                                    <div class="activity-name">
+
+                                        <p>{{professionalDetail.data?.profile_summary}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="d-flex align-items-center mb-2">
+                                <h1 class="col-lg-6 col-md-6 col-sm-6 col-6">Company Details</h1>
+                                <h3 class="col-lg-6 col-6 col-lg-6 col-md-6  hedingstyle1"> <i class="bi bi-pencil-fill"
+                                        (click)="companydetailsDilouge()"></i></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row activity-dash">
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6 activity-name">
+                                    <div class="divstyle acclogo">
+
+                                        <img width="50px" height="50px" alt="logo"
+                                            [src]="companyDetails.data?.company_logo">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6 ">
+                                    <div class="divstyle">
+
+                                        <p>Company Name</p>
+                                        <h5>{{companyDetails.data?.company_name}}</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Pan Number</p>
+                                        <h5>{{companyDetails.data?.pan_number}}</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Pan Documents</p>
+                                        <!-- <h5>{{companyDetails.data?.pan_document}}</h5> -->
+                                        <a href={{companyDetails.data?.pan_document}} target="_blank">view file</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+
+                                    <div class="divstyle">
+
+                                        <p>GST Number</p>
+                                        <h5>{{companyDetails.data?.gst_number}}</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>GST Documents</p>
+                                        <!-- <h5>{{companyDetails.data?.gst_document}}</h5> -->
+                                        <a href={{companyDetails.data?.gst_document}} target="_blank">view file</a>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6  col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>CIN Number</p>
+                                        <h5>{{companyDetails.data?.cin_number}}</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Year Of Establishment</p>
+                                        <h5>{{companyDetails.data?.year_of_establishment}}</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+                                        <p>Company Type</p>
+                                        <h5>{{companyDetails.data?.company_type_name}}</h5>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Company Size</p>
+                                        <h5>{{companyDetails.data?.company_size}}</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-6 col-sm-6 activity-name">
+
+                                    <div class="divstyle">
+                                        <p>Major Industry You Serve</p>
+                                        <div>
+                                            <h5>{{commaSeparatedString}}</h5>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+
+                                    <div class="divstyle">
+
+                                        <p>Headquarter Address</p>
+                                        <h5>{{companyDetails.data?.address_line_1}}</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Company Website</p>
+                                        <h5>{{companyDetails.data?.website_url}}</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Email Address</p>
+                                        <h5>{{companyDetails.data?.email}}</h5>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-6 col-6 col-6 col-md-6 col-sm-6">
+                                    <div class="divstyle">
+
+                                        <p>Linkedin URL</p>
+                                        <h5>{{companyDetails.data?.linkedin_url}}</h5>
+
+                                    </div>
+                                    <div class="col-lg-6 col-6 col-md-6 col-sm-6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="d-flex align-items-center mb-2">
+                                <h1 class="col-lg-6 col-md-6 col-6 col-sm-6">About Company</h1>
+                                <h3 class="col-lg-6 col-6 col-md-6 col-sm-6 hedingstyle1"> <i class="bi bi-pencil-fill"
+                                        (click)="aboutCompanyDilouge()"></i></h3>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <div class="card p-2">
+                                <div class="activity-dash">
+                                    <div class="activity-name">
+                                        <p>{{aboutCompany.data?.about_company}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

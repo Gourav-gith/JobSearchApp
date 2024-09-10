@@ -1,0 +1,740 @@
+
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+.desktop-header #header {
+    position: sticky;
+    top: 0;
+}
+.desktop-header .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../../../assets/images/hamburger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.desktop-header .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: transparent;
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+}
+/* #top-header {
+    background-color: #264653;
+    padding: 5px 0px;
+}
+
+#top-header .mobile-btn a {
+    background-color: transparent;
+    border: 1px solid #1a53a6;
+    width: 80px;
+}
+
+#top-header .btn-outline-primary {
+    padding: 5px 10px;
+    border-color: white;
+}
+
+#top-header .btn-outline-primary:hover {
+    background-color: #0288d1;
+    border-color: #0288d1;
+} */
+
+.desktop-header #bottom-header {
+    background-color: #fff;
+}
+
+.desktop-header #bottom-header nav {
+    padding: 5px 10px 5px 10px;
+
+}
+
+.desktop-header #bottom-header .right-side-div {
+    position: absolute;
+    right: 0px;
+}
+.desktop-header .utf-intro-search-button .button:hover {
+    background: #2c9cdc;
+}
+.desktop-header .nav-item a,
+.desktop-header .dropdown-item {
+    font-weight: 600;
+    font-size: 16px;
+    color: #242D62;
+
+}
+.desktop-header img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0%;
+    border-radius: 5px;
+}
+.desktop-header button {
+    position: absolute;
+    vertical-align: middle;
+}
+.desktop-header #bottom-header .navbar {
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    min-height: 80px;
+}
+
+.desktop-header .dropdown-menu li a:hover {
+    color: #fff;
+    background-color: #1a53a6;
+}
+
+#bottom-header .navbar .btn-group {
+    position: absolute;
+    right: 50px;
+}
+.desktop-header .mr-25{
+    margin-right: 25px;
+}
+.desktop-header .btn-outline-primary img{
+    max-width: 24px;
+    max-height: 24px;
+}
+.desktop-header header .btn {
+    padding: 3px 20px;
+    font-size: 14px;
+}
+ .desktop-header .ml-20 {
+    margin-left: 20px;
+}
+ .desktop-header .profile-border {
+    border:1px solid #1a53a6;
+}
+
+@media (max-width: 992px) {
+    .desktop-header img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 35%;
+        border-radius: 5px;
+    }
+    .desktop-header .headhid{
+        display: none;
+    }
+
+    .desktop-header body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .desktop-header #header {
+        position: sticky;
+        top: 0;
+    }
+    .desktop-header .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(../../../assets/images/hamburger.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .desktop-header .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0.3125rem;
+        --bs-navbar-brand-margin-end: 1rem;
+        --bs-navbar-brand-font-size: 1.25rem;
+        --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+        --bs-navbar-toggler-padding-y: 0.25rem;
+        --bs-navbar-toggler-padding-x: 0.75rem;
+        --bs-navbar-toggler-font-size: 1.25rem;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+        --bs-navbar-toggler-border-color: transparent;
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    }
+    /* #top-header {
+        background-color: #264653;
+        padding: 5px 0px;
+    }
+    
+    #top-header .mobile-btn a {
+        background-color: transparent;
+        border: 1px solid #1a53a6;
+        width: 80px;
+    }
+    
+    #top-header .btn-outline-primary {
+        padding: 5px 10px;
+        border-color: white;
+    }
+    
+    #top-header .btn-outline-primary:hover {
+        background-color: #0288d1;
+        border-color: #0288d1;
+    } */
+    
+    .desktop-header #bottom-header {
+        background-color: #fff;
+    }
+    
+    .desktop-header #bottom-header nav {
+        padding: 5px 10px 5px 10px;
+    
+    }
+    
+    .desktop-header #bottom-header .right-side-div {
+        position: absolute;
+        right: 0px;
+    }
+    
+    .desktop-header .nav-item a,
+    .dropdown-item {
+        font-weight: 600;
+        font-size: 16px;
+        color: #242D62;
+        right: 61%;
+        font-weight: 600;
+        font-size: 16px;
+        color: #242D62;
+        position: relative;
+        z-index: 115;
+        background: #fff;
+        width: 250px;
+    
+    }
+   .desktop-header  img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 0%;
+        border-radius: 5px;
+        margin-left: 50px;
+    }
+    .desktop-header button {
+        position: absolute;
+        vertical-align: middle;
+    }
+    .desktop-header #bottom-header .navbar {
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+        min-height: 80px;
+    }
+    
+    .desktop-header .dropdown-menu li a:hover {
+        color: #fff;
+        background-color: #1a53a6;
+    }
+     
+    .desktop-header #bottom-header .navbar .btn-group {
+        position: absolute;
+        right: 155px;
+    }
+    
+    .desktop-header header .btn {
+        padding: 3px 20px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .desktop-header .headhid{
+        display: none;
+    }
+}
+
+.desktop-header .bellico{
+    font-size: 26px;
+    color: #000;
+}
+.desktop-header img.footer-logo {
+    max-height: 44px;
+    width: auto;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.desktop-header #bottom-header .navbar .btn-group {
+    position: absolute;
+    /* right: 50px; */
+}
+
+.desktop-header #bottom-header .navbar .btn-group {
+    /* right: 150px !important;  */
+    margin-right: 100px;
+}
+
+.desktop-header .utf-intro-search-button .button:hover {
+    background: #2c9cdc;
+}
+
+/* mobile-header */
+
+.mobile-header .headhid{
+    display: none;
+} 
+
+@media (max-width: 1440px) {
+    .mobile-header .headhid{
+        display: none;
+    } 
+}
+@media (max-width: 992px) {
+
+    .mobile-header.mobile-header .hidden {
+        display: none;
+      }
+      .container {
+        max-width: 100%;
+    }
+     .mobile-header .navstyle {
+        position: absolute;
+        z-index: 115;
+        background-color: #fff;
+        width: 50%;
+        /* top: 0; */
+    }
+   .mobile-header .headhid{
+        display: block;
+    }
+   .mobile-header .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        /* background-image: url(../../assets/images/hamburger.png); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+   .mobile-header img {
+        max-width: 55%;
+        max-height: 100%;
+        border-radius: 5px;
+        margin-left: 5%;
+    }
+   .mobile-header .text-end{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        margin: auto;
+    }
+   .mobile-header  .wd-100{
+        width: 100%;
+    }
+
+   .mobile-header  .buttonstyle {
+        background-color: #F05537;
+        border: none;
+        height: auto;
+        color: #fff;
+        margin-left: 0%;
+    }
+   .mobile-header  .ham-style{
+        font-size: 24px;
+        color: #407BFF;
+    }
+   .mobile-header  .btn-style{
+        padding: 0px 0px 0px 0px;
+        /* margin: auto; */
+    }
+   .mobile-header  .buttonstyle p {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0px 0px 0px 0px;
+    }
+   .mobile-header  .listyle1{
+        list-style: none;
+        height: 30px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-top: 10px;
+    }
+   .mobile-header  .listyle{
+        list-style: none;
+        height: 30px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-top: 10px;
+    }
+   .mobile-header  a{
+        text-decoration: none;
+        color: #000;
+    }
+   .mobile-header  .mrleft{
+        margin-left: 5%;
+    }
+   .mobile-header  .profile{
+        height: 80px;
+        width: 90%;
+        background-color: #159EEC;
+        color: #fff;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 1rem;
+    }
+   .mobile-header  .prostyle{
+        height: 62%;
+        width: 100%;
+        margin: 30% 30%;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background: white;
+    }
+   .mobile-header  .img-box{
+        display: flex;
+    }
+    .mobile-header .txtstyle{
+    
+        top: 25%;
+        position: relative;
+        left: 10%;
+    }
+   .mobile-header .mobile-headerbody p {
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0 0 0px;
+    }
+   .mobile-header h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+       color: #fff;
+        letter-spacing: .0125em;
+        margin: 0 0 0px;
+    }
+   .mobile-header .logostyle{
+        height: 50px;
+        width: 150px;
+        margin-left: 10px;
+    }
+   .mobile-header ul {
+        padding-left: 0rem;
+    }
+   .mobile-header .buttonstyle1 {
+        background-color: #407BFF;
+        border: none;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 5%;
+        color:#fff
+    }
+   .mobile-header .emstyle{
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    }
+
+@media (max-width: 768px) {
+   .mobile-header .hidden {
+        display: none;
+      }
+    .mobile-header  .container {
+        max-width: 100%;
+    }
+    .mobile-header  .navstyle {
+        position: absolute;
+        z-index: 115;
+        background-color: #fff;
+        width: 50%;
+        /* top: 0; */
+    }
+  .mobile-header  .headhid{
+        display: block;
+    }
+    .mobile-header  .pt-10{
+        padding: 10px 0px;
+    }
+  .mobile-header  .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        /* background-image: url(../../assets/images/hamburger.png); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+   .mobile-header img {
+        max-width: 55%;
+        max-height: 100%;
+        border-radius: 5px;
+        margin-left: 5%;
+    }
+   .mobile-header .text-end{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        margin: auto;
+    }
+   .mobile-header .wd-100{
+        width: 100%;
+    }
+
+   .mobile-header .buttonstyle {
+        background-color: #F05537;
+        border: none;
+        height: auto;
+        color: #fff;
+        margin-left: 0%;
+    }
+   .mobile-header .ham-style{
+        font-size: 24px;
+        color: #407BFF;
+    }
+  .mobile-header  .btn-style{
+        padding: 0px 0px 0px 0px;
+        /* margin: auto; */
+    }
+  .mobile-header  .buttonstyle p {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0px 0px 0px 0px;
+    }
+  .mobile-header  .listyle1{
+        list-style: none;
+        height: 30px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-top: 10px;
+    }
+   .mobile-header .listyle{
+        list-style: none;
+        height: 30px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-top: 10px;
+    }
+   .mobile-header a{
+        text-decoration: none;
+        color: #000;
+    }
+   .mobile-header .mrleft{
+        margin-left: 5%;
+    }
+   .mobile-header .profile{
+        height: 80px;
+        width: 90%;
+        background-color: #159EEC;
+        color: #fff;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 1rem;
+    }
+  .mobile-header  .prostyle{
+        height: 62%;
+        width: 100%;
+        margin: 30% 30%;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background: white;
+    }
+  .mobile-header  .img-box{
+        display: flex;
+    }
+  .mobile-header  .txtstyle{
+    
+        top: 25%;
+        position: relative;
+        left: 10%;
+    }
+   .mobile-header body p {
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0 0 0px;
+    }
+  .mobile-header  h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+       color: #fff;
+        letter-spacing: .0125em;
+        margin: 0 0 0px;
+    }
+   .mobile-header .logostyle{
+        height: 50px;
+        width: 150px;
+        margin-left: 10px;
+    }
+  .mobile-header  ul {
+        padding-left: 0rem;
+    }
+   .mobile-header .buttonstyle1 {
+        background-color: #407BFF;
+        border: none;
+        height: 30px;
+        font-size: 12px;
+        margin-left: 5%;
+        color:#fff
+    }
+   .mobile-header .emstyle{
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    }
+
+    @media (max-width: 576px) {
+       .mobile-header  .hidden {
+            display: none;
+          }
+          .mobile-header  .container {
+            max-width: 100%;
+            box-shadow: -1px 0px 0px 2px rgba(232, 227, 227, 0.75);
+            margin: 1px 0px 2px 0px;
+        }
+         .mobile-header  .navstyle {
+            position: absolute;
+            z-index: 115;
+            background-color: #fff;
+            width: 50%;
+            /* top: 0; */
+        }
+        .mobile-header .headhid{
+            display: block;
+        }
+       .mobile-header .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            /* background-image: url(../../assets/images/hamburger.png); */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+       .mobile-header img {
+            max-width: 55%;
+            max-height: 100%;
+            border-radius: 5px;
+            margin-left: 5%;
+        }
+       .mobile-header .text-end{
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            margin: auto;
+        }
+       .mobile-header .wd-100{
+            width: 100%;
+        }
+
+       .mobile-header .buttonstyle {
+            background-color: #F05537;
+            border: none;
+            height: auto;
+            color: #fff;
+            margin-left: 0%;
+        }
+       .mobile-header .ham-style{
+            font-size: 24px;
+            color: #407BFF;
+        }
+       .mobile-header .btn-style{
+            padding: 0px 0px 0px 0px;
+            /* margin: auto; */
+        }
+       .mobile-header .buttonstyle p {
+            font-size: 10px;
+            line-height: 12px;
+            margin: 0px 0px 0px 0px;
+        }
+       .mobile-header .listyle1{
+            list-style: none;
+            height: 30px;
+            border-bottom: 1px solid #E0E0E0;
+            margin-top: 10px;
+        }
+       .mobile-header .listyle{
+            list-style: none;
+            height: 30px;
+            border-bottom: 1px solid #E0E0E0;
+            margin-top: 10px;
+        }
+       .mobile-header a{
+            text-decoration: none;
+            color: #000;
+        }
+       .mobile-header .mrleft{
+            margin-left: 5%;
+        }
+       .mobile-header .profile{
+            height: 80px;
+            width: 90%;
+            background-color: #159EEC;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            margin-left: 1rem;
+        }
+       .mobile-header .prostyle{
+            height: 62%;
+            width: 100%;
+            margin: 30% 30%;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: white;
+        }
+      .mobile-header  .img-box{
+            display: flex;
+        }
+      .mobile-header  .txtstyle{
+        
+            top: 25%;
+            position: relative;
+            left: 10%;
+        }
+      .mobile-header  body p {
+            font-size: 16px;
+            line-height: 16px;
+            margin: 0 0 0px;
+        }
+      .mobile-header  h2 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+           color: #fff;
+            letter-spacing: .0125em;
+            margin: 0 0 0px;
+        }
+       .mobile-header .logostyle{
+            height: 50px;
+            width: 150px;
+            margin-left: 10px;
+        }
+      .mobile-header  ul {
+            padding-left: 0rem;
+        }
+      .mobile-header  .buttonstyle1 {
+            background-color: #407BFF;
+            border: none;
+            height: 30px;
+            font-size: 12px;
+            margin-left: 5%;
+            color:#fff
+        }
+       .mobile-header .emstyle{
+            margin-left: 5%;
+            margin-top: 3%;
+        }
+        }

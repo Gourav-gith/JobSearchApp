@@ -1,0 +1,62 @@
+section{
+    background-color: #E9E9F3;
+}
+.firstBlog{
+    margin-bottom: -48px;
+    margin-top: -20px;
+}
+.searchbtn{
+    /* margin-left: 103px; */
+    margin-top: 6px;
+
+}
+.to{
+    margin-top: 15px;
+}
+p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.sortBy{
+    width: 105px;
+    margin-top: -10px;
+}
+.secondBlog{
+    margin-bottom: -47px;
+    margin-top: -19px;
+}
+.thirdBlog{
+    margin-bottom: -47px;
+    margin-top: -19px;
+}
+.status{
+    margin-left: 65px;
+}
+.countStatusPostJob{
+    margin-left: 77px;
+}
+.countStatusActive{
+    margin-left: 147px;
+}
+.countStatusExpired{
+    margin-left: 142px;
+}
+.countStatusApplication{
+    margin-left: 148px;
+}
+h4{
+    line-height: 40px;
+}
+.countStatus{
+    margin-left: 125px;
+}
+.third{
+    background-color: whitesmoke;
+    border: none;
+}
+th{
+    /* border: 1px solid black; */
+}
+td{
+    
+}

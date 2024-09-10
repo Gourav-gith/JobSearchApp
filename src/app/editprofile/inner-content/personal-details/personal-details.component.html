@@ -1,0 +1,269 @@
+
+<div class="personal-details">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Personal Details</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="row ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="dob">Date Of Birth <span class="star">*</span> </label>
+                            <input type="date"  id="dob"
+                             (change)="selectDate($event)"
+                             [value]="date"
+                             placeholder="DD/MM/YYYY">
+                        </div>
+                        </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        
+                        <label for="gender">Gender <span class="star">*</span> </label>
+                            <select name="gender" id="gender" 
+                            [(ngModel)]="personalDetails.gender_name" 
+                            (ngModelChange)="selectGender($event)">
+                            <option value="Select">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            </select>
+                        
+                    </div>
+                   
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="gender">Marital Status </label>
+                                <select name="marital-status" id="marital-status"
+                                [(ngModel)]="personalDetails.marital_status" 
+                                (ngModelChange)="maritalStatus($event)">
+                                <option value="" disabled selected>Select your marital status </option>
+                                <option value="Married">Married</option>
+                                <option value="Unmarried">Unmarried</option>
+                                </select> 
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="nationality">Nationality<span class="star">*</span> </label>
+                                <select name="nationality" id="nationality"
+                                [(ngModel)]="personalDetails.nationality" 
+                                (ngModelChange)="nationality($event)">
+                                <option value=""  disabled selected>Select</option>
+                                <option value="Indian">Indian</option>
+                                <option value="Other">Other</option>
+                                </select> 
+                        </div>
+                        </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="address">Address Line 1<span class="star" >*</span> </label>
+                                <input type="text" class="form-control" id="address"
+                                [(ngModel)]="personalDetails.address_line_1" 
+                                [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter house number">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="address">Address Line 2</label>
+                                <input type="text" class="form-control" id="address"
+                                [(ngModel)]="personalDetails.address_line_2" 
+                                [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter street">
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="pin-code">Pincode<span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="pin-code"
+                                [(ngModel)]="personalDetails.pincode" 
+                                (ngModelChange)="getLocationByPincode($event)"
+                                [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter pin ode">
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="city">City<span class="star">*</span> </label>
+                                <select name="city" id="city"
+                                [(ngModel)]="personalDetails.city_id">
+                                <option value="">Select City</option>
+                                <option *ngFor="let city of cityList" [value]="city.id">{{city.city_name}}</option>
+                                </select> 
+                        </div> -->
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <label for="city">City<span class="star">*</span> </label>
+                                <select name="city" id="city"
+                                [(ngModel)]="personalDetails.city_id">
+                                <option value="">Select City</option>
+                                <option *ngFor="let city of cityList"  >{{city.city_name}}</option>
+                                </select>
+                        </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label for="state">State<span class="star">*</span> </label>
+                                    <select name="state" id="state"
+                                    [(ngModel)]="personalDetails.state_id">
+                                    <option value="">Select state</option>
+                                    <option *ngFor="let state of stateList" [value]="state.id">{{state.state_name}}</option>
+                                    </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">  
+                                <label for="city">Country<span class="star">*</span> </label>
+                                    <select name="city" id="city"
+                                    [(ngModel)]="personalDetails.nationality_id" >
+                                    <option value="India">India</option>
+                                    <option value="Other">Other</option>
+                                    </select> 
+                            </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="col-lg-12">
+                                        <label for="aadhar">Aadhar Number </label>
+                                        <div class="d-flex">
+                                        <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="aadhar"
+                                            placeholder="Enter aadhar number">                                           
+                                        </div>
+                                        <div class="col-lg-2 justify-content-center text-end">
+                                            <!-- <button type="submit" class="btn btn-color1">Cancel</button> -->
+                                            <button type="submit" class="btn btn-verify">Verify</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                   
+                                    <div class="d-flex">
+                                    <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="otp"
+                                        placeholder="Enter otp"> 
+                                        <a href="#" class="re-otp"><p>Resend OTP</p></a>                                          
+                                    </div>
+                                    <div class="col-lg-2 justify-content-center text-end">
+                                        <!-- <button type="submit" class="btn btn-color1">Cancel</button> -->
+                                        <button type="submit" class="btn btn-otp-submit">Submit</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="col-lg-12">
+                                        <label for="pan">PAN Number </label>
+                                        <div class="d-flex">
+                                        <div class="col-lg-10">
+                                        <input type="text" class="form-control" id="pan"
+                                            placeholder="Enter pan number">                                           
+                                        </div>
+                                        <div class="col-lg-2 justify-content-center text-end">
+                                           
+                                            <button type="submit" class="btn btn-verify">Verify</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                   
+                                    <div class="d-flex">
+                                    <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="otp"
+                                        placeholder="Enter otp"> 
+                                        <a href="#" class="re-otp"><p>Resend OTP</p></a>                                          
+                                    </div>
+                                    <div class="col-lg-2 justify-content-center text-end">
+                                        <button type="submit" class="btn btn-otp-submit">Submit</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div >
+                                        <label for="a-email">Alternate Email </label>
+                                        <input type="text" class="form-control" id="a-email"
+                                            placeholder="Enter your alternate email address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div >
+                                        <label for="a-mobile">Alternate Mobile</label>
+                                        <input type="text" class="form-control" id="a-mobile"
+                                            placeholder="Enter your alternate mobile number">
+                                    </div>
+                                    </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="row ">
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div>
+                                                <label for="language">Language Known </label>
+                                                <input type="text" class="form-control" id="language"
+                                                    placeholder="Enter languages">
+                                            </div>
+                                            </div>
+                    
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            
+                                            <label for="level">Level</label>
+                                                <select name="level" id="level">
+                                                <option value="select-level">Select</option>
+                                                <option value="proficient">Proficient</option>
+                                                <option value="proficient">Proficient</option>
+                                                <option value="proficient">Proficient</option>
+                                                </select>
+                                            
+                                        </div>
+                                       
+                                        </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div>
+                                        <label for="linkedin">Linkedin</label>
+                                        <input type="text" class="form-control" id="linkedin"
+                                            placeholder="Enter your linkedin url">
+                                    </div>
+                                    <p>https://linkedin.com/username</p>
+                                </div>
+                            </div>
+
+                <div class=" justify-content-center text-end">
+                    <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                    <button type="button" class="btn btn-color2" (click)="submit()">Save</button>
+                </div>
+                <!-- <div class="marg">
+                    <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                </div> -->
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

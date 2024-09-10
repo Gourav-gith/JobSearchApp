@@ -1,0 +1,595 @@
+<!-- <app-seekerhead></app-seekerhead> -->
+
+<section>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 ">
+               
+                
+                <div class="breadcrumb">
+                    <!-- <h1 *ngIf="jobList.length > 10">10 </h1>
+                    <h1 *ngIf="jobList.length > 50"> - 50 Of </h1> -->
+                    <h1>{{jobList!.length}} UI/UX Developer Jobs</h1>
+                    <a href="#"> <p>Send Me Similar Job</p></a>
+                </div>
+
+                <div class="card card-1"  *ngFor="let job of jobList ; let i = index ">
+                    <div class="card-body" (dblclick)="individualPage()">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <!-- <h4 class="mb-0">UI/UX Designer</h4> -->
+                                        <h4 class="mb-0">{{job.job_title}}</h4>
+                                        <!-- <p>Company Name</p> -->
+                                        <p>{{job?.primary_responsibility_detail?.display_company_name}}</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-4">
+                                    <div class="simillar-job">
+                                        <p><img src="" width="30" height="30"> Verified</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <!-- <p>Lucknow</p> -->
+                                        <p >{{job.job_location | jobLocationFilter : value}}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2" *ngIf="job.ctc_type == 1">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <!-- <p>5-8 Lpa</p> -->
+                                        {{job.fixed_ctc}}
+                                    </div>
+                                </div>
+                                <div class="col-md-2" *ngIf="job.ctc_type == 2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <!-- <p> 5-8 Lpa</p> -->
+                                        <p>{{job?.min_ctc | numberFilter : value}} - {{job?.max_ctc | numberFilter : value}} {{job?.min_ctc | alphabetFilter : value}} </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Type</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <!-- <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol> -->
+                            <p>{{job?.primary_responsibility_detail?.job_description}}</p>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a class="btn btn-job" (click)="quickApply()">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="card card-1">
+                    <div class="card-body">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <h4 class="mb-0">UI/UX Designer</h4>
+                                        <p>Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <p>Lucknow</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <p>5-8 Lpa</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Time</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a href="#" class="btn btn-job">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-1">
+                    <div class="card-body">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <h4 class="mb-0">UI/UX Designer</h4>
+                                        <p>Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <p>Lucknow</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <p>5-8 Lpa</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Time</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a href="#" class="btn btn-job">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-1">
+                    <div class="card-body">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <h4 class="mb-0">UI/UX Designer</h4>
+                                        <p>Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <p>Lucknow</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <p>5-8 Lpa</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Time</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a href="#" class="btn btn-job">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-1">
+                    <div class="card-body">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <h4 class="mb-0">UI/UX Designer</h4>
+                                        <p>Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <p>Lucknow</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <p>5-8 Lpa</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Time</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a href="#" class="btn btn-job">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-1">
+                    <div class="card-body">
+                        <div class="designation">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../../../assets/images/blog-img.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-7 marg">
+                                    <div class="designation">
+                                        <h4 class="mb-0">UI/UX Designer</h4>
+                                        <p>Company Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-detail">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Experience</h4>
+                                        <p>3-4 Years</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Location</h4>
+                                        <p>Lucknow</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>CTC</h4>
+                                        <p>5-8 Lpa</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Job Time</h4>
+                                        <p>Full Time</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="box-detail">
+                                        <h4>Work Mode</h4>
+                                        <p>Onsite</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5>Job Description</h5>
+                            <p>Develop user-centric, visually pleasing interfaces for web and mobile applications,
+                                ensuring a seamless and enjoyable user experience.</p>
+                            <p>Embrace an agile approach to design projects,
+                                responding adeptly to changing
+                                requirements and priorities while upholding design excellence and meeting
+                                deadlines.........
+                            </p>
+                            <ol>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                                <li>A degree in Interaction Design, UI/UX Design, or a related field.</li>
+                            </ol>
+                            <p><b>Key Skills :</b> PHP, Javascript, Bootstrap</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-6 d-flex">
+                                <div class="days">
+                                    <p><i class="bi bi-eye"></i> : 456</p>
+                                </div>
+                                <div class="days1">
+                                    <p><i class="bi bi-clock-history"></i> : 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="simillar-job">
+                                    <a href="#" class="btn btn-job">Quick Apply</a>
+                                </div>
+                                <div class="simillar-job margright">
+                                    <a href="#" class="btn btn-job">Save Job</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">❮</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">❯</a>
+          </div>
+    </div>
+</section>
+
+<!-- <app-footer></app-footer> -->

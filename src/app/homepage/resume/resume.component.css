@@ -1,0 +1,583 @@
+
+/* ==========================================================================
+        section-2 CSS START
+========================================================================== */
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 22px;
+    padding: 13px 0px 0px 0px;
+    color: #fff;
+}
+#counter {
+    padding-top: 100px;
+    /* padding-bottom: 30px; */
+    position: relative;
+    top: -70px;
+    
+}
+.resumeheading{
+    color: #000;
+    margin-bottom: 35px;
+    margin-top: -100px;
+    font-size: 44px;
+}
+.herotext{
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 600;
+
+}
+.heading{
+    display: flex;
+}
+#counter .need-help-area .col-xl-4{
+    width: 25%;
+    /* border: 2px solid gray; */
+}
+.need-help-area .info-box-1 .utf-icon-box-circle-inner{
+    font-size: 28px;
+}
+
+#counter .need-help-area .info-box-1 {
+    margin-bottom: 0px;
+    padding: 20px 0px;
+}
+.need-help-area .info-box-1 h4{
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+#counter .need-help-area .info-box-1 p{
+    
+    width: 95%;
+    /* text-align: center; */
+    margin: 0px auto;
+}
+.need-help-area .info-box-1 .utf-icon-box-circle1 {
+	background-color: #F05537;
+	width: 50px;
+    color: #fff;
+	height: 50px;
+	line-height:80px;
+	border-radius:50%;
+	z-index: 100;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+
+/* ==========================================================================
+        Responsive css
+========================================================================== */
+@media screen and (max-width: 1200px){
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    #counter {
+        padding-top: 100px;
+        /* padding-bottom: 30px; */
+        position: relative;
+        top: -70px;
+        
+    }
+    .resumeheading{
+        color: #000;
+        margin-bottom: 35px;
+        margin-top: -100px;
+        font-size: 34px;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle {
+        background-color: #f7f7f7;
+        width: 200px;
+        height: 175px;
+        line-height: 80px;
+        border-radius: 50px;
+        z-index: 100;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    #counter .need-help-area .col-xl-4{
+        width: 25%;
+        /* border: 2px solid gray; */
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle-inner{
+        font-size: 28px;
+    }
+    
+    #counter .need-help-area .info-box-1 {
+        margin-bottom: 0px;
+        padding: 20px 0px;
+    }
+    .need-help-area .info-box-1 h4{
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    #counter .need-help-area .info-box-1 p{
+        
+        width: 95%;
+        /* text-align: center; */
+        margin: 0px auto;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle1 {
+        background-color: #F05537;
+        width: 50px;
+        color: #fff;
+        height: 50px;
+        line-height:80px;
+        border-radius:50%;
+        z-index: 100;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    h2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.1025em;
+        margin: 0 0 16px;
+    }
+    h1{
+        margin: 0 0 0px;
+    }
+    #counter {
+        padding-top: 100px;
+        /* padding-bottom: 30px; */
+        position: relative;
+        top: -75px;
+        
+    }
+    .resumemain{
+        display: flex;
+    
+    }
+    .herotext{
+        color: #000;
+        margin-bottom: 0px;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 100;
+    
+    }
+    .heading{
+        display: flex;
+    }
+    .mabot{
+        margin-bottom: 30px;
+    }
+    .resumeheading{
+        color: #000;
+        margin-bottom: 35px;
+        margin-top: -100px;
+        font-size: 34px;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle {
+        background-color: #fff;
+    width: 32%;
+    height: 33%;
+    line-height: 80px;
+    border-radius: 50px;
+    z-index: 0 !important;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    /* margin-bottom: 20px; */
+    }
+    .resumecard{
+        display: flex;
+    width: 100%;
+    height: 85%;
+    }
+    img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 5px;
+        margin-left: 55%;
+    }
+    .resumehead{
+        text-align: left;
+        width: 300px;
+    }
+    
+    #counter .need-help-area .col-xl-4{
+        width: 100%;
+        /* border: 2px solid gray; */
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle-inner{
+        font-size: 28px;
+    }
+    
+    #counter .need-help-area .info-box-1 {
+        margin-bottom: 20px;
+        padding: 20px 0px;
+    }
+    .need-help-area .info-box-1 h4{
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    #counter .need-help-area .info-box-1 p{
+        
+        width: 95%;
+        /* text-align: center; */
+        margin: 0px auto;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle1 {
+        background-color: #F05537;
+        width: 40px;
+        color: #fff;
+        height: 40px;
+        line-height:80px;
+        border-radius:50%;
+        /* z-index: 100; */
+        margin: 15px auto;
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .stepnum{
+        /* position: absolute !important; */
+        /* right: 151px; */
+        left: -40%;
+        z-index: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .num-style{
+        color: #fff;
+        padding-top: 8px;
+    }
+    .register-btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 20px;
+        /* padding: 10px 20px; */
+        line-height: 24px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 50px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}
+
+@media screen and (max-width: 768px){
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 32px;
+        letter-spacing: normal;
+        margin: 0 0 0px;
+    }
+    .need-help-area .info-box-1 p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        padding: 0;
+        color: #808080;
+    }
+    #counter {
+        padding-top: 20px;
+        /* padding-bottom: 30px; */
+        position: relative;
+        top: 0px;
+        
+    }
+    .resumemain{
+        display: block;
+    
+    }
+    .resumeheading{
+        color: #000;
+        margin-bottom: 35px;
+        margin-top: -100px;
+        font-size: 34px;
+    }
+    .herotext{
+        color: #000;
+        margin-bottom: 0px;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 100;
+    
+    }
+    .heading{
+        display: block;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle {
+        background-color: #fff;
+    width: 32%;
+    height: 33%;
+    line-height: 80px;
+    border-radius: 50px;
+    z-index: 0 !important;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    /* margin-bottom: 20px; */
+    }
+    .resumecard{
+        display: flex;
+    width: 100%;
+    height: 100%;
+    }
+    img {
+        max-width: 50%;
+        max-height: 50%;
+        border-radius: 5px;
+        margin-left: 70%;
+    }
+    .resumehead{
+        text-align: left;
+        width: 250px;
+    }
+    
+    #counter .need-help-area .col-xl-4{
+        width: 100%;
+        /* border: 2px solid gray; */
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle-inner{
+        font-size: 28px;
+    }
+    
+    #counter .need-help-area .info-box-1 {
+        margin-bottom: 20px;
+        padding: 20px 0px;
+    }
+    .need-help-area .info-box-1 h4{
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    #counter .need-help-area .info-box-1 p{
+        
+        width: 95%;
+        /* text-align: center; */
+        margin: 0px 0px;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle1 {
+        background-color: #F05537;
+        width: 40px;
+        color: #fff;
+        height: 40px;
+        line-height:80px;
+        border-radius:50%;
+        /* z-index: 100; */
+        margin: 15px auto;
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .stepnum{
+        /* position: absolute !important; */
+        /* right: 151px; */
+        left: -35%;
+        z-index: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .register-btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 15px;
+        /* padding: 10px 20px; */
+        line-height: 12px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 100;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 40px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}
+
+@media screen and (max-width: 576px){
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 32px;
+        letter-spacing: normal;
+        margin: 0 0 0px;
+    }
+    .need-help-area .info-box-1 p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        padding: 0;
+        color: #808080;
+    }
+    #counter {
+        padding-top: 20px;
+        /* padding-bottom: 30px; */
+        position: relative;
+        top: 0px;
+        
+    }
+    .resumemain{
+        display: block;
+    
+    }
+    .resumeheading{
+        color: #000;
+        margin-bottom: 35px;
+        margin-top: -100px;
+        font-size: 34px;
+    }
+    .herotext{
+        color: #000;
+        margin-bottom: 0px;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 100;
+    
+    }
+    .heading{
+        display: block;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle {
+        background-color: #fff;
+    width: 32%;
+    height: 33%;
+    line-height: 80px;
+    border-radius: 50px;
+    z-index: 0 !important;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    /* margin-bottom: 20px; */
+    }
+    .resumecard{
+        display: flex;
+    width: 100%;
+    height: 100%;
+    }
+    img {
+        max-width: 50%;
+        max-height: 50%;
+        border-radius: 5px;
+        margin-left: 70%;
+    }
+    .resumehead{
+        text-align: left;
+        width: 250px;
+    }
+    
+    #counter .need-help-area .col-xl-4{
+        width: 100%;
+        /* border: 2px solid gray; */
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle-inner{
+        font-size: 28px;
+    }
+    
+    #counter .need-help-area .info-box-1 {
+        margin-bottom: 20px;
+        padding: 20px 0px;
+    }
+    .need-help-area .info-box-1 h4{
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    #counter .need-help-area .info-box-1 p{
+        
+        width: 95%;
+        /* text-align: center; */
+        margin: 0px 0px;
+    }
+    .need-help-area .info-box-1 .utf-icon-box-circle1 {
+        background-color: #F05537;
+        width: 40px;
+        color: #fff;
+        height: 37px;
+        line-height:80px;
+        border-radius:50%;
+        /* z-index: 100; */
+        margin: 15px auto;
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .stepnum{
+        /* position: absolute !important; */
+        /* right: 151px; */
+        left: -25%;
+        z-index: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .num-style{
+        color: #fff;
+        padding-top: 7px;
+    }
+    .register-btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 15px;
+        /* padding: 10px 20px; */
+        line-height: 12px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 100;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 40px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}

@@ -1,0 +1,511 @@
+body{
+    background-color: #C5E1E4;
+}
+h1{
+    color: #121262;
+}
+h3{
+    margin: 0px 0px 0px;
+    line-height: 20px;
+}
+.activity{
+    background-color:#fff ;
+}
+.main{
+    background-color: #E9E9F3;
+}
+.main-profile{
+    margin-bottom: 30px;
+}
+.profile-img {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    height: 130px;
+    margin: 0px auto;
+    width: 120px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.img-fluid {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+.profile-name h3{
+     font-size: 15px;
+     color: #156CD9;
+     font-weight: bold;
+}
+i.fa.fa-edit {
+    margin-right: 10px;
+    color: #333;
+}
+.profile{
+    color: #333;
+}
+.profile-btn{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.hedingstyle{
+    text-align: end;
+    padding: 5px 10px 0px 0px;
+    color: #121262;
+}
+.hedingstyle1{
+    text-align: end;
+   
+    color: #121262;
+   
+    font-size: 15px;
+}
+.profile-user{
+    padding: 10px 5px;
+}
+.tabs-main{
+    border: 1px solid #333;
+    padding: 5px 0px;
+    text-align: left;
+    background: #fff;
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 20px 0px 0px 0px;
+}
+.tabs-main1{
+    border: 1px solid #333;
+    padding: 5px 15px;
+    text-align: left;
+    background: #fff;
+    margin-top: -5px;
+    margin-right: 15px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+ul {
+    padding-left: 0rem;
+}
+a.link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+/* searxh box */
+.search-style-2 {
+    width: 100%;
+}
+.header-style-1 .search-style-2 form {
+    max-width: 774px;
+}
+.header-style-1 .search-style-2 form {
+    border: 2px solid #BCE3C9;
+    border-radius: 4px;
+    max-width: 700px;
+    background-color: #fff;
+    /* display: none; */
+}
+.search-style-2 form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+.header-style-1 .search-style-2 form input {
+    max-width: 600px;
+    border-width: 0px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 20px;
+    background-color: #fff;
+    border: none;
+}
+.search-style-2 form input {
+    width: 100%;
+    max-width: 683px;
+    font-size: 14px;
+    /* background-image: url(../imgs/theme/icons/search.png); */
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    border: 1 px solid #333;
+    background: #C1BCBC;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+}
+.box-content {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+}
+.box-content h2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.title {
+    padding: 5px 16px 0px 16px;
+}
+.recommended.jobs {
+    margin-bottom: 25px;
+}
+.activity
+{
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    margin: 0px 0px 25px;
+    padding: 15px;
+}
+/* .activity-dash{
+    
+    margin: 5px;
+    border-radius: 5px;
+} */
+.activity-name{
+   
+}
+.activity-name a {
+    color: #333;
+    text-decoration: none;
+}
+.activity-name h5 {
+    /* font-size: 14px;
+    line-height: 24px; */
+    padding: 0px 0px 5px 0px;
+    font-weight: 600;
+}
+.updates{
+    padding: 5px;
+}
+section.main {
+    padding-top: 25px;
+}
+@media screen and (max-width: 480px) {
+    .box{
+        margin-bottom: 15px;
+    }
+}
+.formobile{
+    display: none;
+}
+p{
+    line-height: 12px;
+    font-size: 9px;
+    /* width: 90px; */
+}
+#client-section {
+    background-color: #fff;
+}
+.popularjob{
+    color: #000;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    font-size: 34px;
+}
+.view{
+    color: #4540DB;
+    padding-bottom: 0px;
+    margin-top: -40px;
+    font-size: 22px;
+    text-align: right;
+}
+.cardlogo{
+    height: 100%;
+    width: 100%;
+}
+.cardimg{
+    margin-left: 11px;
+    margin-top: 11px;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+}
+.cardicon{
+    padding-left: 15px;
+    padding-right: 5px;
+    font-size: 18px;
+    padding-top: 3px;
+}
+.save{
+    font-size: 12px;
+    padding-left: 15px;
+}
+.apply{
+    font-size: 12px;
+    text-align: start;
+    /* padding-right: 35px; */
+    padding-left: 5px   ;
+}
+.submit {
+    color: #4540DB;
+    padding-top:10px;
+}
+.ico1{
+    padding-left: 11px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    position: relative;
+    top: -3px;
+    /* padding-top: 3px; */
+}
+.ico2{
+    padding-right: 5px;
+    font-size: 12px;
+    position: relative;
+    top: -3px;
+    /* padding-top: 3px; */
+}
+h1 {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: normal;
+   
+}
+.disflex h1{
+    padding: 5px 0px 0px 10px;
+}
+h2{
+    margin-bottom: 0px;
+    line-height: normal;
+    font-size: 10px;
+    /* width: 90px; */
+}
+h5{
+    margin: 0px 0px 0px;
+}
+.profile-img1 {
+    height: 100%;
+}
+
+.activity-name p{
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0px 0px 0px;
+    text-align: justify;
+    font-weight: 600;
+}
+.activity h1 {
+    /* margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 5px 0px 0px 10px; */
+    font-weight: 600;
+}
+.activity h5 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.h1margin{
+    margin-bottom: 15px;
+    color: #FF4D4D;
+}
+.utf-intro-search-button1 .button {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    position: relative;
+    border-radius: 5px;
+    left: 210%;
+    top: 17%;
+}
+.profile-img1 {
+    justify-content: center;
+    padding: 0px;
+    margin: 0px auto;
+    height: 100%;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+}
+
+/* .profile-user1 {
+    padding: 15px 0px;
+} */
+/* .activity-name p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 0px 0px;
+} */
+.divstyle{
+    margin: 0px 0px 15px 0px;
+}
+/* .divstyle1{
+    margin: 40px 0px 40px 0px;
+} */
+.divstyle p{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 0px 0px;
+   
+    font-weight: 600;
+}
+.divstyle1 p{
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0px 0px 5px;
+    font-weight: 500;
+}
+.divstyle h5{
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 0px 0px;
+    font-weight: 600;
+    
+}
+
+.divstyle a{
+    padding: 2px 5px 2px 5px;
+    /*
+    margin: 25px 0px 25px 0px; */
+    border-radius: 5px;
+    background-color: #156CD9;
+    color: white;
+}
+.botstyle{
+    margin-left: 10px;
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+.activestyle{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.text-center p{
+    margin: 5px 0px 0px;
+    color: #4943DA;
+}
+.text-center h5{
+    /* margin: 5px 0px 0px; */
+    color: #30782E;
+}
+.divstyle h1{
+    font-size: 22px;
+    line-height: 22px;
+    margin: 5px 0px 0px;
+    padding-left: 0px;
+}
+.iconstyle{
+    font-size: 18px;
+    color: #242D62;
+    margin-right: 5px;
+}
+.recbutton{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 5px;
+    justify-content: end;
+}
+.recbutton a{
+    color: #FF7575;
+}
+.card-body1{
+    display: flex;
+    padding: 0px 0px 0px 0px;
+}
+.resbut{
+    border: 1px solid #333;
+    padding: 10px 15px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.buttonpadding{
+    padding: 0px 180px 0px 15px;
+}
+.buttonpadding1{
+    padding: 0px 15px 5px 180px;
+}
+.spstyle{
+    margin-right: 20px;
+}
+.widgetstyle{
+    color: #30782E;
+    text-align: end;
+}
+.disflex{
+    display: flex;
+}
+
+/* Accountlogo by surya */
+.acclogo{
+    width: 100px;
+    height: auto;
+}
+
+.activity .card{
+    height: auto;
+    max-height: 100%;
+}
+/**********---RESPONSIVE---********/
+
+@media screen and  (min-width:767px) {
+    .d-hide-1 {
+        display: none;   
+       }
+
+    
+
+}
+@media screen and  (max-width:767px){
+    
+    .d-hide {
+        display: none;   
+       }
+
+    .activity h1{
+        font-size: 16px;
+    }
+    .divstyle p{
+        font-size: 12px;
+    }
+    .divstyle p{
+        font-size: 12px;
+    }
+    .divstyle h5{
+        font-size: 10px;
+    }
+    .divstyle{
+        margin-bottom: 10px;
+    }
+    .iconstyle{
+        font-size: 12px;
+    }
+    .contact h5{
+        font-size: 12px;
+    }
+    .divstyle1 p{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .hedingstyle1 i{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

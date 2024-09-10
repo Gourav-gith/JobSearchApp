@@ -1,0 +1,331 @@
+<section id="main">
+    <div class="container" id="recruiter">
+        <div class="row space">
+            <div class="col-md-3">
+                <div class="card">
+                    <app-recruiter-sidemenu></app-recruiter-sidemenu>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card-heading mb-3 bg-blue p-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-9">
+                            <h3>Post your job in 3 easy steps.</h3>
+                            <p>Your progress is safe. if you leave,your job posting will be saved as a draft</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-grid px-3 py-2">
+                                <div class="position-relative m-4">
+                                    <div class="position-relative m-4">
+                                        <div class="progress" style="height: 1px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <button type="button"
+                                            class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+                                            style="width: 2rem; height:2rem;">1</button><br>
+                                        <button type="button"
+                                            class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+                                            style="width: 2rem; height:2rem;">2</button>
+                                        <button type="button"
+                                            class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+                                            style="width: 2rem; height:2rem;">3</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-3 recent-job">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card p-3">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div>
+                                            <label for="experience">Experience <span class="star">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select experience</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <!-- <span class="error-message">{{error.first_name}}</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div>
+                                            <label for="experience">Educational Qualification <span
+                                                    class="star">*</span> </label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select educational qualification</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <!-- <span class="error-message">{{error.first_name}}</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div>
+                                            <label for="openposition">Number of Open Position</label>
+                                            <input type="text" class="form-control" id="Middle Name"
+                                                placeholder="Number of Open Position">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div>
+                                            <label for="companyname">Comapny Name<span class="star">*</span> </label>
+                                            <input type="text" class="form-control" id="companyname"
+                                                placeholder="Ex:leading private banking">
+
+                                        </div>
+                                        <div class="form-check companyConfidential">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Keep company name confidential?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div>
+                                            <label for="primaryresponsibility">Primary Responsibility<span
+                                                    class="star">*</span> </label>
+                                            <input type="text" class="form-control" id="primaryresponsibility"
+                                                placeholder="Enter role and responsibility for this job">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Job
+                                                Description<span class="star">*</span></label>
+                                            <ckeditor [editor]="Editor" data="<p>Hello from CKEditor5!</p>"
+                                                (ready)="onReady($event)" (change)="onChange($event)">
+                                            </ckeditor>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="card seeker-item-div  p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8 mb-3">
+                                        <h5>Tips</h5>
+                                    </div>
+                                </div>
+                                <div class="seekr">
+                                    <div class="seeker-item">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-img-div">
+                                                <img src="" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="px-2 mb-3 tips">
+                                                <p class="card-text">Choose whether or not to showcase your brand
+                                                    (Company name)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mt-3 recent-job">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="">Job Type <span class="star">*</span></h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Full-time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Part-time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Contact</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Intership</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="card p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="">Preferred Shift</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Day</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">After-noon</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Night</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Rotational</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="card p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="">Work Mode</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Work from home</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Hybrid</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Remote</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Onsite</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="card p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="">Preferred Gender</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input margin-right-4" type="checkbox"
+                                                id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Other</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <button type="button" class="btn btn-outline-primary">Back</button>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <button type="button" class="btn btn-primary">Save and Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>

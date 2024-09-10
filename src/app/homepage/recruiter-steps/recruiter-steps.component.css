@@ -1,0 +1,285 @@
+/* ==========================================================================
+        section-4 CSS START
+========================================================================== */
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+.candidate {
+    background-color: #fff;
+    padding: 30px 0px;
+    
+}
+.recruiterstep{
+    color: #000; 
+    margin-bottom: 20px;
+    margin-top: 0px; 
+    font-size: 34px;
+}
+.candidate .inner-info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.candidate .inner-info-box .img-box {
+    width: 150px;
+    height: 150px;
+    /* background-color: #eaedff; */
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #F05537;
+
+
+}
+#line1{
+    position: relative;
+}
+#line1::after{
+    position: absolute;
+    top: 107px;
+    content: '';
+    width: 294px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(25%);
+}
+#line2{
+    position: relative;
+}
+#line2::before{
+    position: absolute;
+    top: 107px;
+    content: '';
+    width: 293px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-125%);
+}
+
+
+.candidate .inner-info-box .img-box img {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/* ==========================================================================
+        responsive css
+========================================================================== */
+
+@media screen and (max-width: 1400px) { 
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+.candidate {
+    background-color: #fff;
+    padding: 50px 0px;
+    
+}
+.recruiterstep{
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 34px;
+}
+.candidate .inner-info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.candidate .inner-info-box .img-box {
+    width: 150px;
+    height: 150px;
+    /* background-color: #eaedff; */
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #F05537;
+
+
+}
+#line1{
+    position: relative;
+}
+#line1::after{
+    position: absolute;
+    top: 107px;
+    content: '';
+    width: 233px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(31%);
+}
+#line2{
+    position: relative;
+}
+#line2::before{
+    position: absolute;
+    top: 107px;
+    content: '';
+    width: 235px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-131%);
+}
+
+
+.candidate .inner-info-box .img-box img {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+}
+
+@media screen and (max-width: 1200px) { 
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .candidate {
+        background-color: #fff;
+        padding: 50px 0px;
+        
+    }
+    .recruiterstep{
+        color: #000;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-size: 34px;
+    }
+    .candidate .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .candidate .inner-info-box .img-box {
+        width: 150px;
+        height: 150px;
+        /* background-color: #eaedff; */
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+        top: 107px;
+        content: '';
+        width: 170px;
+        height: 3px;
+        background: #F05537;
+        left: 50%;
+        transform: translateX(44%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+    top: 107px;
+    content: '';
+    width: 170px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-144%);
+    }
+    
+    
+    .candidate .inner-info-box .img-box img {
+        padding: 5px;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    }
+
+    @media screen and (max-width: 992px) { 
+        body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+            font-family: "lato", sans-serif;
+            text-transform: none;
+        }
+        .candidate {
+            background-color: #fff;
+            padding: 50px 0px;
+            display: none;
+        }
+        .recruiterstep{
+            color: #000;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            font-size: 34px;
+        }
+        .candidate .inner-info-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        
+        .candidate .inner-info-box .img-box {
+            width: 150px;
+            height: 150px;
+            /* background-color: #eaedff; */
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 auto;
+            border: 3px solid #F05537;
+        
+        
+        }
+        #line1{
+            position: relative;
+        }
+        #line1::after{
+            position: absolute;
+            top: 107px;
+            content: '';
+            width: 170px;
+            height: 3px;
+            background: #F05537;
+            left: 50%;
+            transform: translateX(44%);
+        }
+        #line2{
+            position: relative;
+        }
+        #line2::before{
+            position: absolute;
+        top: 107px;
+        content: '';
+        width: 170px;
+        height: 3px;
+        background: #F05537;
+        left: 50%;
+        transform: translateX(-144%);
+        }
+        
+        
+        .candidate .inner-info-box .img-box img {
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        }

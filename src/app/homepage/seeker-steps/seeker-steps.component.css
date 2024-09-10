@@ -1,0 +1,1211 @@
+/* ==========================================================================
+        section-3 CSS START
+========================================================================== */
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+.find-section {
+    /* background-color: #f6f7ff; */
+    /* padding: 50px 0px; */
+}
+.seekerstep{
+    color: #000; 
+    margin-bottom: 20px;
+    margin-top: 0px; 
+    font-size: 34px; 
+}
+.find-section .card {
+    /* background-image: url(../images/card-bg.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: right -200px top -90px; */
+}
+
+.find-section .card-body .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #324e7e;
+
+}
+.thumb{
+    min-height: 350px;
+    width: 100%;
+}
+.jsstep{
+    height: 250px;
+}
+.find-section .card-left {
+    background-color: #fff;
+    border: none;
+}
+
+.find-section .card-right .card-title {
+    color: #fff;
+}
+
+.find-section .card-right {
+    background-color: #eaf3fa;
+}
+
+.find-section .card-body .btn {
+
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 25px;
+}
+
+.txt-style{
+    font-size: 19px; 
+    padding-top: 10px;
+}
+.row-style{
+    width: 33.33%;
+}
+
+.hover-styled:hover {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* ==========================================================================
+        section-4 CSS START
+========================================================================== */
+.find-section {
+    background-color: #fff;
+    padding: 30px 0px;
+    
+}
+
+.find-section .inner-info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.find-section .inner-info-box .img-box {
+    width: 100px;
+    height: 100px;
+    background-color: #eaedff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #F05537;
+
+
+}
+.iconstyle1{
+    font-size: 70px; 
+    line-height: 1.3;
+}
+.iconstyle2{
+    font-size: 55px; 
+    line-height: 1.8;
+}
+#line1{
+    position: relative;
+}
+#line1::after{
+    position: absolute;
+    top: 82px;
+    content: '';
+    width: 123px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(39%);
+}
+#line2{
+    position: relative;
+}
+#line2::before{
+    position: absolute;
+    top: 82px;
+    content: '';
+    width: 123px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-139%);
+}
+
+
+.find-section .inner-info-box .img-box img {
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+/* ==========================================================================
+        section-3 CSS START
+========================================================================== */
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+.find-section {
+    /* background-color: #f6f7ff; */
+    /* padding: 50px 0px; */
+}
+
+.find-section .card {
+    /* background-image: url(../images/card-bg.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: right -200px top -90px; */
+}
+
+.find-section .card-body .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #324e7e;
+
+}
+
+.find-section .card-left {
+    background-color: #fff;
+    border: none;
+}
+
+.find-section .card-right .card-title {
+    color: #fff;
+}
+
+.find-section .card-right {
+    background-color: #eaf3fa;
+}
+
+.find-section .card-body .btn {
+
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 25px;
+}
+
+
+
+
+.hover-styled:hover {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* ==========================================================================
+        responsive css
+========================================================================== */
+
+@media screen and (max-width: 1400px) { 
+
+    .seekerstep{
+        color: #000; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        font-size: 34px; 
+    }
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    /* ==========================================================================
+            section-4 CSS START
+    ========================================================================== */
+    .find-section {
+        background-color: #fff;
+        padding: 30px 0px;
+        
+    }
+    
+    .find-section .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .find-section .inner-info-box .img-box {
+        width: 100px;
+        height: 100px;
+        background-color: #eaedff;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+    top: 82px;
+    content: '';
+    width: 95px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(50%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+        top: 82px;
+        content: '';
+        width: 95px;
+        height: 3px;
+        background: #F05537;
+        left: 50%;
+        transform: translateX(-150%);
+    }
+    
+    
+    .find-section .inner-info-box .img-box img {
+        padding: 15px;
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    
+    /* ==========================================================================
+            section-3 CSS START
+    ========================================================================== */
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    
+    .seekerstep{
+        color: #000; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        font-size: 34px; 
+    }
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    /* ==========================================================================
+            section-4 CSS START
+    ========================================================================== */
+    .find-section {
+        background-color: #fff;
+        padding: 30px 0px;
+        
+    }
+    
+    .find-section .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .find-section .inner-info-box .img-box {
+        width: 100px;
+        height: 100px;
+        background-color: #eaedff;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+        top: 82px;
+        content: '';
+        width: 64px;
+        height: 3px;
+        background: #F05537;
+        left: 50%;
+        transform: translateX(93%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+    top: 82px;
+    content: '';
+    width: 64px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-156%);
+    }
+    
+    
+    .find-section .inner-info-box .img-box img {
+        padding: 15px;
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    
+    /* ==========================================================================
+            section-3 CSS START
+    ========================================================================== */
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+@media screen and (max-width: 992px) { 
+
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    .seekerstep{
+        color: #000; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        font-size: 34px; 
+        display: none;
+    }
+    .toblock{
+        display: block;
+    }
+    .forwidth1{
+        width: 100%;
+        position: relative;
+        top: 400px;
+    }
+    .forwidth2{
+        width: 100%;
+        position: relative;
+        bottom: 230px;
+    }
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    /* ==========================================================================
+            section-4 CSS START
+    ========================================================================== */
+    .find-section {
+        background-color: #fff;
+        padding: 0px 0px;
+        
+    }
+    
+    .find-section .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .find-section .inner-info-box .img-box {
+        width: 100px;
+        height: 100px;
+        background-color: #eaedff;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+        top: 82px;
+        content: '';
+        width: 142px;
+        height: 3px;
+        background: #F05537;
+        left: 50%;
+        transform: translateX(35%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+    top: 82px;
+    content: '';
+    width: 142px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-135%);
+    }
+    
+    
+    .find-section .inner-info-box .img-box img {
+        padding: 15px;
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    
+    /* ==========================================================================
+            section-3 CSS START
+    ========================================================================== */
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 0;
+        /* padding: 10px 20px; */
+        line-height: 24px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 50px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}
+
+@media screen and  (max-width: 768px) { 
+
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    .seekerstep{
+        color: #000; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        font-size: 34px; 
+        display: none;
+    }
+    .toblock{
+        display: block;
+    }
+    .forwidth1{
+        width: 100%;
+        position: relative;
+        top: 400px;
+    }
+    .forwidth2{
+        width: 100%;
+        position: relative;
+        bottom: 130px;
+    }
+    .thumb{
+        min-height: 250px;
+    }
+    .jsstep{
+        height: 200px;
+        position: relative;
+        top:-142px;
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+        height: 100px;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    /* ==========================================================================
+            section-4 CSS START
+    ========================================================================== */
+    .find-section {
+        background-color: #fff;
+        padding: 90px 0px;
+        
+    }
+    
+    .find-section .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .find-section .inner-info-box .img-box {
+        width: 70px;
+        height: 70px;
+        background-color: #eaedff;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    .iconstyle1{
+        font-size: 46px; 
+        line-height: 1.3;
+    }
+    .iconstyle2{
+        font-size: 36px; 
+        line-height: 1.8;
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+    top: 67px;
+    content: '';
+    width: 112px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(30%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+    top: 67px;
+    content: '';
+    width: 112px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-130%);
+    }
+    
+    
+    .find-section .inner-info-box .img-box img {
+        padding: 15px;
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    
+    /* ==========================================================================
+            section-3 CSS START
+    ========================================================================== */
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 0;
+        /* padding: 10px 20px; */
+        line-height: 12px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 40px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}
+
+@media screen and  (max-width: 576px) { 
+
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    .seekerstep{
+        color: #000; 
+        margin-bottom: 10px;
+        margin-top: 0px; 
+        font-size: 34px; 
+        display: none;
+    }
+    .toblock{
+        display: block;
+    }
+    .forwidth1{
+        width: 100%;
+        position: relative;
+        top: 400px;
+    }
+    .forwidth2{
+        width: 100%;
+        position: relative;
+        bottom: 130px;
+    }
+    .thumb{
+        min-height: 250px;
+    }
+    .jsstep{
+        height: 200px;
+        position: relative;
+        top:-142px;
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+        height: 100px;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    /* ==========================================================================
+            section-4 CSS START
+    ========================================================================== */
+    .find-section {
+        background-color: #fff;
+        padding: 90px 0px;
+        
+    }
+    
+    .find-section .inner-info-box {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 0px;
+    }
+    
+    .find-section .inner-info-box .img-box {
+        width: 70px;
+        height: 70px;
+        background-color: #eaedff;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #F05537;
+    
+    
+    }
+    .iconstyle1{
+        font-size: 46px; 
+        line-height: 1.3;
+    }
+    .iconstyle2{
+        font-size: 36px; 
+        line-height: 1.8;
+    }
+    #line1{
+        position: relative;
+    }
+    #line1::after{
+        position: absolute;
+    top: 67px;
+    content: '';
+    width: 62px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(55%);
+    }
+    #line2{
+        position: relative;
+    }
+    #line2::before{
+        position: absolute;
+    top: 67px;
+    content: '';
+    width: 62px;
+    height: 3px;
+    background: #F05537;
+    left: 50%;
+    transform: translateX(-155%);
+    }
+    
+    
+    .find-section .inner-info-box .img-box img {
+        padding: 15px;
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    
+    /* ==========================================================================
+            section-3 CSS START
+    ========================================================================== */
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    .find-section {
+        /* background-color: #f6f7ff; */
+        /* padding: 50px 0px; */
+    }
+    
+    .find-section .card {
+        /* background-image: url(../images/card-bg.png); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right -200px top -90px; */
+    }
+    
+    .find-section .card-body .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #324e7e;
+    
+    }
+    
+    .find-section .card-left {
+        background-color: #fff;
+        border: none;
+    }
+    
+    .find-section .card-right .card-title {
+        color: #fff;
+    }
+    
+    .find-section .card-right {
+        background-color: #eaf3fa;
+    }
+    
+    .find-section .card-body .btn {
+    
+        font-size: 16px;
+        font-weight: 600;
+        padding: 13px 25px;
+    }
+    
+    
+    
+    
+    .hover-styled:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) .1s;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    span.button, button.button, input[type="button"], input[type="submit"], a.button {
+        background-color: #F05537;
+        top: 0;
+        /* padding: 10px 20px; */
+        line-height: 12px;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        border: none;
+        width: 100%;
+        height: 40px;
+        /* border-radius: 4px; */
+        box-shadow: 0 4px 12px rgba(102,103,107,0.15);
+    }
+}

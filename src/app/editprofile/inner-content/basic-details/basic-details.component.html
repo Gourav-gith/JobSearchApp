@@ -1,0 +1,109 @@
+
+<div class="basic-details">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Basic Details</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                    </div>
+                </div>
+                    <h2>Get noticed by recruiters!</h2>
+                    <p>A profile with photo is 40% more likely to be noticed by recruiters.</p>
+                </div>
+                
+              <div class="row ">
+                <div class="col-lg-1 col-md-6 col-sm-6">
+                    <div  >
+                        <div class="col-lg-3 inner-info-box text-center imgstyle">
+                            <!-- <div class="img-box"><img src="./assets/images/profile.jpg"></div> -->
+                            <div class="img-box" *ngIf="imagePath"><img [src]="imagePath"></div>
+                            <span *ngIf="error.profile_image"><span class="error" *ngFor="let errorMessage of error.profile_image">{{errorMessage}}</span></span>
+                            <div class="img-box" *ngIf="!imagePath"><img [src]="basicDetails.profile_image"></div>
+                          </div>
+                        
+                    </div>
+                    
+​
+                </div>
+​
+                <div class="col-lg-11 col-md-6 col-sm-6">
+                    <div class="mt-0">
+                        <!-- <label for="exampleInputPassword1">Mobile Number:</label> -->
+                        <input type="file" class="form-control" id="profile-photo"  (change)="profilePictureChange($event)"
+                            placeholder="Browse file to upload">
+                           <span class="d-flex"> <p><i class="bi bi-info-circle"></i> Supported file format png, jpg, jpeg, gif | upto 3 Mb</p></span>
+                    </div>
+                        
+​
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="first-name">First Name <span class="star">*</span> </label>
+                            <input type="text" class="form-control" id="first-name" [(ngModel)]="basicDetails.first_name"  [ngModelOptions]="{standalone: true}"
+                                placeholder="Enter first name">
+                                <span *ngIf="error.first_name"><span class="error" *ngFor="let errorMessage of error.first_name">{{errorMessage}}</span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div >
+                            <label for="middle-name">Middle Name  </label>
+                            <input type="text" class="form-control" id="middle-name" [(ngModel)]="basicDetails.middle_name"  [ngModelOptions]="{standalone: true}"
+                                placeholder="Enter middle name">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="last-name">Last Name <span class="star" >*</span> </label>
+                                <input type="text" class="form-control" id="last-name" [(ngModel)]="basicDetails.last_name"  [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter last name">
+                                <span *ngIf="error.last_name"><span class="error" *ngFor="let errorMessage of error.last_name">{{errorMessage}}</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="mobile-number">Mobile Number <span class="star">*</span></label>
+                                <input type="text" class="form-control" id="mobile-number" [(ngModel)]="basicDetails.mobile_number"  [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter mobile number">
+                                <span *ngIf="error.mobile_number"><span class="error" *ngFor="let errorMessage of error.mobile_number">{{errorMessage}}</span></span>
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="email-address">Email Address <span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="email-address" [(ngModel)]="basicDetails.email"  [ngModelOptions]="{standalone: true}"
+                                    placeholder="Enter email address">
+                                <span *ngIf="error.email"><span class="error" *ngFor="let errorMessage of error.email">{{errorMessage}}</span></span>
+                            </div>
+                        </div>
+                        
+                        </div>
+
+                <div class=" justify-content-center text-end">
+                    <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                    <button type="button" class="btn btn-color2" (click)="submit()">Save</button>
+                </div>
+                <!-- <div class="marg">
+                    <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                </div> -->
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

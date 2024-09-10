@@ -1,0 +1,106 @@
+<div class="educational-details">
+    <div class=" backcolor">
+        <div class="container fix-width">
+            <div class="row">
+
+                <form>
+                    <div class="head">
+                        <div class="d-flex">
+                            <div class="col-lg-11">
+                                <h1>Educational Details</h1>
+                            </div>
+                            <div class="col-lg-1">
+                                <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-style" *ngFor="let educationData of educationalDetails ; let i = index ">
+
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label for="qualification">Qualification <span class="star">*</span> </label>
+                                <select name="qualification" 
+                                        id="qualification" 
+                                        [(ngModel)]="educationData.qualification_id" 
+                                        (ngModelChange)="selectQualification($event , i)"
+                                        [ngModelOptions]="{standalone: true}"                                >
+                                    <option *ngFor="let data of qualification" [value]="data.id" >{{data.name}}</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6" *ngIf="!(educationData.qualification_id == 1435)" >
+                                <label for="course">Course <span class="star">*</span> </label>
+                                <select name="course" 
+                                        id="course"
+                                        [(ngModel)]="educationData.course_id" 
+                                        (ngModelChange)="selectCourse($event , i)"
+                                        [ngModelOptions]="{standalone: true}"                                 
+                                >
+                                    <option *ngFor="let data of course" [value]="data.id" >{{data.name}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label for="specialization">Specialization <span class="star">*</span> </label>
+                                <select name="specialization" 
+                                        id="specialization"
+                                        [(ngModel)]="educationData.specialization_id" 
+                                        (ngModelChange)="selectSpecialization($event , i)"
+                                        [ngModelOptions]="{standalone: true}"  
+                                >
+                                    <option *ngFor="let data of specialization" [value]="data.id" >{{data.name}}</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label for="institute">University/Institute <span class="star">*</span> </label>
+                                <select name="institute" 
+                                        id="institute"
+                                        [(ngModel)]="educationData.institute_id" 
+                                        (ngModelChange)="selectInstitutes($event , i)"
+                                        [ngModelOptions]="{standalone: true}" 
+                                        >
+                                    <option *ngFor="let data of institutes" [value]="data.id" >{{data.name}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <label for="passing-year">Passing Year <span class="star">*</span> </label>
+                                <select name="passing-year" 
+                                        id="passing-year"
+                                        [(ngModel)]="educationData.passing_year_id" 
+                                        (ngModelChange)="selectPassingYears($event , i)"
+                                        [ngModelOptions]="{standalone: true}" 
+                                >
+                                    <option *ngFor="let data of passing_years" [value]="data.id" >{{data.name}}</option>
+                                </select>
+
+                                <div class="form-group d-flex ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label>Currently Pursuing</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" justify-content-center text-end">
+                            <button type="button" class="btn btn-color3" (click)="removeEducationalDetail(i)">Remove</button>
+                            <button type="button" class="btn btn-color4"
+                                *ngIf=" i == (educationalDetails.length - 1)" (click)="addEducationalDetail()">Add</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-color4"
+                    *ngIf="educationalDetails.length == 0" (click)="addEducationalDetail()">Add</button>
+                    <div class=" justify-content-center text-end">
+                        <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                        <button type="button" class="btn btn-color2" (click)="submit()">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

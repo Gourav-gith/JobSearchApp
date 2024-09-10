@@ -1,0 +1,151 @@
+
+<div class="seeker-register">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form> 
+                <div class="head">
+                    <div >
+                        <span (click)="goHome()"><b><i class="bi bi-arrow-left"></i></b></span>
+                    </div>
+                    <div >
+                        <h1>Create an account,<br>
+                            Post jobs & hire talent</h1>
+                    </div>
+                    
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="first-name">First Name <span class="star">*</span> </label>
+                            <input type="text" class="form-control" id="first-name" 
+
+                                placeholder="Enter first name" [(ngModel)]="RecruiterRegister.first_name"
+                                [ngModelOptions]="{standalone: true}" 
+                                (input)="RecruiterRegister.first_name = alphabetsOnly(RecruiterRegister.first_name)" 
+                                (keyup)="RecruiterRegister.first_name = alphabetsOnly(RecruiterRegister.first_name)">
+                                <span class="error-message">{{error.first_name}}</span>
+                               
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="Middle Name">Middle Name</label>
+                            <input type="text" class="form-control" id="Middle Name" 
+
+                                placeholder="Enter middle name" [(ngModel)]="RecruiterRegister.middle_name"
+                                [ngModelOptions]="{standalone: true}"
+                                (input)="RecruiterRegister.middle_name = alphabetsOnly(RecruiterRegister.middle_name)" 
+                                (keyup)="RecruiterRegister.middle_name = alphabetsOnly(RecruiterRegister.middle_name)">
+
+                               
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div>
+                                <label for="Last Name">Last Name <span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="Last Name" 
+    
+                                    placeholder="Enter last name" [(ngModel)]="RecruiterRegister.last_name"
+                                    [ngModelOptions]="{standalone: true}"
+                                    (input)="RecruiterRegister.last_name = alphabetsOnly(RecruiterRegister.last_name)" 
+                                    (keyup)="RecruiterRegister.last_name= alphabetsOnly(RecruiterRegister.last_name)">
+                                    <span class="error-message">{{error.last_name}}</span>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div>
+                                <fieldset disabled>
+                                <label for="Mobile Number">Mobile Number <span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="Mobile Number" 
+    
+                                    placeholder="Enter mobile number" [(ngModel)]="RecruiterRegister.mobile_number"
+                                    [ngModelOptions]="{standalone: true}" 
+                                    (input)="RecruiterRegister.mobile_number = numbersOnly(RecruiterRegister.mobile_number)" 
+                                    (keyup)="RecruiterRegister.mobile_number = numbersOnly(RecruiterRegister.mobile_number)"
+                                    disabled>
+                                    <span class="error-message">{{error.mobile_number}}</span>
+                                    </fieldset>
+                                   
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div>
+                                    <label for="email">Company Email<span class="star">*</span> </label>
+                                    <input type="email" class="form-control" id="email" 
+        
+                                        placeholder=" Ex: abc@company.com" [(ngModel)]="RecruiterRegister.email"
+                                        [ngModelOptions]="{standalone: true}"
+                                        (input)="RecruiterRegister.email = alphabetsOnly(RecruiterRegister.email)" 
+                                        (keyup)="RecruiterRegister.email= alphabetsOnly(RecruiterRegister.email)">
+                                    <span class="error-message">{{error.email}}</span>
+                                        
+                                        <span class="d-flex"> <p class="font"><i class="bi bi-info-circle mr-2"></i>Please use your official company email address. Generic email providers
+                                            &nbsp; &nbsp;  (e.g., Gmail, Yahoo) are not allowed. Example: abc@company.com</p></span>
+                                       
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div>
+                                    <label for="company name">Company Name<span class="star">*</span> </label>
+                                    <input type="text" class="form-control" id="Company name" 
+        
+                                        placeholder="Enter company name" [(ngModel)]="RecruiterRegister.company_name"
+                                        [ngModelOptions]="{standalone: true}">
+                                    <span class="error-message">{{error.company_name}}</span>                          
+                                </div>
+                            </div>
+                            </div>
+
+                   
+
+                   
+                        <div class="row ">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div>
+                                    <label for="category">I am <span class="star">*</span> </label>
+                                   <select (change)="companyOption($event)">
+                                    <option [value]="1">Company</option>
+                                    <option [value]="2">Individual</option>
+                                    <option [value]="3">Consultans</option>
+                                   </select>
+                                   <span class="error-message">{{error.account_type_id}}</span>
+                                
+                                </div>
+                                
+                            </div>
+
+                            </div>
+
+                            <div class="form-group d-flex ">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" [(ngModel)]="agreedTermsAndConditions" [ngModelOptions]="{standalone: true}">
+                                <label >I agree to Workassist. <span
+                                        class="text-primary"> <a href="https://workassist.in/privacy-policy" target="_blank"> Terms & Conditions.</a> </span>
+                                        <span class="star">*</span></label>
+
+                                     <!-- <label >
+                                         I agree to Workassist <span class="text-primary"> <a href="https://workassist.in/privacy-policy"> Terms & Conditions.</a> </span>  
+                                     </label> -->
+                            </div>
+
+                            <div class="form-group d-flex  ">
+                                <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1" [(ngModel)]="whatsupUpdates" [ngModelOptions]="{standalone: true}">
+                                <label class="mt-0">Send me important updates on whatsapp.</label>
+                            </div>
+
+                <div class=" justify-content-center text-center">
+                    <!-- <button type="submit" class="btn btn-color1">Cancel</button> -->
+                    <button type="button" [disabled]="disabled" class="btn btn-color2"  (click)="submit()" >Resister Now</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

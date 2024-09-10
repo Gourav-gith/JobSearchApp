@@ -1,0 +1,776 @@
+<!-- <app-seekerhead></app-seekerhead> -->
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="main-profile">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="profile-user">
+                                <div class="profile-img">
+                                    <img src="../../../assets/images/profile.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="profile-name text-center">
+                                    <h3>Sharad Kumar Sani</h3>
+                                    <h5>Profile last updated : 2 days ago</h5>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <li style="list-style: none;margin-bottom: 10px;" ><a href="#" class="link">Profile Completed</a></li>
+                                <li class="tabs-main1"><a href="#" class="link"></a></li>
+                            </div>
+                            <div>
+                                <li class="tabs-main1"><a href="#" class="link"><span>Upload your photo</span><span style="margin-left: 35%;color: #30782E;">10%</span> </a></li>
+                                <li class="tabs-main1"><a href="#" class="link"><span>Upload your resume</span><span style="margin-left: 31%;color: #30782E;">10%</span> </a></li>
+                            </div>
+                            <ul class="tabs-main">
+                                <li class="tabs-main" (click)="seekerProfile()"><a class="link">View / Edit Profile</a></li>
+                                <li class="tabs-main"><a href="#" class="link">My Jobs</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Settings</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Chat Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="options">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul>
+                                <li class="tabs-main"><a href="#" class="link">Edit Profile</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Manage Profile</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Change Password</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Help</a></li>
+                                <li class="tabs-main"><a href="#" class="link">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="col-md-9">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="utf-intro-banner-search-form-block">
+                        <div class="utf-intro-search-field-item">
+          
+                          <input id="intro-keywords" type="text" placeholder="Search by job/skills/role.">
+                          <i class="bi bi-search" aria-hidden="true" ></i>
+                          
+                        </div>
+                        <div class="utf-intro-search-field-item" style="margin-right:0px;">
+          
+                          <input id="intro-keywords" type="text" placeholder="Location">
+                          <i class="bi bi-geo-alt-fill" aria-hidden="true" ></i>
+                        </div>
+          
+                        <div class="utf-intro-search-field-item" style="margin-right:0px;">
+          
+                          <input id="intro-keywords" type="text" placeholder="Category">
+                          <i class="bi bi-ui-checks-grid" aria-hidden="true" ></i>
+                        </div>
+          
+                        <div class="utf-intro-search-button">
+                          <button class="button ripple-effect" >Search</button>
+                        </div>
+                      </div>
+          
+                    </div>
+                  </div>
+
+
+                <div class="activity">
+                    <div class="row">
+                        <h1>Last 30 Days Activity</h1>
+                        <div class="col-lg-6">
+
+                            <div class="activity-dash">
+                                
+                                <div class="activity-name">
+                                    <a href="#" >
+                                        <p class="tabs-main1">99 People Show Your Profile</p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="tabs-main1">45 People has Intrested in your Profile</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="activity-dash">
+                                <div class="activity-name">
+                                    <a href="#">
+                                        <p class="tabs-main1">99 People Show Your Profile</p>
+                                    </a>
+                                    <a href="#">
+                                        <p class="tabs-main1">45 People has Intrested in your Profile</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="recommended jobs">
+                    <div class="card">
+                        <div class="card-title title">
+                            
+                            <div style="display: flex;" >
+
+                                <h1 class="col-lg-6">Recommended Jobs</h1>
+                            <h3 class="col-lg-6 hedingstyle">View More</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3   ">
+                                    <div class="card pcard1">
+                                      <div class="card-img" class="cardlogo" >
+                                        <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6 wdth" style="display: flex; ">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 wdth " style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit " >
+                                        <div class="col-md-6 wdth" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6 wdth1" style="display: flex;">
+                                            <p class="apply" >Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3   ">
+                                    <div class="card pcard1">
+                                      <div class="card-img" class="cardlogo" >
+                                        <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6 wdth" style="display: flex; ">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 wdth " style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit " >
+                                        <div class="col-md-6 wdth" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6 wdth1" style="display: flex;">
+                                            <p class="apply" >Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3   ">
+                                    <div class="card pcard3">
+                                      <div class="card-img" class="cardlogo">
+                                        <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6" style="display: flex;">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit ">
+                                        <div class="col-md-6" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6" style="display: flex;">
+                                            <p class="apply">Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 ">
+                                    <div class="card">
+                                      <div class="card-img" class="cardlogo">
+                                        <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6" style="display: flex;">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="row submit ">
+                                        <div class="col-md-6" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6" style="display: flex;">
+                                            <p class="apply">Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="activity">
+                    <div class="row">
+                        <h1>Employers Action</h1>
+                        <div class="col-lg-6">
+
+                            <div class="activity-dash">
+                                
+                                <div class="activity-name">
+                                    <a href="#">
+                                        <p>99 People Show Your Profile</p>
+                                    </a>
+                                    <a href="#">
+                                        <p>45 People has Intrested in your Profile</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="activity-dash">
+                                <div class="activity-name">
+                                    <a href="#">
+                                        <p>99 People Show Your Profile</p>
+                                    </a>
+                                    <a href="#">
+                                        <p>45 People has Intrested in your Profile</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="recommended jobs">
+                    <div class="card">
+                        <div class="card-title title" style="display: flex;">
+                            <h1 class="col-lg-6 h1margin">Create Your Job Alert</h1>
+                            <div class="col-ld-6 utf-intro-search-button1">
+                                <button class="button ripple-effect" >Create Alert</button>
+                              </div>
+                        </div>
+                        <!-- <div class="utf-intro-search-button">
+                            <button class="button ripple-effect" >Search</button>
+                          </div> -->
+                    </div>
+                </div>
+
+                
+                <div class="recommended jobs">
+                    <div class="card">
+                        <div class="card-title title">
+                            <!-- <h1>Preferred Jobs</h1> -->
+                            <div style="display: flex;" >
+                                <h1 class="col-lg-6">Preferred Jobs</h1>
+                            <h3 class="col-lg-6 hedingstyle">View More</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3   ">
+                                    <div class="card pcard1">
+                                      <div class="card-img" class="cardlogo" >
+                                        <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6 wdth" style="display: flex; ">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 wdth " style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit " >
+                                        <div class="col-md-6 wdth" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6 wdth1" style="display: flex;">
+                                            <p class="apply" >Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3   ">
+                                    <div class="card pcard1">
+                                      <div class="card-img" class="cardlogo" >
+                                        <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6 wdth" style="display: flex; ">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 wdth " style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6 wdth" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit " >
+                                        <div class="col-md-6 wdth" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6 wdth1" style="display: flex;">
+                                            <p class="apply" >Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3   ">
+                                    <div class="card pcard3">
+                                      <div class="card-img" class="cardlogo">
+                                        <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6" style="display: flex;">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row submit ">
+                                        <div class="col-md-6" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6" style="display: flex;">
+                                            <p class="apply">Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 ">
+                                    <div class="card">
+                                      <div class="card-img" class="cardlogo">
+                                        <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="cardimg">
+                                            <img src="./assets/images/logo.png" class="img-fluid"> 
+                                        </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style=" margin-top: 15px;">
+                                                <h2>Fullstack Web Developer </h2>
+                                                <p >Company Name</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        
+                                     
+                                    <div class="job-detail">
+                                        <div class="row" >
+                                            <div class="col-md-6" style="display: flex;">
+                                                
+                                                <i class="bi bi-briefcase  ico1"></i> <p class="boxpfont">  02 to 08 years</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-currency-rupee ico2" ></i><p >6 lacks - 18 lacks</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-clock ico1" ></i><p >Fulltime</p>
+                                            </div>
+                                            <div class="col-md-6" style="display: flex;">
+                                                <i class="bi bi-geo-alt ico2" ></i> <p >Banglore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="row submit ">
+                                        <div class="col-md-6" style="display: flex;" >
+                                            <p class="save">Save Job</p>
+                                        </div>
+                                        <div class="col-md-6" style="display: flex;">
+                                            <p class="apply">Apply Now</p>
+                                        </div>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+
+                <div class="recommended jobs">
+                    <div class="card">
+                        <div class="card-title title">
+                            <!-- <h1>Career Resources</h1> -->
+                            <div style="display: flex;" >
+                                <h1 class="col-lg-6">Career Resources</h1>
+                            <h3 class="col-lg-6 hedingstyle">View More</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <!-- <h2>Jobs related to preferance</h2> -->
+                                            <img src="./assets/images/blog-img.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <!-- <h2>Jobs related to preferance</h2> -->
+                                            <img src="./assets/images/blog-img.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <!-- <h2>Jobs related to preferance</h2> -->
+                                            <img src="./assets/images/blog-img.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <!-- <h2>Jobs related to preferance</h2> -->
+                                            <img src="./assets/images/blog-img.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="activity">
+                    <div class="row">
+                        <!-- <h1>Employers Action</h1> -->
+                        <div style="display: flex;" >
+                            <h1 class="col-lg-6">Public Profile View</h1>
+                        <h3 class="col-lg-6 hedingstyle1">View More</h3>
+                        </div>
+                        <div class="col-lg-2">
+
+                            <div class="profile-user1">
+                                <div class="profile-img1">
+                                    <img src="../../../assets/images/profile.jpg" alt="" class="img-fluid"  >
+                                </div>
+                                <div class="profile-name text-center">
+                                    <h5>Sharad Kumar Sani</h5>
+                                    <p>Web Developer</p>
+                                </div>
+                                <!-- <a href="#">
+                                    <div class="profile-btn">
+                                        <a href="#" class="btn btn-primary">
+                                            User Profile
+                                        </a>
+                                    </div>
+                                </a> -->
+                                <!-- <div class="d-flex profile-icons justify-content-center">
+                                    <a href="#" class="profile"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="profile"> <i class="fa fa-sign-out"
+                                            aria-hidden="true"></i></a>
+                                </div> -->
+                            </div>
+
+                            <!-- <div class="activity-dash">
+                                
+                                <div class="activity-name">
+                                    <a href="#">
+                                        <p>99 People Show Your Profile</p>
+                                    </a>
+                                    <a href="#">
+                                        <p>45 People has Intrested in your Profile</p>
+                                    </a>
+                                    
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <div class="col-lg-10">
+
+                            <div class="row activity-dash">
+                                <div class="col-lg-4 activity-name">
+                                    <div class="divstyle">
+                                        <a href="#">
+                                            <p>Current company</p>
+                                            <h5>Workassist</h5>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="divstyle1">
+                                        <a href="#">
+                                            <p>Language</p>
+                                            <h5>Hindi , English</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 activity-name">
+                                    <div class="divstyle">
+                                        <a href="#">
+                                            <p>Location</p>
+                                            <h5>Lucknow</h5>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="divstyle1">
+                                        <a href="#">
+                                            <p>Key Skill</p>
+                                            <h5>AngularJs , reactJs</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 activity-name">
+                                    <div class="divstyle">
+                                        <a href="#">
+                                            <p>Expected CTC</p>
+                                            <h5>5-8 lac</h5>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="divstyle1">
+                                        <a href="#">
+                                            <p>Joining Availibility</p>
+                                            <h5>30 days</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <span class="activestyle">
+                                <h5>Last Active : 7 Hr Ago</h5>
+                                <h5 class="botstyle">Last Updated : 2 Days Ago</h5>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            <!-- <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="updates">
+                            <div>
+                                <h4>Stay updated with your job applies</h4>
+                            </div>
+                            <div>
+                                <p>Get notification on sms or Whatsapp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+

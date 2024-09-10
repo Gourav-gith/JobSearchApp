@@ -1,0 +1,304 @@
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-12">
+                <div class="activity">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="profile-user1">
+                                <div class="profile-img1">
+                                    <img src="../../../assets/images/profile.jpg" alt="" class="img-fluid" >
+                                </div>
+                                <div class="profile-name text-center">
+                                    <p>Profile Updated : <span>2 Days Ago</span></p>
+                                    <h5>Open To Work</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="row activity-dash">
+                                <div class="col-lg-12 activity-name">
+                                    <div class="divstyle">
+                                        <a href="#"> 
+                                            <div style="display: flex;" >
+                                                <h1 class="col-lg-6">Shashank Nishad</h1>
+                                            <h3 class="col-lg-6 hedingstyle1"> <i class="bi bi-pencil-fill"></i></h3>
+                                            </div>
+                                        </a>                                     
+                                    </div>                                  
+                                    <div class="divstyle1">
+                                        <a href="#">
+                                            <p>Web Developer</p>
+                                            <p>At <span>Workassist</span></p>
+                                        </a>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <div class="disflex">
+                            <span class="col-lg-6 activestyle">
+                                <span class="iconstyle"><i class="bi bi-envelope-fill"></i></span><h3>sharad.sani@workassist.in</h3>
+                                <span class="iconstyle botstyle"><i class="bi bi-telephone-fill"></i></span><h3 >9876543210</h3>
+                                <span class="iconstyle botstyle"><i class="bi bi-geo-alt-fill"></i></span><h3 >Lucknow</h3>
+                            </span>
+                            <span class="col-lg-6 recbutton">
+                                <li class="tabs-main1"><a href="#" class="link"><span>View Profile As Recruiter</span> </a></li>
+                            </span>
+                        </div>
+                        </div>          
+                    </div>
+                </div>              
+            </div> -->
+            <!-- <div class="col-md-3">
+
+                <div class="main-profile">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/collapse.png"> Collapse </div> </a></li>
+                                
+                            </div>
+                            
+                            <ul >
+                                <li class="row tabs-main " style="background-color: blue;"><a href="#" class="link "><div ><img src="./assets/images/dash.png"> User Dashboard </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/usermanage.png"> User Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/role.png"> Role and Permission </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/jobmanage.png"> Job Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seekermanage.png"> Jobseeker Management</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seekermanage.png"> Recruiter Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/blogmanage.png"> Blog Management</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seomanage.png"> SEO Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/sitemanage.png">Site Access</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/support.png"> Support </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/sitemanage.png"> Setting </div> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+
+            <!-- side bar -->
+
+            <div class="col-md-3">
+                <div class="main-profile">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <li class="row tabs-main" (click)="toggleSidebar()">
+                                    <a href="#" class="link">
+                                        <div>
+                                            <img src="./assets/images/collapse.png" alt="Collapse">
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                            <ul id="sidebar-menu" [ngClass]="{'collapsed': isCollapsed}">
+                                <li class="row tabs-main " style="background-color: blue;"><a href="#" class="link "><div ><img src="./assets/images/dash.png"> User Dashboard </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/usermanage.png"> User Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/role.png"> Role and Permission </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/jobmanage.png"> Job Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seekermanage.png"> Jobseeker Management</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seekermanage.png"> Recruiter Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/blogmanage.png"> Blog Management</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/seomanage.png"> SEO Management </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/sitemanage.png">Site Access</div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/support.png"> Support </div> </a></li>
+                                <li class="row tabs-main "><a href="#" class="link "><div ><img src="./assets/images/sitemanage.png"> Setting </div> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <!-- <div class="side-bar">
+                <div class="logo-name-wrapper">
+                  <div class="logo-name">
+                    <img
+                      src="./assets/images/logo.png"
+                      class="logo"
+                      alt="logo app"
+                      srcset=""
+                    />
+                    <span class="logo-name__name">Lincoln Botosh</span>
+                  </div>
+                  <button class="logo-name__button">
+                    <i
+                      class="bx bx-arrow-from-right logo-name__icon"
+                      id="logo-name__icon"
+                    ></i>
+                  </button>
+                </div>
+                <div class="message">
+                  <i class="message-icon bx bx-message-square-edit"></i>
+                  <span class="message-text">New Mesage</span>
+                  <span class="tooltip">New Mesage</span>
+                </div>
+                <ul class="features-list">
+                  <li class="features-item inbox active">
+                    <i class="bx bxs-inbox features-item-icon inbox-icon"
+                      ><span class="status"></span
+                    ></i>
+                    <span class="features-item-text">Inbox</span>
+                    <span class="inbox-number">99</span>
+                    <span class="tooltip">Inbox</span>
+                  </li>
+                  <li class="features-item draft">
+                    <i class="bx bx-file-blank features-item-icon"></i>
+                    <span class="features-item-text">Draft</span>
+                    <span class="tooltip">Draft</span>
+                  </li>
+                  <li class="features-item star">
+                    <i class="bx bx-star features-item-icon"></i>
+                    <span class="features-item-text">Starred</span>
+                    <span class="tooltip">Starred</span>
+                  </li>
+                  <li class="features-item sent">
+                    <i class="bx bx-send features-item-icon"></i>
+                    <span class="features-item-text">Sent</span>
+                    <span class="tooltip">Sent</span>
+                  </li>
+                  <li class="features-item trash">
+                    <i class="bx bx-trash features-item-icon"></i>
+                    <span class="features-item-text">Trash</span>
+                    <span class="tooltip">Trash</span>
+                  </li>
+                  <li class="features-item spam">
+                    <i class="bx bx-message-square-error features-item-icon"></i>
+                    <span class="features-item-text">Spam</span>
+                    <span class="tooltip">Spam</span>
+                  </li>
+                </ul>
+                <ul class="category-list">
+                  <div class="category-header">Message categories</div>
+                  <li class="category-item">
+                    <span
+                      class="category-item-status"
+                      style="background-color: #79d861"
+                    ></span
+                    ><span class="category-item-text">My works</span
+                    ><span class="category-item-number">9</span>
+                    <span class="tooltip">My works</span>
+                  </li>
+                  <li class="category-item">
+                    <span
+                      class="category-item-status"
+                      style="background-color: #c43c5d"
+                    ></span
+                    ><span class="category-item-text">Accountant</span
+                    ><span class="category-item-number">43</span>
+                    <span class="tooltip">Accountant</span>
+                  </li>
+                  <li class="category-item">
+                    <span
+                      class="category-item-status"
+                      style="background-color: #ff5050"
+                    ></span
+                    ><span class="category-item-text">Works</span
+                    ><span class="category-item-number">78</span>
+                    <span class="tooltip">Works</span>
+                  </li>
+                  <li class="category-item">
+                    <span
+                      class="category-item-status"
+                      style="background-color: #42ffdd"
+                    ></span
+                    ><span class="category-item-text">Marketing</span
+                    ><span class="category-item-number">253</span>
+                    <span class="tooltip">Marketing</span>
+                  </li>
+                </ul>
+                <ul class="chat-list">
+                  <div class="chat-header">recent chats</div>
+                  <button class="chat-new-btn">
+                    <i class="bx bxs-plus-circle chat-icon"></i>
+                    <span class="chat-new-btn-text">Start New Chat</span>
+                    <span class="tooltip">New Chat</span>
+                  </button>
+                  <li class="chat-item">
+                    <span class="chat-item-avatar-wrapper has-message">
+                      <img
+                        src="./assets/images/chris-evans.jpg"
+                        alt="avatar"
+                        class="chat-item-avatar"
+                      />
+                    </span>
+                    <span class="chat-item-name">Steve Rogers</span>
+                    <span class="chat-item-number">53</span>
+                  </li>
+                  <li class="chat-item">
+                    <span class="chat-item-avatar-wrapper">
+                      <img
+                        src="./assets/images/tony-stark.jpg"
+                        alt="avatar"
+                        class="chat-item-avatar"
+                      />
+                    </span>
+                    <span class="chat-item-name">Tony Stark</span
+                    ><span
+                      class="chat-item-status"
+                      style="background-color: #79d861"
+                    ></span>
+                  </li>
+                </ul>
+              </div> -->
+
+            <!-- side bar -->
+
+            <div class="col-md-9">
+                <h1 class="h1head">Admin Dashboard</h1>
+                <div class="activity">
+                    
+                    <div class="row">
+                        
+                        <div class="col-lg-12 disflex1">
+                            <div class="col-lg-2 widgetstyle"></div>
+                            <div class="col-lg-2 widgetstyle"></div>
+                            <div class="col-lg-2 widgetstyle"></div>
+                            <div class="col-lg-2 widgetstyle"></div>
+                            <div class="col-lg-2 widgetstyle"></div>
+                            <div class="col-lg-2 widgetstyle"></div>
+                        </div>
+                        
+                        <div class="col-lg-12 disflex2">
+
+                            <div class="col-lg-8 activity-dash">
+                                <div class="activity-name margtop">
+                                    <form class="d-flex">
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                      </form>
+                                </div>
+                                <div class="activity-name divstyle1">           
+                                    
+                                </div>
+
+                                <div class="activity-name divstyle1">           
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 activity-dash">
+                                <div class="activity-name divstyle2">
+                                         
+                                </div>
+
+                                <div class="activity-name divstyle2">
+                                         
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+<script src="./dist/script.js"></script>
+
+

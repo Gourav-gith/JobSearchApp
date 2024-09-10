@@ -1,0 +1,153 @@
+<div class="container-fluid bg-color">
+    <div class="container bg-white">
+      <div class="row">
+        <form>
+        <div class="model-title d-flex mb-3">
+            <div class="title"><h3>Professional Details</h3></div>
+            <div class="cross"><i class="bi bi-x-square" (click)="cancel()"></i></div>
+        </div>
+        <div class="upload-img mb-3">
+            <div class="row">
+                <div class="col-md-2" *ngIf="image_path"><img [src]="image_path" alt="" srcset=""><div class="img">
+                <img alt="img" *ngIf="!image_path" [src]="professionalDetails.profile_image">
+
+            </div>
+        </div>
+    <div class="col-md-10">
+            <div class="upload-img-field">
+    
+    <input _ngcontent-ng-c2985620456="" type="file" (change)="profilePicture($event)" id="inputGroupFile" class="form-control">
+    
+    
+     <span><i class="bi bi-info-circle me-1"></i>Supported file format png, jpg, jpeg, gif | upto 3 Mb</span>
+    <!-- <span class="text-danger">{{error.profile_image}}</span>  -->
+
+    
+            </div>
+            </div>
+        </div>
+        </div>
+
+     
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6 col-md-6 mb-lg-3">
+            <label for="fname">First Name<span>*</span></label>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" [(ngModel)]="professionalDetails.first_name" [ngModelOptions]="{standalone: true}">
+            
+            <span class="text-danger">{{error.first_name}}</span>
+        </div>
+        <div class="col-md-6 col-md-6 mb-lg-3">
+            <label for="mname">Midddle Name<span></span></label>
+            <input type="text" id="mname" name="mname" placeholder=" Enter middle name"[(ngModel)]="professionalDetails.middle_name" [ngModelOptions]="{standalone: true}">
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="lname">Last Name<span>*</span></label>
+        <input type="text" id="lname" name="lname" placeholder=" Enter last name" [(ngModel)]="professionalDetails.last_name" [ngModelOptions]="{standalone: true}">
+        <span class="text-danger">{{error.last_name}}</span>
+
+    </div>
+    <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="email">Email Address<span>*</span></label>
+        <input type="email" id="email" name="email" placeholder=" Enter email" [(ngModel)]="professionalDetails.email" [ngModelOptions]="{standalone: true}">
+        <span class="text-danger">{{error.email}}</span>
+
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-6 mb-lg-3">
+    <label for="number">Mobile Number<span>*</span></label>
+    <input type="tel" id="number" name="number" placeholder=" Enter mobile number" [(ngModel)]="professionalDetails.mobile_number" [ngModelOptions]="{standalone: true}">
+    <span class="text-danger">{{error.mobile_number}}</span>
+
+    </div>
+    <div class="col-md-6 col-md-6 mb-lg-3">
+    <label for="role">Job Role<span>*</span></label>
+    <input type="text" id="role" name="role" placeholder=" Enter job role" [(ngModel)]="professionalDetails.job_role" [ngModelOptions]="{standalone: true}">
+    <span class="text-danger">{{error.job_role}}</span>
+
+    </div>
+    </div>
+    <!-- ----changes by prem -->
+    <!-- <div class="row">
+        <div class="col-md-12  mb-lg-3">
+    <label for="company">Company Name<span>*</span></label>
+    <input type="text" id="company" name="company" placeholder=" Enter company name" [(ngModel)]="professionalDetails.company_name" [ngModelOptions]="{standalone: true}">
+    <span class="text-danger">{{error.company_name}}</span>
+
+
+    </div> -->
+    <!-- </div> -->
+    
+        <div class="title mb-3"><h3>Company Address</h3></div>
+    
+    <div class="row">
+                <div class="col-md-6 col-md-6 mb-lg-3">
+            <label for="adress1">Address Line 1<span>*</span></label>
+            <input type="text" id="adress1" name="adress1" placeholder=" Enter house number" [(ngModel)]="professionalDetails.address_line_1" [ngModelOptions]="{standalone: true}">
+            <span class="text-danger">{{error.address_line_1}}</span>
+
+        </div>
+        <div class="col-md-6 col-md-6 mb-lg-3">
+            <label for="address2">Address Line 2<span></span></label>
+            <input type="text" id="address2" name="address2" placeholder=" Enter street" [(ngModel)]="professionalDetails.address_line_2" [ngModelOptions]="{standalone: true}">
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="pincode">Pin code<span>*</span></label>
+        <input type="text" id="pincode" name="pincode" placeholder=" Enter pin code"
+        [(ngModel)]="professionalDetails.pincode" [ngModelOptions]="{standalone: true}"
+        (input)="pinCodechange($event)" maxlength="6">
+    <span class="text-danger">{{error.pincode}}</span>
+
+    </div>
+    <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="city">City<span>*</span></label>
+        <input type="text" id="citycode" name="citycode" placeholder=""
+        [(ngModel)]="professionalDetails.city_name" [ngModelOptions]="{standalone: true}"
+        readonly>
+    <span class="text-danger">{{error.city_id}}</span>
+
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="State">State<span>*</span></label>
+        <input type="text" id="state" name="state" placeholder=""
+        [(ngModel)]="professionalDetails.state_name" [ngModelOptions]="{standalone: true}" readonly>
+    <span class="text-danger">{{error.state_id}}</span>
+    </div>
+    <div class="col-md-6 col-md-6 mb-lg-3">
+        <label for="country">Country<span>*</span></label>
+        <input type="text" id="country" name="country" placeholder=""
+        [(ngModel)]="professionalDetails.country_name" [ngModelOptions]="{standalone: true}" readonly>
+      
+            <span class="text-danger">{{error.country_id}}</span>
+
+    </div>
+</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12  mb-lg-3">
+    <label for="fname">Profile Summary<span>*</span></label>
+    <textarea class="mb-0" id="fname" name="fname" placeholder="Write about your roles , responsibilities , achievements etc..." [(ngModel)]="professionalDetails.profile_summary"></textarea>
+    <span>About should be more than 50 characters.</span>
+    </div>   
+    </div>
+    <div class="row">
+        <div class="col-md-12   text-end">
+            <button class="btn btn-danger me-3" (click)="cancel()">Cancel</button>
+            <button class="btn btn-primary" (click)="submit()">Save</button>
+        </div>
+    </div>
+</form>
+    </div>
+    </div>
+    
+        
+    </div>
+    
+    

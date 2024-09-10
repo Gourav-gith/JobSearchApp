@@ -1,0 +1,209 @@
+section{
+    background-color: #E9E9F3;
+}
+.individual-job .container{
+    padding-top: 25px;
+}
+.individual-job body{
+    font-family: serif;
+}
+
+.individual-job p{
+    margin: 3px 0px;
+}
+
+.individual-job a {
+   text-decoration: none;
+   list-style: none;
+}
+.individual-job .btn-job{
+    background: #fff;
+    color: #407BFF;
+    padding: 10px 15px;
+    width: auto;
+    height: 45px;
+    border: 1px solid #407BFF;
+    border-radius: 5px;
+}
+
+.individual-job .btn:hover {
+    border: 1px solid #b7b6b6;
+}
+
+.individual-job .foot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.individual-job .days{
+   margin-top: 10px;
+}
+.individual-job .days1 {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.individual-job .card-footer {
+    background-color: #fff;
+    padding: 15px 25px 15px 25px;
+}
+.individual-job .exp-detail{
+    margin-top: 5px;
+}
+
+.individual-job .box-detail h4{
+    font-size: 18px;
+    font-weight: 600;
+
+    margin: 15px 0px 0px 0px;
+}
+
+.individual-job .card-1{
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 6px 20px 0 rgb(0 0 0 / 11%);
+}
+.individual-job .card-4 h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #4ACD5A;
+    margin: 0px 0px 0px 0px;
+}
+.individual-job .card-1 h1{
+    font-size: 18px;
+    font-weight: 600;
+    
+    margin: 0px 0px 10px 0px;
+}
+.individual-job .card-4 .wa-style{
+    font-size: 28px;
+    font-weight: 600;
+    color: #4ACD5A;
+    margin: 0px 0px 0px 0px;
+}
+.individual-job .card-2{
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 6px 20px 0 rgb(0 0 0 / 11%);
+}
+
+.individual-job .card-3{
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 6px 20px 0 rgb(0 0 0 / 11%);
+}
+
+.individual-job .card-4{
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 6px 20px 0 rgb(0 0 0 / 11%);
+}
+
+.individual-job .report-btn{
+    float: right;
+}
+
+.individual-job .apply-jobs{
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 0.375rem;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 12%), 0 6px 20px 0 rgb(0 0 0 / 11%);
+}
+
+.individual-job .mb-10{
+    margin-top: 10px;
+}
+
+.individual-job .mt-10{
+    margin-top: 10px;
+}
+.individual-job h1{
+    font-weight: 600;
+    color: #121262;
+}
+.individual-job h5{
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #121262; */
+    margin: 5px 0px 0px 0px;
+}
+.individual-job .simillar-job{
+    float: right;
+}
+.individual-job .my-10{
+    margin: 10px 0px;
+}
+.individual-job .card-2 h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #121262;
+    line-height: 22px;
+}
+.individual-job .text-right{
+    text-align: end;
+}
+.individual-job .simillar-job p{
+    color: #3140ce;
+    font-size: 20px;
+}
+.individual-job .mr-25{
+    margin-right: 25px;
+}
+.individual-job .p-25{
+    padding: 25px;
+}
+.individual-job .breadcrumb{
+    display: flex;
+    justify-content: space-between;
+}
+.individual-job .border-top{
+    border-top: none;
+}
+.individual-job .breadcrumb a{
+    color: green;
+}
+.individual-job .icon {
+    height: 60px;
+    width: auto;
+    border: 1px solid #000;
+}
+.individual-job .icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
+.individual-job .mr{
+    margin-right: 25px;
+}
+.individual-job .pd-25{
+    padding: 25px 25px 10px 25px;
+}
+/* Media query Css */
+
+@media screen and (max-width: 460px) {
+    .individual-job .btn-job{
+        width: auto;
+        margin-bottom: 10px;
+        
+    }
+    .individual-job .report-btn{
+        display: flex;
+    }
+    .individual-job .icon{
+        margin-bottom: 8px;
+        width: 80px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .individual-job .btn-job{
+        width: auto;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .individual-job .report-btn{
+        display: flex;
+    }
+    .individual-job .icon img{
+        margin-bottom: 8px;
+    }
+}
+
+

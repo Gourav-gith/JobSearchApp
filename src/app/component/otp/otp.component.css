@@ -1,0 +1,313 @@
+.otp .backcolor{
+    background-color: #E3EBFF;
+
+}
+.otp h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px 0px 0px 0px ;
+}
+.otp form{
+    max-height: 700px;
+    max-width: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.otp input{
+    border: 1px solid black;
+}
+.otp .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.otp .form-check-label{
+    margin-left: 10px;
+}
+.otp .btn{
+    width: 100%;
+}
+.oto .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.otp .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.otp .head{
+    margin-bottom: 40px;
+}
+​
+.otp .fix-width{
+    width: 30%;
+}
+.otp .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    /* padding: 15px 15px 0px 15px; */
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.otp label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.otp input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 0px;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    text-align: center;
+    
+}
+.otp .form-check label{
+    padding-top: 13px;
+}
+.otp .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.otp .marg{
+    margin-top: 10px;
+}
+.otp .colr{
+    color: #F42323;
+}
+.otp label img{
+    height: 20px;
+    width: 20px;
+}
+.otp img {
+    max-height: 130px;
+    border-radius: 5px;
+    max-width: 130px;
+    margin-left: -15px;
+}
+.otp .head p{
+    margin: 0 0 0px;
+}
+.otp .form-control{
+    /* width: 50px; */
+    width: auto;
+    
+}
+.otp .otpin{
+    display: flex;
+}
+.otp .otpin input{
+    margin-right: 30px;
+}
+.otp h3{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.otp .form-group h5{
+    /* text-align: end; */
+    margin-left: auto;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    color: #0d6efd;
+}
+.otp .marg2{
+    margin-top: 30px;
+}
+
+.bi-pencil-fill{
+    margin-left: 10px;
+    color: #0d6efd;
+}
+
+@media only screen  and (max-width : 576px){
+
+	[_nghost-ng-c1591437670] tui-root._mobile[data-size][_nghost-ng-c1591437670] .t-content[_ngcontent-ng-c1591437670], tui-root._mobile [data-size][_nghost-ng-c1591437670] .t-content[_ngcontent-ng-c1591437670] {
+        margin: 1.5rem;
+    }
+ 
+:host {
+    display: block;
+}
+ 
+.heading {
+    font: var(--tui-font-heading-3);
+    margin: 0 0 1.5rem;
+}
+ 
+.text {
+    margin: 0 0 0.75rem;
+}
+
+    .otp .backcolor{
+        background-color: #fff;
+    
+    }
+    
+    .otp h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin:20px 0px 0px 0px ;
+    }
+    .otp form{
+        max-height: 700px;
+        max-width: 500px;
+        border-radius: 5px;
+        justify-content: center;
+        vertical-align: middle;
+        background-color: #fff;
+        margin:10% auto;
+        padding: 25px;
+    }
+    
+    .otp input{
+        border: 1px solid black;
+    }
+    .otp .form-group1{
+        display: flex;
+        border: 1px solid;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .otp .form-check-label{
+        margin-left: 10px;
+    }
+    .otp .btn{
+        width: 100%;
+    }
+    .oto .form-check-labelrounded-circle{
+        margin-left: 22px;
+    }
+    .otp .img_head{
+        margin-bottom: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        height: 100px;
+        width: 100px;
+    }
+    .otp .head{
+        margin-bottom: 40px;
+    }
+    ​
+    .otp .fix-width{
+        width: 30%;
+    }
+    .otp .imgstyle{
+        height: 80px;
+        width: 80px;
+        background: #F3F3F3;
+        
+        border-radius: 50px;
+    }
+    .otp label, legend {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 13px 0px 0px 0px;
+    }
+    .otp input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+        
+        /* padding: 0 12px; */
+        outline: none;
+        font-size: 16px;
+        color: #000;
+        margin: 15px 0 15px 0;
+        
+        box-sizing: border-box;
+        display: block;
+        background-color: #fbfdff;
+        font-weight: 500;
+        opacity: 1;
+        border-radius: 4px;
+        border: 1px solid;
+        text-align: center;
+    }
+    .otp .form-check label{
+        padding-top: 13px;
+    }
+    .otp .form-check-input{
+        padding: 0px;
+        margin-right: 10px;
+    }
+    .otp .marg{
+        margin-top: 10px;
+    }
+    .otp .colr{
+        color: #F42323;
+    }
+    .otp label img{
+        height: 20px;
+        width: 20px;
+    }
+    .otp img {
+        max-height: 130px;
+        border-radius: 5px;
+        max-width: 130px;
+        margin-left: -15px;
+    }
+    .otp .head p{
+        margin: 0 0 0px;
+    }
+    /* .otp .form-control{
+        width: 35px;
+        
+    } */
+    .otp .otpin{
+        display: flex;
+    }
+    .otp .otpin input{
+        margin-right: 26px;
+    }
+    .otp h3{
+        margin-bottom: 0px;
+        font-weight: 600;
+    }
+    .otp .form-group h5{
+      
+        margin-left: auto;
+        font-weight: 600;
+        margin-bottom: 0px;
+        margin-top: 4px;
+        color: #0d6efd;
+    }
+    .otp .marg2{
+        margin-top: 30px;
+    }
+    
+    .bi-pencil-fill{
+        margin-left: 10px;
+        color: #0d6efd;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

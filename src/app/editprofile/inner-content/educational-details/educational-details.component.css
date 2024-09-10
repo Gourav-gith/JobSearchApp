@@ -1,0 +1,167 @@
+.educational-details  .backcolor{
+    background-color: #000;
+
+}
+.educational-details h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin:0px 0px 0px 0px ;
+    color: #121262;
+}
+.educational-details h2{
+    
+    margin:0px 0px 0px 0px ;
+}
+.educational-details label{
+    color: #000;
+}
+.educational-details .star{
+    color: #EF0015;
+}
+.educational-details form{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.educational-details input{
+    border: 1px solid black;
+}
+.educational-details .mt-0 input{
+    margin-top: 0px;
+}
+.educational-details .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.educational-details .form-check-label{
+    margin-left: 10px;
+}
+
+.educational-details .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.educational-details .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.educational-details .head{
+    margin-bottom: 0px;
+}
+​
+.educational-details .fix-width{
+    width: 30%;
+}
+.educational-details .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    /* padding: 15px 15px 0px 15px; */
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.educational-details label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.educational-details input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.educational-details .form-check label{
+    padding-top: 13px;
+}
+.educational-details .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.educational-details .marg{
+    margin-top: 10px;
+}
+.educational-details .colr{
+    color: #F42323;
+}
+.educational-details label img{
+    height: 20px;
+    width: 20px;
+}
+.educational-details .btn-color1{
+    background-color: #FF7575;
+    color: #fff;
+    margin-right: 25px;
+}
+.educational-details .btn-color2{
+    background-color: #54B4EA;
+    color: #fff;
+}
+.educational-details .btn-color3{
+    background-color: #FF3333;
+    color: #fff;
+    margin-right: 25px;
+}
+.educational-details .btn-color4{
+    background-color: #4D9F4C;
+    color: #fff;
+}
+.educational-details .btn-verify{
+    background-color: #54B4EA;
+    color: #fff;
+    height: 48px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 24px;
+}
+.educational-details .btn-otp-submit{
+    background-color: #4D9F4C;
+    color: #fff;
+    height: 48px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 20px;
+}
+.educational-details .re-otp{
+    text-align: end;
+    text-decoration: none;
+    color: #407BFF;
+}
+.educational-details .re-otp p{
+    margin: 0px 0px 0px 0px;
+}
+.educational-details #linkedin{
+    margin-bottom: 0px;
+}
+.educational-details h3{
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+}
+.educational-details .border-style{
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 25px;
+    margin: 25px 0px;
+}

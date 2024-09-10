@@ -1,0 +1,369 @@
+<section id="main">
+    <div class="container" id="recruiter">
+        <div class="row space">
+            <div class="col-md-3">
+                <div class="card">
+                    <app-recruiter-sidemenu></app-recruiter-sidemenu>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card-heading mb-3 bg-blue p-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-9">
+                            <h3>Post your job in 3 easy steps.</h3>
+                            <p>Your progress is safe. if you leave,your job posting will be saved as a draft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-grid">
+                                <div class="position-relative m-1">
+                                    <div class="position-relative m-1">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input screening" type="image"
+                                                        src="../../../assets/images/check.png" value="">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        <hr>
+                                                    </label>
+                                                    <p>Basic job & Qualification Details.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input screening" type="image"
+                                                        src="../../../assets/images/check2.png" value="">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        <hr>
+                                                    </label>
+                                                    <p>Primary Responsibilities & Job Description</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input screening"
+                                                        src="../../../assets/images/check2.png" type="image" value="">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        <hr>
+                                                    </label>
+                                                    <p>Screening Questions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 recent-job">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card p-3">
+                                <div class="row ">
+                                    <!-- <form action=""> -->
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label"><b>Job
+                                                        Title</b><span class="star">*</span></label>
+                                                <input type="text" class="inputborder"
+                                                    [(ngModel)]="postJobStep1.job_title"
+                                                    [ngModelOptions]="{standalone: true}" placeholder="Ex: Software Engineer / Marketing Executive / Sales
+                                                    Executive" [ngModelOptions]="{standalone: true}">
+
+                                                    <p class="text-danger">{{error.job_title}}</p>
+                                                </div>
+                                            </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="industry"><b>Industry</b><span class="star">*</span>
+                                                </label>
+                                                <select class="form-select" aria-label="Default select example"  ngValue="postJobStep1.industry_id"
+                                                  (change)="onChangeEventIndustry($event)">
+                                                    <option selected *ngIf="!postJobStep1.industry_id">Select Industry</option>
+                                                    <option [value]="item.id" *ngFor="let item of industry">
+                                                        {{item.name}}</option>
+
+                                                </select>
+                                                <p class="text-danger">{{error.industry_id}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="functionalArea"><b>Functional Area</b><span
+                                                        class="star">*</span>
+                                                </label>
+                                                <select class="form-select" aria-label="Default select example"
+                                                 ngValue="postJobStep1.functional_area_id"  
+                                                     (change)="onChangeEventFunctinalArea($event)">
+                                                    <option selected *ngIf="!postJobStep1.functional_area_id">Select functional area</option>
+                                                    <option [value]="item.id" *ngFor="let item of functionalArea">
+                                                        {{item.name}}</option>
+                                                </select>
+                                                <p class="text-danger">{{error.functional_area_id}}</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="location"><b>Location</b><span class="star">*</span>
+                                                </label>
+                                                <ng-multiselect-dropdown [placeholder]="'Select Location'"
+                                                [placeholder]="'Select Location'"
+                                                [(ngModel)]="selectedLocation"
+                                                [settings]="dropdownSettingsLocation" [data]="location"
+                                                 (onSelect)="onItemSelectLocation($event)"
+                                                (onSelectAll)="onSelectAll($event)"
+                                                [ngModelOptions]="{standalone: true}"
+                                                >                            
+                                            </ng-multiselect-dropdown>
+                                        </div>
+                                        <p class="text-danger" *ngIf="!postJobStep1.job_location_id">{{error.job_location_id}}</p>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                            <div class="mb-4">
+                                                <label for="location"><b>Experience</b><span class="star">*</span>
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <select class="form-select" aria-label="Default select example" ngValue="postJobStep1.min_experience_id"  (change)="onChangeEventMinMax($event ,'min')">
+                                                            <option selected *ngIf="!postJobStep1.min_experience_id">Min Experience</option>
+                                                            <option [value]="item.id" *ngFor="let item of experience">
+                                                                {{item.min}}</option>
+                                                        </select>
+                                                    <p class="text-danger"  *ngIf="!postJobStep1.min_experience_id">{{error.min_experience_id}}</p>                                                         
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <select class="form-select" aria-label="Default select example" ngValue="postJobStep1.max_experience_id" (change)="onChangeEventMinMax($event , 'max')">
+                                                            <option selected *ngIf="!postJobStep1.max_experience_id">Max Experience</option>
+                                                            <option [value]="item.id" *ngFor="let item of experience">
+                                                                {{item.max}}</option>
+                                                        </select>
+                                                        <p class="text-danger"  *ngIf="!postJobStep1.max_experience_id">{{error.max_experience_id}}</p>                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="primaryresponsibility"><b>Type of CTC</b><span
+                                                        class="star">*</span>
+                                                </label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input ctcchkbox" type="radio"
+                                                        name="flexRadioDefault" id="flexRadioDefault1"
+                                                        (click)="range()">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Range
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input ctcchkbox" type="radio"
+                                                        name="flexRadioDefault" id="flexRadioDefault2" 
+                                                         (click)="fixed()" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Fixed
+                                                    </label>
+                                                </div>
+                                                <div *ngIf="ctcType == '2'">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <input type="text" class="form-control inputborder"
+                                                                placeholder="From CTC" [(ngModel)]="postJobStep1.min_ctc"
+                                                                [ngModelOptions]="{standalone: true}">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <input type="text" class="form-control inputborder"
+                                                                placeholder="To CTC" [(ngModel)]="postJobStep1.max_ctc"
+                                                                [ngModelOptions]="{standalone: true}">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div *ngIf="ctcType == '1'">
+                                                    <input type="text" class="form-control inputborder"
+                                                        placeholder="Enter your CTC"  [(ngModel)]="postJobStep1.fixed_ctc"
+                                                        [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <p class="text-danger"  *ngIf="!postJobStep1.fixed_ctc">{{error.fixed_ctc}}</p>                                                         
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="educationalQualification"><b>Educational Qualification</b><span
+                                                        class="star">*</span> </label>
+                                                <select class="form-select" aria-label="Default select example"  ngvalue="postJobStep1.educational_qualification_id" (change)="onChangeEventEducational($event)">
+                                                    <option selected *ngIf="!postJobStep1.educational_qualification_id">Select educational qualification</option>
+                                                    <option [value]="item.id" *ngFor="let item of educationalQualification">{{item.name}}</option>
+                                                 
+                                                </select>
+                                                <p class="text-danger"  *ngIf="!postJobStep1.educational_qualification_id">{{error.educational_qualification_id}}</p>                                                         
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="openposition"><b>Number of Open Position</b></label>
+                                                <input type="text" class="form-control inputfield inputborder" id="Middle Name"
+                                                    placeholder="Number of open position" [(ngModel)]="postJobStep1.num_open_position"
+                                                    [ngModelOptions]="{standalone: true}">
+    
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="exampleFormControlTextarea1" class="form-label"><b>Preferred
+                                                        Key Skill</b><span class="star">*</span></label>
+                                                <ng-multiselect-dropdown [placeholder]="'Select preferred key skills'"
+                                                    [settings]="dropdownSettings" [data]="preferdSkills"
+                                                     (onSelect)="onItemSelectPreferdKey($event)"
+                                                    (onSelectAll)="onSelectAll($event)"
+                                                    [(ngModel)]="selectedPreferdSkills"
+                                                    [ngModelOptions]="{standalone: true}"
+                                                    >
+                                                </ng-multiselect-dropdown>
+                                            </div>
+                                            <p class="text-danger"  *ngIf="!postJobStep1.preferred_skill_id">{{error.preferred_skill_id}}</p>                                                         
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                            <div class="mb-4">
+                                                <label for="exampleFormControlTextarea1" class="form-label"><b>Work
+                                                        Level</b><span class="star">*</span></label>
+                                                <select class="form-select" aria-label="Default select example"
+                                                ngValue="postJobStep1.work_level_competency_id"  
+                                                    (change)="worklevel($event)" (change)="onChangeEvent($event)">
+                                                    <option selected *ngIf="!postJobStep1.work_level_competency_id">Select Work Level</option>
+                                                    <option [value]="item.id" *ngFor="let item of workLevel">
+                                                        {{item.name}}</option>
+                                                </select>
+                                                <p class="text-danger"  *ngIf="!postJobStep1.work_level_competency_id">{{error.work_level_competency_id}}</p>                                                         
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h4>Type of Competency<span class="star">*</span></h4>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label"><b>Core</b><span class="star">*</span></label>
+                                                <ng-multiselect-dropdown [placeholder]="'Select core'"
+                                                [settings]="dropdownSettingsCore" [data]="core"
+                                                 (onSelect)="onItemSelectCore($event)"
+                                                (onSelectAll)="onSelectAll($event)"
+                                                [(ngModel)]="selectedCore"
+                                                [ngModelOptions]="{standalone: true}"
+                                                 >
+                                            </ng-multiselect-dropdown>
+                                        </div>
+                                        <p class="text-danger"  *ngIf="!postJobStep1.core_competency_id">{{error.core_competency_id}}</p>                                                         
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                            <div class="mb-4">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label"><b>Leadership</b><span
+                                                        class="star">*</span></label>
+                                                <ng-multiselect-dropdown [placeholder]="'Select leadership'"
+                                                [settings]="dropdownSettingsLeader" [data]="leaderShip"
+                                                 (onSelect)="onItemSelectleadership($event)"
+                                                (onSelectAll)="onSelectAll($event)"
+                                                [(ngModel)]="selectedLeaderShip"
+                                                [ngModelOptions]="{standalone: true}"
+                                                 >
+                                            </ng-multiselect-dropdown>
+                                        </div>
+                                        <p class="text-danger"  *ngIf="!postJobStep1.leadership_competency_id">{{error.leadership_competency_id}}</p>                                                         
+
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                            <div class="mb-4">
+                                                <label for="exampleFormControlTextarea1" class="form-label"><b>Role
+                                                        Based</b><span class="star">*</span></label>
+                                                  <mat-form-field class="example-chip-list">
+                                                    <mat-chip-grid #chipGrid aria-label="Enter roles">
+                                                        <input
+                                                        placeholder="Enter role"
+                                                        [matChipInputFor]="chipGrid"
+                                                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                                        [matChipInputAddOnBlur]="addOnBlur"
+                                                        (matChipInputTokenEnd)="add($event)"
+                                                        [(ngModel)]="postJobStep1.role_specific"
+                                                        />                                                        
+                                                        <mat-chip-row *ngIf="!postJobStep1.role_specific" [editable]="true" [aria-description]="''">
+                                                            <ng-container *ngFor="let item of roleSpecific">
+                                                              <mat-chip>{{ item }}</mat-chip>
+                                                            </ng-container>
+                                                          </mat-chip-row>
+                                                    </mat-chip-grid>
+                                                </mat-form-field>                                                                                                    
+                                                  <p class="text-danger"  *ngIf="!postJobStep1.role_specific">{{error.role_specific}}</p>                                                         
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                            <button class="btn btn-primary float-end btnsave" (click)="saveContinue()">save and continue</button>
+                                        </div>
+                                    <!-- </form> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card seeker-item-div  p-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8 mb-3">
+                                        <b>Tips:</b>
+                                    </div>
+                                </div>
+                                <div class="seekr">
+                                    <div class="seeker-item">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-img-div">
+                                                <a href="">
+                                                    <img src="../../../assets/images/lightbulb.png" class="card-img-top"
+                                                        alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="px-2 mb-3 tips">
+                                                <p class="card-text">Use industry Standard job Titles / Designations for
+                                                    easy searchability</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-img-div">
+                                                <a href="">
+                                                    <img src="../../../../assets/images/lightbulb.png"
+                                                        class="card-img-top" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="px-2 mb-3 tips">
+                                                <p class="card-text">Identify and add popular key skills to attract
+                                                    qualified candidates.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="card-img-div">
+                                                <a href="">
+                                                    <img src="../../../../assets/images/lightbulb.png"
+                                                        class="card-img-top" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="px-2 mb-3 tips">
+                                                <p class="card-text">Identify and add popular key skills to attract
+                                                    qualified candidates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

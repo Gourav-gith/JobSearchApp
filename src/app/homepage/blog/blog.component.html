@@ -1,0 +1,118 @@
+
+
+<div id="client-section" class="padding">
+    <div class="container">
+      <div class="section-title " >
+        
+        <h1 class="blogtext" >Career resources
+        </h1>
+       
+      
+      </div>
+      <div class="col-md-12 col-lg-12 col-sm-12 catcenter" >
+        <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn" >Blogs</a>
+        <span *ngFor="let blogName of blogCatagories">
+          <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn mrleft" >{{blogName?.name}}</a>
+        </span>
+    </div>
+          <div class="row d-flex">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-flex " *ngFor="let blog of blogList" >
+                <div class="post-slide">
+                    <div class="post-img">
+                      <img [src]="blog?.blog_image?.blog_image" alt="img">
+                      <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title" [title]="showBlogTitleOnTitle(blog.blog_title)">
+                        <!-- {{blog.blog_title}} -->
+                        {{ (blog.blog_title!.length > 50 ) ? (blog?.blog_title | slice:0:50)+'...':(blog?.blog_title)}}
+                      </h3>
+                      <p class="post-description">
+                        {{ (blog.blog_details!.length > 150 ) ? (blog?.blog_details | slice:0:150)+'...':(blog?.blog_details)}}
+                      </p>
+                      
+                    </div>
+                    <a class="read-more" (click)="individualBlog(blog!.blog_slug)">read more<i class="bi bi-caret-right-fill"></i></a>
+                  </div>
+            </div>
+          </div>
+             
+      
+    </div>
+  </div>
+
+
+  <section class="padding">
+    <div class="find-section">
+      <div class="container">
+        <div class="row" style="display: flex;"  >
+          <div class="col-md-1 col-lg-2 col-sm-1">
+            
+          </div>
+          <div class="col-md-10 col-lg-8 col-sm-10" id="heropop">
+          <div class="col-md-12 col-lg-12 col-sm-12" >
+            <div class="card card-left px-2 pfordesk">
+              <div class="card-body" >
+               
+                <div class="row cardblock" >
+                  <div class="col-md-12 col-lg-6 col-sm-12" >
+                    <div class="crflex">
+                    <p class="card-text " style="color: #000;margin-right: 5px;">Never miss an update
+                      </p>
+                    
+                      <p class="card-text" style="color: #4540DB;">
+                        Subscribe now!</p>
+                      </div>
+                  </div>
+
+
+                  <div class="col-md-12 col-lg-6 col-sm-12"> 
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="utf-intro-banner-search-form-block margin-top-0">
+              
+                            <div class="utf-intro-search-field-item" style="margin-right:0px;border-right: none;">
+              
+                              <input id="intro-keywords" type="text" placeholder="inter your email">
+                              
+                              <div class="utf-intro-search-button">
+                                <button class="button ripple-effect" style="background-color: #4540DB; color: #fff; padding: 0px 15px;" >Subscribe</button>
+                              </div>
+                            </div>
+              
+                            
+                          </div>
+              
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-1 col-lg-2 col-sm-1">
+            
+          </div>
+          <!-- <div class="col-md-6 col-lg-6 col-sm-6">
+            <div class="card card-right px-5 py-4">
+              <div class="card-body">
+                <h2 class="card-title">I want to hire</h2>
+
+                <p class="card-text" style="color: #0c2140;">Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry</p>
+                <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn">Post Job</a>
+
+              </div>
+            </div>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Client Section End -->

@@ -1,0 +1,206 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <app-recruiter-sidemenu></app-recruiter-sidemenu>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-9 col-sm-9">
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <h1>Manage jobs</h1>
+                    </div>
+
+                    <div class="col-md-8 mt-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary" (click)="postjob()">Post a job</button>
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                        <p *ngIf="totalJobs !== 0">Total {{ selectedButton }} Jobs: {{ totalJobs }}</p>
+                      </div> -->
+                    <div class="col-md-12">
+                        <div class="card mb-3" style="width:100%;">
+                            <div class="d-flex bd-highlight">
+                                <div class="p-2 flex-fill bd-highlight"
+                                    [ngClass]="{'active': selectedButton === 'AllJobs'}">
+                                    <button type="button" (click)="selectButton('AllJobs')">All Jobs ({{
+                                        totalJobs.allJobs }})</button>
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight"
+                                    [ngClass]="{'active': selectedButton === 'Active'}">
+                                    <button type="button" (click)="selectButton('Active')">Active Jobs
+                                        ({{ totalJobs.active }}) </button>
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight" id="inactiveJobsButton"
+                                    [ngClass]="{'active' : selectedButton === 'Inactive'}">
+                                    <button type="button" (click)="selectButton('Inactive')">Inactive Jobs ({{
+                                        totalJobs.inactive }})
+                                    </button>
+                                </div>
+
+                                <div class="p-2 flex-fill bd-highlight" id="inactiveJobsButton"
+                                    [ngClass]="{'active' : selectedButton === 'Draft'}">
+                                    <button type="button" (click)="selectButton('Draft')">Draft Jobs ({{ totalJobs.draft
+                                        }})</button>
+                                </div>
+                                <div class="p-2 flex-fill bd-highlight" id="inactiveJobsButton"
+                                    [ngClass]="{'active' : selectedButton === 'Under Review'}">
+                                    <button type="button" (click)="selectButton('Under Review')">Under Review ({{
+                                        totalJobs.underReview }})
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card mb-3" style="width:100%;">
+                        <div class="card-body secondBlog">
+                            <div class="d-flex bd-highlight">
+                                <div class="p-1 flex-fill bd-highlight">
+                                    <input type="text" class="form-control" placeholder="Job Title"
+                                        (input)="onInputChange($event)">
+                                </div>
+
+                                <div class="p-1 flex-fill bd-highlight">
+                                    <select class="form-select" aria-label="Default select example"
+                                        (change)="jobTypeChange($event)">
+                                        <option selected>Job Type</option>
+                                        <option *ngFor="let item of jobTypeData">{{item.name}}
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="p-1 flex-fill bd-highlight">
+                                    <input type="date" class="form-control" (input)="onStartDate($event)">
+                                </div>
+                                <div class="p-1 flex-fill bd-highlight mt-3 to">
+                                    To
+                                </div>
+                                <div class="p-1 flex-fill bd-highlight">
+                                    <input type="date" class="form-control" (input)="onEndDate($event)">
+                                </div>
+                                <!-- <div class="p-1 flex-fill bd-highlight">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search">
+
+                                        </div>
+                                    </div> -->
+                                <div class="p-1 flex-fill bd-highlight">
+                                    <select class="form-select" aria-label="Default select example"
+                                        (click)="postDateChange($event)">
+                                        <option selected>Sort by</option>
+                                        <option [value]="'job_post_date'">By Post Date</option>
+                                        <option [value]="'view_count'">By View Count</option>
+                                        <option [value]="'created_at'">By Post Created</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngFor="let item of manageJob">
+                    <div class="card card mb-3">
+                        <div class="col-md-12">
+                            <div class="card mb-0 border-0" style="width:100%;">
+                                <div class="d-flex mt-2 bd-highlight">
+                                    <div class="p-2 flex-fill bd-highlight">
+                                        <!-- <h3 class="title">{{ truncateText(item.job_title, 20)}}</h3> -->
+                                        <h3 class="title thirdBlog"><button type="button"
+                                                (click)="jobTitleBtn(item.id)">{{ truncateText(item.job_title,
+                                                20)}}</button></h3>
+
+                                        <div class="mt-4 mb-3 thirdBlog">
+                                            <p class="location">{{item.job_locations}}</p><br>
+                                            <p>Posted: {{item.job_post_date}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 flex-fill bd-highlight">
+                                        <h3>{{item.total_applications_count}}</h3>
+                                        <h3>Application</h3>
+                                    </div>
+                                    <div class="p-2 flex-fill bd-highlight">
+                                        <h3>{{item.new_applications_count}}</h3>
+                                        <h3>New</h3>
+                                    </div>
+                                    <div class="p-2 flex-fill bd-highlight">
+                                        <h3>{{item.hired}}</h3>
+                                        <h3>Hired</h3>
+                                    </div>
+                                    <div class="p-2 mt-3 flex-fill bd-highlight text-end">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary statusBtn dropdown-toggle mright p-1 statusBtn"
+                                                type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                {{item.status}}
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="col-md-6 ">
+                                    <div class="days totalView">
+                                        <p>Total View : {{item.view_count}}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="simillar-job p-1">
+                                        <!-- <a routerLink="/recruiter-job-preview" class="btn">View Job</a> -->
+                                        <a class="btn" (click)="handleBtn(item.id)">View Job</a>
+
+                                    </div>
+                                    <div class="simillar-job p-1">
+                                        <a href="#" class="btn">Edit Job</a>
+                                    </div>
+                                    <div class="simillar-job p-1">
+                                        <button type="button" class="btn btn-secondary shareBtn">Share</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="d-flex justify-content-center">
+            <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+            </pagination-controls>
+        </div> -->
+
+        <div class="pagination">
+            <!-- <a href="#">❮</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">❯</a> -->
+            <!-- your-component.component.html -->
+
+            <div style="display: flex;">
+                <button style="margin: 10px;" (click)="paginationPre(pagination.prev_page_url! || '')">Previous</button>
+                <button style="margin: 10px;" (click)="paginationNext(pagination.next_page_url! || '')"
+                    *ngIf="pagination.next_page_url !== null">Next</button>
+            </div>
+        </div>
+    </div>
+</section>

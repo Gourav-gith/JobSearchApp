@@ -1,0 +1,80 @@
+<!-- <app-seekerhead></app-seekerhead> -->
+<div class="login">
+<div class=" backcolor">
+<div class="container fix-width">
+    <div class="row">
+        <form>
+            <div class="inner-info-box text-center imgstyle">
+                <div class="img-box"><img src="./assets/images/loginimg.png"></div>
+              </div>
+            <div class="head">
+                <h1>Login or register</h1>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1"><span class="title" >Mobile Number:</span></label>
+                <input type="text"  id="mobilenumber" 
+                [(ngModel)]="mobileNo" 
+                (input)="mobileNo = numbersOnly(mobileNo)" 
+                (keyup)="mobileNo = numbersOnly(mobileNo)"
+                maxlength="10"
+                [ngModelOptions]="{standalone: true}"
+                    placeholder="Enter mobile number ">
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="form-group1" >
+                        <div class="d-flex">
+                            <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="job_seeker" (change)="selectUserType($event)" checked>
+                        <label class="form-check-label d-flex" for="exampleRadios">
+                            <p>I am a jobseeker</p>
+                                <img src="./assets/images/job-seeker.png">
+                        </label>
+                        
+                        </div>
+                        
+                    </div>
+                    
+​
+                </div>
+​
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                    <div class="form-group1">
+                        <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="recruiter" (change)="selectUserType($event)"
+                        ngModel
+                        [ngModelOptions]="{standalone: true}">
+                        <label class="form-check-label d-flex" for="exampleRadios">
+                           <p> I am a recruiter</p>
+                            <img src="./assets/images/recruiter.png">
+                        </label>
+                    </div>
+                        
+​
+                    </div>
+                </div>
+                <div class="form-group d-flex ">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                     (change)="termsAndConditions($event)"
+                     ngModel
+                     [ngModelOptions]="{standalone: true}"
+                      [checked]="agreedTermsAndConditions">
+                    <label >
+                        I agree to Workassist's <span class="text-primary"> <a href="https://workassist.in/privacy-policy" target="_blank" > Terms & Conditions.</a> </span>  
+                    </label>
+                </div>
+            <div class="col-md-12 justify-content-center">
+                <button type="submit" class="btn btn-primary"
+                [disabled]="btnDisabled" (click)="submit()">Send OTP</button>
+​
+            </div>
+            <div class="marg">
+                <h4><span>Having trouble? </span><span class="colr"> Contact Us</span> </h4>
+            </div>
+            <div class="marg">
+                <h4><span>Mobile number changed? </span><a class="colr" (click)="updateMobile()"> Update Mobile</a> </h4>
+            </div>            
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<!-- <app-footer></app-footer> -->

@@ -1,0 +1,58 @@
+\<div class="otp">
+
+    <div class="backcolor">
+        <div class="container fix-width">
+            <div class="row">
+                <form>
+                    <div class="inner-info-box text-center imgstyle">
+                        <div class="img-box"><img src="./assets/images/Illustration.png"></div>
+                      </div>
+                    <div class="head">
+                        <!-- <h1>
+                            {{message}} 
+                            <i _ngcontent-ng-c2851788188="" class="bi bi-pencil-fill"></i> 
+                            
+                        </h1> -->
+                        <h1>{{message[0]}}</h1>
+                        <p>{{message[1]}}</p>
+                        <!-- <p>sent to <span> +91 </span> <span>9876543210</span> </p> -->
+                        <div class="form-group d-flex " *ngIf="message['mobile_number']">
+                            <p><span > +91 </span> <span>{{message['mobile_number']}}</span></p>
+                            <i _ngcontent-ng-c2851788188="" class="bi bi-pencil-fill" (click)="loginPage()"></i>
+                        </div>
+                        <div class="form-group d-flex " *ngIf="message['email']">
+                            <p><span>{{message['email']}}</span></p>
+                            <i _ngcontent-ng-c2851788188="" class="bi bi-pencil-fill" (click)="verifyEmailPage()"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" ><h3>Enter OTP</h3></label>
+                        <div class="otpin row">
+                            <div class="col-2"><input type="number" id="otp1" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp1']" placeholder="" (keyup)="otp['otp1'] = validateInput($event , 2)"></div>
+                            <div class="col-2"><input type="number" id="otp2" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp2']" placeholder="" (keyup)="otp['otp2'] = validateInput($event , 3)"></div>
+                            <div class="col-2"><input type="number" id="otp3" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp3']" placeholder="" (keyup)="otp['otp3'] = validateInput($event , 4)"></div>
+                            <div class="col-2"><input type="number" id="otp4" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp4']" placeholder="" (keyup)="otp['otp4'] = validateInput($event , 5)" ></div>
+                            <div class="col-2"><input type="number" id="otp5" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp5']" placeholder="" (keyup)="otp['otp5'] = validateInput($event , 6)" ></div>
+                            <div class="col-2"><input type="number" id="otp6" [ngModelOptions]="{standalone: true}" [(ngModel)]="otp['otp6']" placeholder="" (keyup)="otp['otp6'] = validateInput($event , 7)"></div>
+                        </div>
+                        
+                    </div>
+                    
+    
+                            <div class="form-group d-flex ">
+                            <p>Didn't receive your OTP ?</p>
+                            <h5 (click)="resendOTP()">Resend OTP</h5>
+                        </div>
+                    <div class="col-md-12 justify-content-center marg2">
+                        <button type="button" class="btn btn-primary" (click)="submit()">Continue</button>
+        ​
+                    </div>
+                    <div class="marg">
+                        <h4><span>Having trouble ? </span><span class="colr"> Contact Us</span> </h4>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>

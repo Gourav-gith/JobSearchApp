@@ -1,0 +1,395 @@
+.email .backcolor{
+    background-color: #E3EBFF;
+
+}
+.email h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px 0px 0px 0px ;
+}
+.email a{
+    text-decoration: none;
+}
+.email a:hover{
+    color:blue ;
+}
+.email form{
+    max-height: 700px;
+    max-width: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+.email input{
+    border: 1px solid black;
+}
+.email .form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.email .form-check-label{
+    margin-left: 10px;
+}
+.email .btn{
+    width: 100%;
+}
+.email .form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.email .img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.email .head{
+    margin-bottom: 40px;
+}
+​
+.email .fix-width{
+    width: 30%;
+}
+.email .imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    padding: 15px 15px 0px 15px;
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+.email label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.email input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.email .form-check label{
+    padding-top: 13px;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: #6f97ae;
+    border-color: #6f97ae
+    /* opacity: var(--bs-btn-disabled-opacity); */
+}
+.email .form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+    appearance : auto !important
+}
+.email .marg{
+    margin-top: 10px;
+}
+.email .colr{
+    color: #F42323;
+}
+.email label img{
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 0px 5px;
+}
+label p{
+    font-size: 16px;
+    margin: 0px;
+    line-height: 18px;
+
+}
+.title{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    .email .backcolor{
+        background-color: #fff;
+    
+    }
+    .email h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin:20px 0px 0px 0px ;
+    }
+    .email a{
+        text-decoration: none;
+    }
+    .email a:hover{
+        color:blue ;
+    }
+    .email form{
+        max-height: 700px;
+        max-width: 500px;
+        border-radius: 5px;
+        justify-content: center;
+        vertical-align: middle;
+        background-color: #fff;
+        margin:10% auto;
+        padding: 25px;
+    }
+    
+    .email input{
+        border: 1px solid black;
+    }
+    .email .form-group1{
+        display: flex;
+        border: 1px solid;
+        padding-left: 5px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .email .form-check-label{
+        margin-left: 5px;
+    }
+    .email .btn{
+        width: 100%;
+    }
+    .email .form-check-labelrounded-circle{
+        margin-left: 22px;
+    }
+    .email .img_head{
+        margin-bottom: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        height: 100px;
+        width: 100px;
+    }
+    .email .head{
+        margin-bottom: 40px;
+    }
+    ​
+    .email .fix-width{
+        width: 30%;
+    }
+    .email .imgstyle{
+        height: 80px;
+        width: 80px;
+        background: #F3F3F3;
+        padding: 15px 15px 0px 15px;
+        /* margin: 0px 0px 0px 0px; */
+        border-radius: 50px;
+    }
+    .email label, legend {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 13px 0px 0px 0px;
+    }
+    .email input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+        
+        padding: 0 15px;
+        outline: none;
+        font-size: 16px;
+        color: #000;
+        margin: 13px 0 13px 0;
+        
+        box-sizing: border-box;
+        display: block;
+        background-color: #fbfdff;
+        font-weight: 500;
+        opacity: 1;
+        border-radius: 4px;
+        border: 1px solid;
+        
+    }
+
+    .email input[type="text"] {
+        
+       height: 40px;
+        
+    }
+    .email .form-check label{
+        padding-top: 13px;
+    }
+    .btn.disabled, .btn:disabled, fieldset:disabled .btn {
+        color: var(--bs-btn-disabled-color);
+        pointer-events: none;
+        background-color: #6f97ae;
+        border-color: #6f97ae
+        /* opacity: var(--bs-btn-disabled-opacity); */
+    }
+    .email .form-check-input{
+        padding: 0px;
+        margin-right: 10px;
+        appearance : auto !important
+    }
+    .email .marg{
+        margin-top: 10px;
+    }
+    .email .colr{
+        color: #F42323;
+    }
+    .email label img{
+        height: 15px;
+        width: 15px;
+        margin: 0px 0px 0px 5px;
+    }
+    label p{
+        font-size: 14px;
+        margin: 0px;
+        line-height: 16px;
+
+    }
+}
+
+@media screen and (min-width: 320px)  and (max-width: 375px) {
+    .email .backcolor{
+        background-color: #fff;
+    
+    }
+    .email h1{
+        font-size: 20px;
+        font-weight: 600;
+        margin:20px 0px 0px 0px ;
+    }
+    .email a{
+        text-decoration: none;
+    }
+    .email a:hover{
+        color:blue ;
+    }
+    .email form{
+        max-height: 700px;
+        max-width: 500px;
+        border-radius: 5px;
+        justify-content: center;
+        vertical-align: middle;
+        background-color: #fff;
+        margin:10% auto;
+        padding: 25px;
+    }
+    
+    .email input{
+        border: 1px solid black;
+    }
+    .email .form-group1{
+        display: flex;
+        border: 1px solid;
+        padding-left: 5px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .email .form-check-label{
+        margin-left: 5px;
+    }
+    .email .btn{
+        width: 100%;
+    }
+    .email .form-check-labelrounded-circle{
+        margin-left: 22px;
+    }
+    .email .img_head{
+        margin-bottom: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        height: 100px;
+        width: 100px;
+    }
+    .email .head{
+        margin-bottom: 40px;
+    }
+    ​
+    .email .fix-width{
+        width: 30%;
+    }
+    .email .imgstyle{
+        height: 80px;
+        width: 80px;
+        background: #F3F3F3;
+        padding: 15px 15px 0px 15px;
+        
+        border-radius: 50px;
+    }
+    .email label, legend {
+        display: block;
+        font-weight: bold;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 13px 0px 0px 0px;
+    }
+    .email input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+        
+        padding: 0 15px;
+        outline: none;
+        font-size: 16px;
+        color: #000;
+        margin: 13px 0 13px 0;
+        
+        box-sizing: border-box;
+        display: block;
+        background-color: #fbfdff;
+        font-weight: 500;
+        opacity: 1;
+        border-radius: 4px;
+        border: 1px solid;
+        
+    }
+    .email .form-check label{
+        padding-top: 13px;
+    }
+    .btn.disabled, .btn:disabled, fieldset:disabled .btn {
+        color: var(--bs-btn-disabled-color);
+        pointer-events: none;
+        background-color: #6f97ae;
+        border-color: #6f97ae
+      
+    }
+    .email .form-check-input{
+        padding: 0px;
+        margin:15px 10px 15px 0px;
+        /* appearance : auto !important */
+        height: 12px;
+        width: 12px;
+        
+    }
+    .email .marg{
+        margin-top: 10px;
+    }
+    .email .colr{
+        color: #F42323;
+    }
+    .email label img{
+        height: 15px;
+        width: 15px;
+        margin: 0px 0px 0px 5px;
+    }
+    label p{
+        font-size: 12px;
+        margin: 0px;
+        line-height: 14px;
+    }
+    label a{
+        font-size: 12px;
+       
+
+    }
+    .title{
+        font-size: 16px;
+    }
+  
+}

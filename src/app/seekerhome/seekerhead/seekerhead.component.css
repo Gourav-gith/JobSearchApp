@@ -1,0 +1,270 @@
+
+body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+	font-family: "lato", sans-serif;
+	text-transform: none;
+}
+#header {
+    position: sticky;
+    top: 0;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../../../assets/images/hamburger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: transparent;
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+}
+/* #top-header {
+    background-color: #264653;
+    padding: 5px 0px;
+}
+
+#top-header .mobile-btn a {
+    background-color: transparent;
+    border: 1px solid #1a53a6;
+    width: 80px;
+}
+
+#top-header .btn-outline-primary {
+    padding: 5px 10px;
+    border-color: white;
+}
+
+#top-header .btn-outline-primary:hover {
+    background-color: #0288d1;
+    border-color: #0288d1;
+} */
+
+#bottom-header {
+    background-color: #fff;
+}
+.deskfico{
+    height: 26px;
+}
+.bellico{
+    font-size: 26px;
+    color: #000;
+}
+img.footer-logo {
+    max-height: 44px;
+    width: auto;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+#bottom-header nav {
+    padding: 5px 10px 5px 10px;
+
+}
+
+#bottom-header .right-side-div {
+    position: absolute;
+    right: 0px;
+}
+
+.nav-item a,
+.dropdown-item {
+    font-weight: 600;
+    font-size: 16px;
+    color: #242D62;
+
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0%;
+    border-radius: 5px;
+}
+button {
+    position: absolute;
+    vertical-align: middle;
+}
+#bottom-header .navbar {
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    min-height: 80px;
+}
+
+.dropdown-menu li a:hover {
+    color: #fff;
+    background-color: #1a53a6;
+}
+
+#bottom-header .navbar .btn-group {
+    position: absolute;
+    right: 50px;
+}
+
+header .btn {
+    padding: 3px 20px;
+    font-size: 14px;
+}
+/* #bottom-header[_ngcontent-ng-c2543799993] .navbar[_ngcontent-ng-c2543799993] .btn-group[_ngcontent-ng-c2543799993] {
+    position: relative;
+    right: 155;
+} */
+@media (max-width: 992px) {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 35%;
+        border-radius: 5px;
+    }
+    .headhid{
+        display: none;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, p,a,input[type="text"], input[type="password"], input[type="email"],  textarea, select, input[type="button"], input[type="submit"], button, body .pac-container {
+        font-family: "lato", sans-serif;
+        text-transform: none;
+    }
+    #header {
+        position: sticky;
+        top: 0;
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: url(../../../assets/images/hamburger.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0.3125rem;
+        --bs-navbar-brand-margin-end: 1rem;
+        --bs-navbar-brand-font-size: 1.25rem;
+        --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 0.5rem;
+        --bs-navbar-toggler-padding-y: 0.25rem;
+        --bs-navbar-toggler-padding-x: 0.75rem;
+        --bs-navbar-toggler-font-size: 1.25rem;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+        --bs-navbar-toggler-border-color: transparent;
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    }
+    /* #top-header {
+        background-color: #264653;
+        padding: 5px 0px;
+    }
+    
+    #top-header .mobile-btn a {
+        background-color: transparent;
+        border: 1px solid #1a53a6;
+        width: 80px;
+    }
+    
+    #top-header .btn-outline-primary {
+        padding: 5px 10px;
+        border-color: white;
+    }
+    
+    #top-header .btn-outline-primary:hover {
+        background-color: #0288d1;
+        border-color: #0288d1;
+    } */
+    
+    #bottom-header {
+        background-color: #fff;
+    }
+    
+    #bottom-header nav {
+        padding: 5px 10px 5px 10px;
+    
+    }
+    
+    #bottom-header .right-side-div {
+        position: absolute;
+        right: 0px;
+    }
+    
+    .nav-item a,
+    .dropdown-item {
+        font-weight: 600;
+        font-size: 16px;
+        color: #242D62;
+        right: 61%;
+        font-weight: 600;
+        font-size: 16px;
+        color: #242D62;
+        position: relative;
+        z-index: 115;
+        background: #fff;
+        width: 250px;
+    
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 0%;
+        border-radius: 5px;
+        margin-left: 50px;
+    }
+    button {
+        position: absolute;
+        vertical-align: middle;
+    }
+    #bottom-header .navbar {
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+        min-height: 80px;
+    }
+    
+    .dropdown-menu li a:hover {
+        color: #fff;
+        background-color: #1a53a6;
+    }
+    
+    #bottom-header .navbar .btn-group {
+        position: absolute;
+        right: 155px;
+    }
+    
+    header .btn {
+        padding: 3px 20px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .headhid{
+        display: none;
+    }
+}

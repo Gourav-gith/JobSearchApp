@@ -1,0 +1,81 @@
+
+.bg-black{
+    background-color: black;
+    padding: 30px 0px;
+}
+.bg-color{
+    background-color:#000 ;
+}
+
+.container{
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+border-radius: 5px;
+}
+.model-title .title{
+    width: 95% !important;
+}
+
+.model-title .cross{
+    width: 5%;
+    text-align: right;
+}
+.star{
+    color: red !important;
+}
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+.input-group-text{
+    height: 48px;
+}
+
+.title h3{
+    font-size: 20px;
+}
+
+input, input[type="text"], input[type="password"], input[type="email"], input[type="number"],select,.input-group-text {
+   
+    border: 1px solid;
+    /* height: 40px; */
+    /* padding: 0px 10px; */
+    /* margin-bottom: 30px; */
+
+}
+.custom-file-button input[type="file"]{
+    margin-bottom: 0px;
+}
+span{
+    font-size: 12px;
+}
+label>span{
+    color: red;
+}
+
+@media only screen and (max-width: 576px) {
+    .bg-color{
+        background-color: #fff
+    }
+  }
+/* input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+   
+    cursor: pointer;
+    background-color: white;
+    ;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    content: sfijn;
+    transition: background-color 200ms;
+    float: right;
+    position: relative;
+    right: -18px;
+  } */
+  /* #file::before {
+  content: 'Select some files';
+  color: black;
+  display: inline-block;} */

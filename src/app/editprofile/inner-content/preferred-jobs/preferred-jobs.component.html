@@ -1,0 +1,87 @@
+
+<div class="preferred-jobs">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Preferred Jobs</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6">  
+                        <label for="industry">Industry <span class="star">*</span> </label>
+                            <select name="industry" id="industry">
+                            <option value="select-industry">Tell us your preferred industry</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            </select> 
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">  
+                        <label for="functional-area">Functional Area <span class="star">*</span> </label>
+                            <select name="functional-area" id="functional-area">
+                            <option value="select-functional-area"> Tell us your preferred functional area</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            </select> 
+                    </div>                
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="job-role">Job Role <span class="star">*</span> </label>
+                                <select name="job-role" id="job-role">
+                                <option value="select-job-role">Tell us your preferred job role</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select> 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">  
+                            <label for="location">Location <span class="star">*</span> </label>
+                                <select name="location" id="location">
+                                <option value="select-location">Tell us your preferred work location</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select> 
+                        </div>                
+                        </div>
+
+                        <div class="row ">
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-6">  
+                                <label for="expected-ctc">Expected CTC <span class="star">*</span> </label>
+                                    <select name="expected-ctc" id="expected-ctc">
+                                    <option value="select-expected-ctc">Select</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">  
+                                <label for="job-type">Job Type <span class="star">*</span> </label>
+                                    <select name="job-type" id="job-type">
+                                    <option value="select-job-type">Select job type</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    </select>
+                            </div>
+                            </div>
+            
+            <div class=" justify-content-center text-end mt-10">
+                <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                <button type="button" class="btn btn-color2">Save</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

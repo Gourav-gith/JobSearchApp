@@ -1,0 +1,97 @@
+
+<div class="summary">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Summary</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                    </div>
+                </div>
+                    <h2>Outline the key highlights of your career to recruiters.</h2>
+                </div>
+                
+              <div class="row ">
+                <div class="col-lg-12 col-md-6 col-sm-6">
+                    <div class="mt-0">
+                       
+                        <textarea type="text" rows="6" class="form-control" id="summary"
+                        [(ngModel)]="summaryDetails.profile_summary"  [ngModelOptions]="{standalone: true}"
+                            placeholder="Write about your roles , responsibilities , achievements etc..."></textarea>
+                            <span *ngIf="error.profile_summary"><span class="error" *ngFor="let errorMessage of error.profile_summary">{{errorMessage}}</span></span>
+                            <div class="d-flex">
+                                <div class="col-lg-9">
+                                    <p>Summary should be more than 50 characters.</p> 
+                                </div>
+                                <div class="col-lg-3">
+                                    <p class="text-end">32/1000 characters</p>
+                                </div>
+                            </div>
+                    </div>
+                        
+​
+                    </div>
+                </div>
+
+                <!-- <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div>
+                            <label for="first-name">First Name <span class="star">*</span> </label>
+                            <input type="text" class="form-control" id="first-name"
+                                placeholder="Enter first name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div >
+                            <label for="middle-name">Middle Name  </label>
+                            <input type="text" class="form-control" id="middle-name"
+                                placeholder="Enter middle name">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="last-name">Last Name <span class="star" >*</span> </label>
+                                <input type="text" class="form-control" id="last-name"
+                                    placeholder="Enter last name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="mobile-number">Mobile Number <span class="star">*</span></label>
+                                <input type="text" class="form-control" id="mobile-number"
+                                    placeholder="Enter mobile number">
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div >
+                                <label for="email-address">Email Address <span class="star">*</span> </label>
+                                <input type="text" class="form-control" id="email-address"
+                                    placeholder="Enter email address">
+                            </div>
+                        </div>
+                        
+                        </div> -->
+
+                <div class=" justify-content-center text-end">
+                    <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                    <button type="button" class="btn btn-color2" (click)="submit()">Save</button>
+                </div>
+               
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

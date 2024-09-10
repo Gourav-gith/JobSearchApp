@@ -1,0 +1,53 @@
+section{
+    background-color: #E9E9F3;
+}
+.counter{
+    padding: 2px;
+}
+
+.mb-3 {
+    margin-bottom: -1.5rem!important;
+    margin-top: -0.5rem !important;
+}
+.card-body{
+    padding: 6px;
+    border: 1px solid white;
+
+}
+h1{
+    margin: 0px !important;
+}
+p {
+    font-size: 14px;
+    line-height: 21px !important;
+}
+.left-footer{
+    margin-top: -13px !important;
+}
+.btnViewProfile{
+    padding: 4px;
+    margin-top: 8px;
+    margin-left:12px;
+}
+.candidatestatus{
+    margin-right: -60px;
+}
+.selected{
+    background-color: #ECF2FF;
+}
+
+img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.secondcard{
+    padding: 15px;
+    padding-bottom: 0px;
+}
+.thirdblog{
+    padding-bottom: 0px;
+}
+.thirdblog .col-8{
+    margin-left: 11px;
+}

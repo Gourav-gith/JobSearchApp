@@ -1,0 +1,54 @@
+section{
+    background-color: #E9E9F3;
+}
+.postJobBtn{
+    padding: 4px;
+    height: 37px;
+}
+
+img{
+    height: 125px;
+    width: 113px;
+}
+p{
+    font-size: 14px;
+}
+.firstCradBlog{
+    margin-left: 25px;
+}
+.nameOfCandidate{
+    margin-top: 14px;
+}
+.shortlistedBtn{
+    margin-left: 216px;
+    padding: 4px;
+}
+.secondCradBlog{
+    margin-left: 10px;
+}
+
+.contacts{
+    margin-left: 10px;
+    margin-top: -4px;
+}
+h4{
+    color: blue;
+}
+.downloadBtn{
+    padding: 3px;
+    height: 35px;
+}
+
+.eduLearning{
+    margin-left: 20px;
+}
+/* b{
+    color: darkblue;
+} */
+.leftSecondBlog{
+    color: darkblue;
+}
+h1{
+    color: darkblue;
+}
+

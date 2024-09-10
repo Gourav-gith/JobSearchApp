@@ -1,0 +1,281 @@
+body{
+    color: #464E5F;
+    line-height: 15px;
+}
+p{margin: 0;
+padding: 0;
+line-height: normal;
+font-size: 12px;
+color: #464E5F;
+}
+
+#main{
+  background-color: #E9E9F3;
+  padding: 25px 0px;
+}
+
+.btn-danger{
+    background-color: #F05537;
+}
+
+.bg-blue{
+    background-color: #159EEC;
+}
+
+/* // .bg-white{position: relative;
+//     max-height: calc(100vh - 75px);
+//     min-height: 100%;
+//     overflow: auto;
+//     width: 260px;
+//     z-index: 4;
+//     padding-bottom: 100px;
+// } */
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-grid h4{
+    padding: 0px 0px 3px;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-heading h3, .card-heading p{
+    color: white;
+}
+.card-heading h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+.card-heading p{
+    font-size: 14px;
+    
+}
+.card-heading{
+    border-radius: 5px;
+}
+
+.card span{
+    color: #086EA8;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.recent-job ul{
+    display: inline-flex;
+    width: 100%;
+}
+.recent-job ul li{
+    width: 100%;
+    font-size: 12px;
+}
+
+.recent-job .loop h5{
+  line-height: 15px;
+  padding-bottom: 10px;
+  color: #159EEC;
+
+}
+/* 
+// Recent application css///
+body {
+    margin: 3em;
+  } */
+
+  .card-img-div{
+    width: 20%;
+  }
+  .card-img-top {
+   
+    border-radius: 50%;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+/* //   .card {
+//     padding: 1.5em 0.5em 0.5em;
+//     text-align: center;
+//     border-radius: 2em;
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   } */
+  .card-title {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .btn-primary {
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+  }
+/* //   .space .col-md-3{
+//     padding-left: 5px;
+//     padding-right: 5px;
+//   } */
+.card hr{
+    margin: 10px 0px ;
+}
+.recent-job h3 {
+    font-size: 18px;
+}
+.recent-job span{
+    font-size: 14px;
+}
+.seeker-item a  h3{
+   font-size: 12px;
+}
+.seeker-item a{
+    margin-bottom: 10px;
+}
+hr{
+    border:1px solid
+}
+ Blog section css
+.blog-section{
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog-section .card{
+    border: none;
+}
+.inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+/* //   .card {
+//     flex-basis: 33.33333%;
+//     padding: 15px;
+//   } */
+  .inner-card  {
+    background-color: #EEF3FF;
+    /* // padding: 15px; */
+    box-shadow: 0 1px 2px rgba(0,0,0,.1)
+  }
+  .img-wrapper {
+    width: 100%;
+    height:100%;
+    margin-bottom: 10px;
+  }
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  .blog-section .content {
+    padding: 0px 5px;
+    margin-bottom: 20px;
+  }
+  .content h1 {
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  .content p {
+    font-size: 14px;
+    color: #555;
+  }
+  .btn-wrapper {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .blog-section .content h1
+  {font-size: 16px;
+font-weight: 600;}
+  .view-btn {
+    /* // width: 70%;
+    // height: 40px; */
+    border: none;
+    color: #159EEC !important;
+    background-color: white;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  .view-btn:hover {
+    background-color: whitesmoke;
+  }
+  .light-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-out;
+  }
+  .box {
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: all 200ms ease-in-out;
+    padding: 10px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.1);
+    position: relative;
+  }
+  .box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+  }
+  .box .light-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .box .close-btn {
+    position: absolute;
+    z-index: 100;
+    font-size: 30px;
+    color: #ccc;
+    left: 100%;
+    top: 0;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 200ms linear;
+  }
+  /* Effect */
+  .effect .light-box {
+    opacity: 1;
+    visibility: visible;
+  }
+  .effect .light-box .box {
+    transform: scale(1);
+  }
+  .btn-wrapper {
+    text-align: right;
+  }
+
+
+
+
+
+
+
+
+

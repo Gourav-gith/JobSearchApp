@@ -1,0 +1,59 @@
+
+.bg-black{
+    background-color: black;
+    padding: 30px 0px;
+}
+.bg-color{
+    background-color:#000 ;
+}
+
+.container{
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+border-radius: 5px;
+}
+.model-title .title{
+    width: 95% !important;
+}
+
+.model-title .cross{
+    width: 5%;
+    text-align: right;
+}
+
+
+
+input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select{
+    border: 1px solid;
+    /* margin-bottom: 30px; */
+   /* padding: 0px 10px;
+   height: 40px; */
+}
+
+label>span{
+    color: red;
+}
+
+span{
+    font-size: 12px;
+}
+.upload-img-field input[type="file"]{
+    margin-bottom: 1px;
+}
+label{
+    margin-bottom: 5px;
+}
+
+.title h3{
+    font-size: 20px;
+}
+/* .upload-img-field span{
+    font-size: 12px;
+} */
+
+@media only screen and (max-width: 576px) {
+    .bg-color{
+        background-color: #fff
+    }
+  }

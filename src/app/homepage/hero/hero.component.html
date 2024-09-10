@@ -1,0 +1,292 @@
+
+<div id="hero-banner" class="padding" style="background-color: #F1F9FE;">
+    <div class="intro-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="utf-banner-headline-text-part heading">
+              <h1 class="herotext">A place where
+                 </h1>
+                 <h1 class="herotext"><span> </span>   dreams meet opportunities
+                </h1>
+              <!-- <p style="color: #1a53a6;  font-size: 16px;font-weight: 500">A place where dreams meet opportunities </p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="utf-intro-banner-search-form-block margin-top-40">
+              <div class="utf-intro-search-field-item">
+
+                <!-- <input id="intro-keywords" type="text" placeholder="Search by job/skills/role." [(ngModel)]="skills" (input)="suggestionSearch()"> -->
+
+                
+                <div class="ng-autocomplete search-style">
+                  
+                  <ng-autocomplete
+                    [data]="jobSuggestionList"
+                    [searchKeyword]="keyword"
+                    placeholder= " Search by job/skills/role."
+                    (selected)='selectEvent($event)'
+                    (inputChanged)='onChangeSearch($event)'
+                    (inputFocused)='onFocused($event)'
+                    [itemTemplate]="itemTemplate"
+                    [notFoundTemplate]="notFoundTemplate">
+                  </ng-autocomplete>
+                
+                  <ng-template #itemTemplate let-item>
+                    <a [innerHTML]="item.name"></a>
+                  </ng-template>
+                
+                  <ng-template #notFoundTemplate let-notFound>
+                    <div [innerHTML]="notFound"></div>
+                  </ng-template>
+                </div>
+
+<!-- 
+                <select style="padding-left: 40px;"  id="intro-keywords" type="text" placeholder="Search by job/skills/role."   [(ngModel)]="skills" >
+                  <option>Software Developer</option>
+                  <option>front end developer </option>
+                  <option> Backend developer</option>
+                  <option> UI/UX developer</option>
+                </select> -->
+
+                <i class="bi bi-search" aria-hidden="true" ></i>
+                
+              </div>
+              <div class="utf-intro-search-field-item" style="margin-right:0px;">
+
+                <!-- <input id="intro-keywords" type="text" placeholder="Location"> -->
+                <!-- <select style="padding-left: 40px;" id="intro-keywords" type="text" placeholder="Location"   [(ngModel)]="location">
+                  <option>Lucknow</option>
+                  <option>Kanpur</option>
+                  <option>Noida</option>
+                  <option>Delhi</option>
+                </select> -->
+
+
+                <div class="ng-autocomplete search-style" >
+                  <ng-autocomplete
+                    [data]="locationSuggestionList"
+                    [searchKeyword]="locationKeyword"
+                    placeholder="Location"
+                    (selected)='locationSearch($event)'
+                    (inputChanged)='locationSearch($event)'
+                    (inputFocused)='locationSearch($event)'
+                    [itemTemplate]="itemTemplate1"
+                    [notFoundTemplate]="notFoundTemplate1">
+                  </ng-autocomplete>
+                
+                  <ng-template #itemTemplate1 let-item>
+                    <a [innerHTML]="item.city_name"></a>
+                  </ng-template>
+                
+                  <ng-template #notFoundTemplate1 let-notFound>
+                    <div [innerHTML]="notFound"></div>
+                  </ng-template>
+                </div>
+
+
+                <i class="bi bi-geo-alt-fill" aria-hidden="true" ></i>
+              </div>
+
+              <div class="utf-intro-search-field-item" style="margin-right:0px;">
+
+                <!-- <input id="intro-keywords" type="text" placeholder="Category"> -->
+                <!-- <select style="padding-left: 40px;"  id="intro-keywords" type="text" placeholder="Category"   [(ngModel)]="category">
+                  <option>IT</option>
+                  <option>Banking</option>
+                </select> -->
+
+                <div class="ng-autocomplete search-style" >
+                  <ng-autocomplete
+                    [data]="catagorySuggestionList"
+                    [searchKeyword]="keyword"
+                    placeholder="Category"
+                    (selected)='catagorySearch($event)'
+                    (inputChanged)='catagorySearch($event)'
+                    (inputFocused)='catagorySearch($event)'
+                    [itemTemplate]="itemTemplate2"
+                    [notFoundTemplate]="notFoundTemplate2">
+                  </ng-autocomplete>
+                
+                  <ng-template #itemTemplate2 let-item>
+                    <a [innerHTML]="item.name"></a>
+                  </ng-template>
+                
+                  <ng-template #notFoundTemplate2 let-notFound>
+                    <div [innerHTML]="notFound"></div>
+                  </ng-template>
+                </div>
+                <i class="bi bi-ui-checks-grid" aria-hidden="true" ></i>
+              </div>
+
+              <div class="utf-intro-search-button">
+                <button class="button ripple-effect" (click)="search()" >Search</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="error-style" *ngIf="error">Please select one.</p>
+
+        <div class="row btn-group justify-content-center " *ngIf="recentSearchList" >
+
+          <ng-container *ngFor="let recentSearch of recentSearchList " >
+            <!-- <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+             
+            </div> -->
+            <div class="col-lg-2 col-md-2 text-center col-sm-2 col-2 disnone"  >
+              <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self">
+                <i class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>
+                {{ (recentSearch.length > 12 ) ? (recentSearch | slice:0:12)+'..':(recentSearch)}}
+              </a>
+            </div>
+            <!-- <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+              <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self">
+                <i class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+            </div>
+            <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+              <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self"><i
+                  class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+            </div>
+            <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+              <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn " target="_self"><i
+                  class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+            </div>
+            <div class="col-lg-2 col-md-2 text-center col-sm-2 col-2 disnone">
+              <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self"><i
+                  class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+            </div> -->
+            <!-- <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+             
+            </div> -->
+          </ng-container>
+        </div>
+
+
+        <div class="row btn-group justify-content-center " *ngIf="recentSearchList.length == 0" >
+          <!-- <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+           
+          </div> -->
+          <div class="col-lg-2 col-md-2 text-center col-sm-2 col-2 disnone"  >
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self">
+              <i class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self">
+              <i class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-lg-2 col-md-4 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn " target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-lg-2 col-md-2 text-center col-sm-2 col-2 disnone">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <!-- <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+           
+          </div> -->
+        </div>
+
+        <!-- <div class="row btn-group justify-content-center "  >
+          <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+           
+          </div>
+          <div class="col-md-2 text-center col-sm-2 col-2 disnone"  >
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self"><i
+              class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-md-2 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self">
+              <i class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-md-2 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn" target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-md-2 text-center col-sm-4 col-2">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn " target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-md-2 text-center col-sm-2 col-2 disnone">
+            <a href="#" class="button utf-ripple-effect-dark btn btn-outline-primary upload-btn disnone" target="_self"><i
+                class="bi bi-clock-history" style="margin-right: 6px;" aria-hidden="true"></i>Recent Search</a>
+          </div>
+          <div class="col-md-1 text-center col-sm-1 col-1 disnone">
+           
+          </div>
+        </div> -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <section class="padding">
+    <div class="find-section">
+      <div class="container">
+        <div class="row" style="display: flex; "  >
+          <div class="col-md-1 col-lg-1 col-sm-0">
+            
+          </div>
+          <div class="col-md-10 col-lg-10 col-sm-12" id="heropop">
+          <div class="col-md-12 col-lg-12 col-sm-12" >
+            <div class="card card-left   ">
+              <div class="card-body" >
+               
+                <div class="row disblock" >
+                  <div class="col-md-5 col-lg-6 col-sm-12 txtce" >
+                    <p class="card-text banner herotext">Get started to
+                      </p>
+                      <p class="card-text banner herotext">
+                        Get your dream job.</p>
+                  </div>
+                  <div class="col-md-7 col-lg-6 col-sm-12">
+                    <div style="margin-top: 15px; text-align: right;">
+                      <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn banbutton1">Upload resume</a>
+                      <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn banbutton2">Create profile</a>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-1 col-lg-1 col-sm-0">
+            
+          </div>
+          <!-- <div class="col-md-6 col-lg-6 col-sm-6">
+            <div class="card card-right px-5 py-4">
+              <div class="card-body">
+                <h2 class="card-title">I want to hire</h2>
+
+                <p class="card-text" style="color: #0c2140;">Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry</p>
+                <a href="#" class="card-link  btn btn-primary button utf-ripple-effect-dark register-btn">Post Job</a>
+
+              </div>
+            </div>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+  
+
+  
+
+
+  

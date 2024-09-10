@@ -1,0 +1,66 @@
+<div class="email">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            <form>
+                <div class="inner-info-box text-center imgstyle">
+                    <div class="img-box"><img src="./assets/images/loginimg.png"></div>
+                  </div>
+                <div class="head">
+                    <h1>Verify Email</h1>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email Address:</label>
+                    <input type="email" class="form-control" id="emailid"
+                    [(ngModel)]="verifyEmail.email"
+                    [ngModelOptions]="{standalone: true}"
+                        placeholder="Enter your registered email address">
+                </div>
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="form-group1" >
+                            <div class="d-flex">
+                                <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="job_seeker" checked (change)="userType($event)" >
+                            <label class="form-check-label" for="exampleRadios">
+                                i am a jobseeker
+                                    <img src="./assets/images/job-seeker.png">
+                            </label>
+                            
+                            </div>
+                            
+                        </div>
+                        
+    ​
+                    </div>
+    ​
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="form-group1">
+                            <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="recruiter" (change)="userType($event)" >
+                            <label class="form-check-label" for="exampleRadios">
+                                i am a recruiter
+                                <img src="./assets/images/recruiter.png">
+                            </label>
+                        </div>
+                            
+    ​
+                        </div>
+                    </div>
+                    <!-- <div class="form-group d-flex ">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label >i agree to Workassist<span
+                                class="text-primary">Terms of Use</span> & <span class="text-primary">Privacy
+                                policy.</span></label>
+                    </div> -->
+                <div class="col-md-12 justify-content-center">
+                    <button type="submit" class="btn btn-primary" (click)="submit()">Verify</button>
+    ​
+                </div>
+                <!-- <div class="marg">
+                    <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                </div> -->
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>

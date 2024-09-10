@@ -1,0 +1,229 @@
+
+<div class="desktop-header">
+    <div id="bottom-header" class="headhid" *ngIf="!userLoggedIn">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+
+          <a class="navbar-brand" [routerLink]="''"><img src="./assets/images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
+            
+            
+            <ul class="navbar-nav  mb-2 mb-lg-0 btn-group hide">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Career Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Job By Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Job By Location</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="padding-right:20px;  border-right: 1px solid #1a53a6;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Upload Resume</a>
+                  </li>
+                  
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li style="padding-left:20px ;">
+                <a href="#" target="_self" role="button" class="btn btn-outline-primary">Post a Job</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
+            
+            
+            
+          </div>
+          <span style="margin-left: 20px;" *ngIf="!userLoggedIn && showLoginButton">
+            <a class="btn btn-primary " style="background-color: #F05537;border: none;"   (click)="loginPage()"  >Login/Register</a>
+          </span>
+          <!-- <span style="margin-left:20px" *ngIf="userLoggedIn">
+            <a class="btn btn-outline-primary">Hi {{userName}} <img  src="./assets/images/mobprofile.png" alt="logo"> </a>
+          </span> -->
+          <span style="margin-left: 20px" *ngIf="userLoggedIn">
+            <!-- <a class="btn btn-outline-primary">Hi {{userName}} <img src="./assets/images/mobprofile.png" alt="logo"></a> -->
+            <a class="btn btn-outline-primary">Hi {{userName}} </a>
+            <select>
+              <option value="dashboard" (click)="seekerDashboard()">Dashboard</option>
+              <option value="logout">Logout</option>
+            </select>
+          </span>
+          
+        </nav>
+        
+      </div>
+
+    </div>
+
+
+
+    <div id="bottom-header" class="headhid" *ngIf="userLoggedIn">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+  
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"  >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group hide">
+              <li class="nav-item dropdown" >
+                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Home
+                  </a>
+                </li>
+              <li class="nav-item dropdown">
+                  
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Career Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Job By Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Job By Location</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown" style="padding-right:20px; border-right: 1px solid #1a53a6;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Upload Resume</a>
+                  </li>
+                  
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li style="padding-left:20px" *ngIf="!userName">
+                <a href="#" target="_self" role="button" class="btn btn-outline-primary">Hi User                
+                      <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo">                  
+                </a>
+              </li>
+              <!-- <li style="padding-left:20px" *ngIf="userName">
+                <a href="#" target="_self" role="button" class="btn btn-outline-primary">Hi {{userName}}                
+                      <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo">                  
+                </a>
+              </li> -->
+              <li class="nav-item dropdown" style="padding-left:20px" *ngIf="userName">
+                  
+                <a class="nav-link dropdown-toggle btn btn-outline-primary profile-border"  target="_self" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Hi {{userName}} 
+                  <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo">
+                </a>
+                <ul class="dropdown-menu ml-20">
+                  <li><a class="dropdown-item" *ngIf="job_seekerDashboard" (click)="seekerDashboard()">Dashboard</a></li>
+                  <li><a class="dropdown-item" *ngIf="recuiterDashboard" (click)="recuruiterDashboard()">Dashboard</a></li>
+                  <li><a class="dropdown-item" (click)="logout()" >Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+          <span style="padding-left: 20px;">
+              <a href="#" target="_self" role="button" class=" bellico">
+                  <i class="bi bi-bell"></i>
+                  <!-- <img class="footer-logo deskfico" src="./assets/images/mobprofile.png" alt="logo"> -->
+                
+            </a>
+          </span>
+        </nav>
+        
+      </div>
+  
+    </div>
+  </div>
+
+    <!-- mobile -header -->
+
+<div class="mobile-header">
+  <div id="bottom-header" class="headhid" >
+  <div class="container ">
+      <div class="col-xs-12 d-flex pt-10">
+          <div class="col-xs-6 wd-100">
+      <button (click)="toggleNavigation()" class="butpo" >
+         <span class="ham-style"> <i class="bi bi-list"></i> </span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+      </div>
+      <div class="col-xs-6 text-end" *ngIf="!userLoggedIn && showLoginButton">
+          <span class="btn-style">
+              <a class="btn btn-primary buttonstyle "  target="_self" role="button" (click)="loginPage()"><p>Login/Register</p></a>
+          </span>
+      </div>
+      </div>
+      
+      <nav [ngClass]="{ 'hidden': !isNavigationOpen }" class="navstyle">
+          
+          <ul>
+              <div class="logostyle">
+                   <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+              </div>
+              <div class="profile">
+                  <div class="img-box">
+                      <!-- <i class="bi bi-person-add iconstyle1"></i> -->
+                     <span > <img class="prostyle" src="./assets/images/mobprofile.png" alt="logo"></span>
+                    </div>
+                  <div class="txtstyle">
+                      <h2>Hello & welcome</h2>
+                      <span *ngIf="!userLoggedIn && showLoginButton" >Login or register</span>
+                      <span *ngIf="userLoggedIn" >{{userName}} </span>
+                  </div>
+              </div>
+  
+          <li class="listyle1"><a href="#"><img src="./assets/images/home.png" alt="logo"><span class="mrleft">Home</span></a></li>
+          <li class="listyle"><a href="#"><img src="./assets/images/briefcase.png" alt="logo"><span class="mrleft">Jobs</span></a></li>
+          <li class="listyle"><a href="#"><img src="./assets/images/improvement.png" alt="logo"><span class="mrleft">Career services</span></a></li>
+          <li class="listyle"><a href="#"><img src="./assets/images/blog.png" alt="logo"><span class="mrleft">Blogs</span></a></li>
+          <li class="listyle"><a href="#"><img src="./assets/images/more.png" alt="logo"><span class="mrleft">More</span></a></li>
+          <li class="listyle"><a href="#"><img src="./assets/images/feedback.png" alt="logo"><span class="mrleft">Feedback</span></a></li>
+          
+              <span>
+                  <p class="emstyle">Are you employer?</p>
+                  <a class="btn btn-primary buttonstyle1 "  href="#" target="_self" role="button">Post a job</a>
+              </span>
+      
+        </ul>
+      </nav>
+   </div>
+  </div>
+  </div>
+
+    

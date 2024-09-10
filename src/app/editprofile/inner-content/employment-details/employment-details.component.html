@@ -1,0 +1,131 @@
+
+<div class="employment-details">
+    <div class=" backcolor">
+    <div class="container fix-width">
+        <div class="row">
+            
+            <form>
+                <div class="head">
+                    <div class="d-flex">
+                    <div class="col-lg-11">
+                        <h1>Employment Details</h1>
+                    </div>
+                    <div class="col-lg-1">
+                        <p class="text-end"><b><i class="bi bi-x-square" (click)="cancel()"></i></b></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="border-style">
+
+                <div class="row ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">  
+                        <label for="job-role">Job Role <span class="star">*</span> </label>
+                            <select name="job-role" id="job-role">
+                            <option value="select-job-role">Type your job role</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            </select> 
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">  
+                        <label for="company">Company <span class="star">*</span> </label>
+                            <select name="company" id="company">
+                            <option value="select-company">Type your organization </option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <!-- <option value="other"></option> -->
+                            </select> 
+                    </div>                
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            
+                            <label for="company-location">Company Location <span class="star">*</span> </label>
+                                <select name="company-location" id="company-location">
+                                <option value="select-company-location">Select your employer location</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                </select>
+                                <div class="form-group d-flex ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label >Currently Working</label>
+                                </div>
+                        </div>
+    
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="row ">
+    
+                                <div class="col-lg-12 col-md-6 col-sm-6">
+                                    <div>
+                                        <label for="working-since">Working Since <span class="star">*</span> </label>
+                                        <div class="row d-flex">
+                                        <div class="col-lg-5">
+                                            <div class="row d-flex">
+                                                <div class="col-lg-6">
+                                                <select name="working-since" id="working-since">
+                                                    <option value="total-work">Month</option>
+                                                    <option value="proficient">1</option>
+                                                    <option value="proficient">2</option>
+                                                    <option value="proficient">3</option>
+                                                    </select>
+                                                   
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <select name="working-since" id="working-since">
+                                                        <option value="total-work">Year</option>
+                                                        <option value="proficient">1</option>
+                                                        <option value="proficient">2</option>
+                                                        <option value="proficient">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-2"><h3>To</h3></div>
+                                        <div class="col-lg-5">
+                                            <div class="row d-flex">
+                                                <div class="col-lg-6">
+                                                    <select name="working-since" id="working-since">
+                                                        <option value="total-work">Month</option>
+                                                        <option value="proficient">1</option>
+                                                        <option value="proficient">2</option>
+                                                        <option value="proficient">3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <select name="working-since" id="working-since">
+                                                            <option value="total-work">Year</option>
+                                                            <option value="proficient">1</option>
+                                                            <option value="proficient">2</option>
+                                                            <option value="proficient">3</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                    </div>
+
+                <div class=" justify-content-center text-end">
+                    <button type="submit" class="btn btn-color3">Remove</button>
+                    <button type="submit" class="btn btn-color4">Add</button>
+                </div>
+                <!-- <div class="marg">
+                    <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                </div> -->
+            </div>
+            <div class=" justify-content-center text-end">
+                <button type="button" class="btn btn-color1" (click)="cancel()">Cancel</button>
+                <button type="button" class="btn btn-color2">Save</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
